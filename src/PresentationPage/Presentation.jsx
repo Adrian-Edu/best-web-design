@@ -12,7 +12,6 @@ function Presentation() {
       <div>
         <h1> My name is Adrian Edu, </h1>
         <h2>
-          {" "}
           I am a FrontEnd <br /> Developer
         </h2>
         <h3>Contact me !</h3>
