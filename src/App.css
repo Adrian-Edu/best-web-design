@@ -1,10 +1,4 @@
-/*
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  background-repeat: no-repeat;
+body > element.style {
+  padding-right: 0px;
+  overflow: hidden;
 }
-*/

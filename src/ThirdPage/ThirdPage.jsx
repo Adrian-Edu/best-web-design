@@ -8,13 +8,22 @@ import Image4 from "./Image4.png";
 
 function ThirdPage() {
   return (
-    <section style={{ backgroundImage: `url(${background})` }}>
-      <h4>Skills & Experience</h4>
+    <section
+      className="page-height"
+      style={{ backgroundImage: `url(${background})` }}
+    >
+      <div>
+        <h4>Skills & Experience</h4>
+      </div>
       <div className="third-container">
-        <img src={Image2} className="image2" alt="" />
-        <img src={Image1} className="ThirdPageImage" alt="" />
-        <img src={Image3} className="ThirdPageImage" alt="" />
-        <img src={Image4} className="image4" alt="" />
+        <div className="first2">
+          <img src={Image2} className="image2" alt="" />
+          <img src={Image1} className="image1" alt="" />
+        </div>
+        <div className="second2">
+          <img src={Image3} className="image3" alt="" />
+          <img src={Image4} className="image4" alt="" />
+        </div>
       </div>
     </section>
   );
