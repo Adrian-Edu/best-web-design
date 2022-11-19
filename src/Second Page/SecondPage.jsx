@@ -7,7 +7,6 @@ function SecondPage() {
   return (
     <section style={{ backgroundImage: `url(${background})` }}>
       <h4>Web Design</h4>
-
       <div className="second-container">
         <h5 className="secondpagetext">
           It is essential for any business to <br /> have a professional online{" "}
