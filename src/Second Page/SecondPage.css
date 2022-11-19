@@ -3,6 +3,8 @@ h4 {
   color: white;
   font-size: 40px;
   margin-bottom: 0%;
+  color: #f4b510;
+  margin: 60px 0 20px 0;
 }
 
 h5 {
@@ -20,4 +22,88 @@ h5 {
 
 .secondpagetext {
   text-align: center;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .secondpicture {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+  }
+  h5 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .secondpicture {
+    width: 380px;
+    height: 380px;
+    object-fit: contain;
+  }
+  h5 {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .secondpicture {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+  }
+  h5 {
+    margin-bottom: 40px;
+  }
+  h4 {
+    margin: 40px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .secondpicture {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+  }
+  h5 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+  }
+  h4 {
+    margin: 40px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .secondpicture {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+  h4 {
+    margin: 40px 0 0 0;
+  }
+  h5 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 20px 0;
+  }
 }
