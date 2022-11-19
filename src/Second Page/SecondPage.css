@@ -1,21 +1,21 @@
 h4 {
   text-align: center;
   font-size: 60px;
-  margin-bottom: 0%;
   color: #f4b510;
-  padding-top: 30px;
+  padding: 30px 0;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 h5 {
   text-align: center;
   color: white;
-  font-size: 40px;
-  margin-bottom: 0%;
+  font-size: 60px;
 }
 
 .secondpicture {
-  width: 550px;
-  height: 550px;
+  width: 670px;
+  height: 650px;
   object-fit: contain;
 }
 
@@ -28,6 +28,19 @@ h5 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  height: 70vh;
+}
+
+@media screen and (max-width: 1700px) {
+  .secondpicture {
+    width: 570px;
+    height: 550px;
+    object-fit: contain;
+  }
+  h5 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -58,7 +71,7 @@ h5 {
   .second-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -98,7 +111,6 @@ h5 {
     object-fit: contain;
   }
   h4 {
-    margin: 0;
     font-size: 40px;
   }
   h5 {

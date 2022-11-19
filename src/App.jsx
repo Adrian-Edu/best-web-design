@@ -2,6 +2,7 @@ import "./App.css";
 import Presentation from "./PresentationPage/Presentation";
 import SecondPage from "./Second Page/SecondPage";
 import Navbar from "./Navbar/Navbar";
+import ThirdPage from "./ThirdPage/ThirdPage";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Presentation />
       <SecondPage />
+      <ThirdPage />
     </section>
   );
 }
