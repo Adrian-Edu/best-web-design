@@ -5,7 +5,7 @@ import Navbar from "./Navbar/Navbar";
 
 function App() {
   return (
-    <section className="App">
+    <section>
       <Navbar />
       <Presentation />
       <SecondPage />
