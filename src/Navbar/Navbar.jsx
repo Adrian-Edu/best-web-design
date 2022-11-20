@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import LogoBWD from "../LogoBWD.png";
 import "./Navbar.css";
-import Switch from "../Switch/Switch";
+import Switch from "../switch/Switch";
 const pages = ["Home", "Web Design", "Services", "Portofolio", "Contact"];
 
 function ResponsiveAppBar() {

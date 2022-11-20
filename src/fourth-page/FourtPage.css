@@ -1,0 +1,139 @@
+.page-height {
+  height: 100vh;
+}
+
+.fourt-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80vh;
+}
+
+.first2-fourtpage {
+  display: flex;
+  flex-direction: column;
+}
+
+.second2-fourtpage {
+  display: flex;
+  flex-direction: column;
+}
+
+h6 {
+  text-align: center;
+  font-size: 70px;
+  color: #f4b510;
+  padding: 50px 0;
+  margin: 0;
+}
+
+h7 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.oldnew-image {
+  width: auto;
+  height: 740px;
+  object-fit: contain;
+}
+
+.desktop-image {
+  width: auto;
+  height: 740px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1900px) {
+  .oldnew-image {
+    width: auto;
+    height: 640px;
+    object-fit: contain;
+  }
+
+  .desktop-image {
+    width: auto;
+    height: 640px;
+    object-fit: contain;
+  }
+
+  h7 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .oldnew-image {
+    width: auto;
+    height: 540px;
+    object-fit: contain;
+  }
+
+  .desktop-image {
+    width: auto;
+    height: 540px;
+    object-fit: contain;
+  }
+
+  h7 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .fourt-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .oldnew-image {
+    width: auto;
+    height: 480px;
+    object-fit: contain;
+  }
+
+  .desktop-image {
+    width: auto;
+    height: 440px;
+    object-fit: contain;
+  }
+
+  h7 {
+    font-size: 40px;
+  }
+  .desktop-image {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fourt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+  }
+  .oldnew-image {
+    width: auto;
+    height: 380px;
+    object-fit: contain;
+  }
+
+  .desktop-image {
+    width: auto;
+    height: 340px;
+    object-fit: contain;
+  }
+
+  h7 {
+    font-size: 30px;
+  }
+
+  h6 {
+    font-size: 50px;
+  }
+}

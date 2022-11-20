@@ -108,6 +108,7 @@ h4 {
     font-size: 60px;
     color: #f4b510;
     padding-top: 100px;
+    padding-left: 35px;
   }
   .image2 {
     width: 250px;
@@ -227,6 +228,7 @@ h4 {
   h4 {
     font-size: 30px;
     margin-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-left: 10px;
   }
 }

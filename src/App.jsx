@@ -1,8 +1,9 @@
 import "./App.css";
-import Presentation from "./PresentationPage/Presentation";
-import SecondPage from "./Second Page/SecondPage";
-import Navbar from "./Navbar/Navbar";
-import ThirdPage from "./ThirdPage/ThirdPage";
+import Presentation from "./presentation-page/Presentation";
+import SecondPage from "./second-page/SecondPage";
+import Navbar from "./navbar/Navbar";
+import ThirdPage from "./third-page/ThirdPage";
+import FourthPage from "./fourth-page/FourtPage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Presentation />
       <SecondPage />
       <ThirdPage />
+      <FourthPage />
     </section>
   );
 }
