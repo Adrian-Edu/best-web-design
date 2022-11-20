@@ -79,6 +79,7 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 65vh;
   }
 
   .secondpicture {
@@ -123,8 +124,5 @@ h5 {
     font-size: 16px;
     letter-spacing: 3px;
     margin-bottom: 20px 0;
-  }
-  .second-container {
-    height: 75vh;
   }
 }

@@ -107,7 +107,7 @@ h4 {
     text-align: center;
     font-size: 60px;
     color: #f4b510;
-    padding-top: 100px;
+    padding-top: 10px;
     padding-left: 35px;
   }
   .image2 {
@@ -169,6 +169,7 @@ h4 {
     height: 200px;
     object-fit: contain;
     margin-bottom: 15px;
+    margin-left: 20px;
   }
   .first2 {
     display: flex;
@@ -177,10 +178,11 @@ h4 {
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
   .third-container {
     display: flex;
     flex-direction: column;
+    height: 80vh;
   }
   .first2 {
     display: flex;
@@ -196,9 +198,10 @@ h4 {
   }
   .image2 {
     width: 200px;
-    height: auto;
+    height: 200px;
     object-fit: contain;
     padding-bottom: 0;
+    padding-right: 15px;
   }
 
   .image1 {
@@ -210,8 +213,8 @@ h4 {
   }
 
   .image3 {
-    width: 180px;
-    height: auto;
+    width: 2200px;
+    height: 200px;
     object-fit: contain;
     padding-right: 100px;
     padding-bottom: 0;
@@ -222,12 +225,12 @@ h4 {
     height: 200px;
     object-fit: contain;
     padding-left: 20px;
-    padding-bottom: 0;
     padding: 30px 0 0 0;
+    margin-right: 80px;
   }
   h4 {
     font-size: 30px;
-    padding-top: 30px 0;
+    padding: 20px 0;
     padding-left: 10px;
   }
 }
