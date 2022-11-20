@@ -161,7 +161,7 @@ h7 {
 @media screen and (max-width: 450px) {
   .oldnew-image {
     width: auto;
-    height: 30px;
+    height: 300px;
     object-fit: contain;
   }
 

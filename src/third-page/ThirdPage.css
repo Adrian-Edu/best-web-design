@@ -182,7 +182,7 @@ h4 {
   .third-container {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 85vh;
   }
   .first2 {
     display: flex;
