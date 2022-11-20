@@ -2,7 +2,7 @@
   height: 100vh;
 }
 
-.fourt-container {
+.fifth-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -10,17 +10,17 @@
   height: 80vh;
 }
 
-.first2-fourtpage {
+.first2-fifthpage {
   display: flex;
   flex-direction: column;
 }
 
-.second2-fourtpage {
+.second2-fifthpage {
   display: flex;
   flex-direction: column;
 }
 
-h6 {
+h8 {
   text-align: center;
   font-size: 70px;
   color: #f4b510;
@@ -29,7 +29,7 @@ h6 {
   letter-spacing: 3px;
 }
 
-h7 {
+h9 {
   text-align: center;
   color: white;
   font-size: 60px;
