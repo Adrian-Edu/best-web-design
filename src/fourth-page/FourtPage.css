@@ -7,7 +7,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 80vh;
 }
 
 .first2-fourtpage {
@@ -40,26 +39,26 @@ h7 {
 
 .oldnew-image {
   width: auto;
-  height: 740px;
+  height: 440px;
   object-fit: contain;
 }
 
 .desktop-image {
   width: auto;
-  height: 740px;
+  height: 440px;
   object-fit: contain;
 }
 
 @media screen and (max-width: 1900px) {
   .oldnew-image {
     width: auto;
-    height: 640px;
+    height: 400px;
     object-fit: contain;
   }
 
   .desktop-image {
     width: auto;
-    height: 640px;
+    height: 400px;
     object-fit: contain;
   }
 
@@ -71,13 +70,13 @@ h7 {
 @media screen and (max-width: 1600px) {
   .oldnew-image {
     width: auto;
-    height: 540px;
+    height: 380px;
     object-fit: contain;
   }
 
   .desktop-image {
     width: auto;
-    height: 540px;
+    height: 380px;
     object-fit: contain;
   }
 
@@ -89,14 +88,14 @@ h7 {
 @media screen and (max-width: 1300px) {
   .oldnew-image {
     width: auto;
-    height: 455px;
+    height: 355px;
     object-fit: contain;
     margin-bottom: 15px;
   }
 
   .desktop-image {
     width: auto;
-    height: 440px;
+    height: 340px;
     object-fit: contain;
   }
 
@@ -106,22 +105,19 @@ h7 {
   .desktop-image {
     margin-bottom: 20px;
   }
-  .fourt-container {
-    height: 75vh;
-  }
 }
 
 @media screen and (max-width: 1150px) {
   .oldnew-image {
     width: auto;
-    height: 375px;
+    height: 355px;
     object-fit: contain;
     margin-bottom: 15px;
   }
 
   .desktop-image {
     width: auto;
-    height: 360px;
+    height: 340px;
     object-fit: contain;
   }
 
@@ -131,9 +127,6 @@ h7 {
   .desktop-image {
     margin-bottom: 20px;
   }
-  .fourt-container {
-    height: 75vh;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -142,17 +135,16 @@ h7 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75vh;
   }
   .oldnew-image {
     width: auto;
-    height: 380px;
+    height: 300px;
     object-fit: contain;
   }
 
   .desktop-image {
     width: auto;
-    height: 340px;
+    height: 270px;
     object-fit: contain;
   }
 
@@ -162,20 +154,20 @@ h7 {
 
   h6 {
     font-size: 40px;
-    margin-bottom: 30px;
+    padding: 20px 0;
   }
 }
 
 @media screen and (max-width: 450px) {
   .oldnew-image {
     width: auto;
-    height: 340px;
+    height: 290px;
     object-fit: contain;
   }
 
   .desktop-image {
     width: auto;
-    height: 300px;
+    height: 320px;
     object-fit: contain;
   }
 
