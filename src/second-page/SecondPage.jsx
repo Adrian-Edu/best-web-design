@@ -13,14 +13,18 @@ function SecondPage() {
         <h4>Web Design</h4>
       </div>
       <div className="second-container">
-        <h5 className="secondpagetext">
-          It is essential for any business to <br /> have a professional online{" "}
-          <br /> presence. <br />
-          Using thelatest technologies, I will
-          <br />
-          create a fully responsive <br />
-          website.
-        </h5>
+        <div className="secondpagetext">
+          <h5>
+            It is essential for any business to <br /> have a professional
+            online <br /> presence. <br />
+          </h5>
+          <h5>
+            Using thelatest technologies, I will
+            <br />
+            create a fully responsive <br />
+            website.
+          </h5>
+        </div>
         <img src={secondslicepicture} className="secondpicture" alt="" />
       </div>
     </section>
