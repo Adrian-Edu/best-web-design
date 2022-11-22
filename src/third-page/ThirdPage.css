@@ -148,40 +148,6 @@ h4 {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .image2 {
-    width: 200px;
-    height: 250px;
-    object-fit: contain;
-  }
-
-  .image1 {
-    width: 200px;
-    height: 250px;
-    object-fit: contain;
-    padding-bottom: 60px;
-  }
-
-  .image3 {
-    width: 250px;
-    height: 300px;
-    object-fit: contain;
-  }
-
-  .image4 {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    margin-bottom: 15px;
-    margin-left: 20px;
-  }
-  .first2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .third-container {
     display: flex;
@@ -204,6 +170,7 @@ h4 {
     height: 140px;
     object-fit: contain;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .image1 {
@@ -230,7 +197,7 @@ h4 {
 
   h4 {
     font-size: 30px;
-    padding: 20px 0;
+    padding: 40px 0;
     padding-left: 10px;
   }
 }
