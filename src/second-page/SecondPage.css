@@ -37,6 +37,18 @@ h5 {
   height: 70vh;
 }
 
+@media screen and (max-width: 2000px) {
+  .secondpicture {
+    width: 570px;
+    height: 550px;
+    object-fit: contain;
+  }
+  h5 {
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .secondpicture {
     width: 570px;
@@ -79,19 +91,18 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 65vh;
   }
 
   .secondpicture {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: contain;
   }
   h5 {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
   h4 {
-    padding: 40px 0 0 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -102,12 +113,13 @@ h5 {
     object-fit: contain;
   }
   h5 {
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 3px;
     margin-bottom: 40px 0 0 0;
   }
   h4 {
     padding: 40px 0 0 0;
+    font-size: 25px;
   }
 }
 

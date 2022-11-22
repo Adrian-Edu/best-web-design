@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  height: 70vh;
 }
 
 .first2-fourtpage {
@@ -52,7 +53,7 @@ h7 {
 @media screen and (max-width: 1900px) {
   .oldnew-image {
     width: auto;
-    height: 400px;
+    height: 410px;
     object-fit: contain;
   }
 
@@ -70,7 +71,7 @@ h7 {
 @media screen and (max-width: 1600px) {
   .oldnew-image {
     width: auto;
-    height: 380px;
+    height: 390px;
     object-fit: contain;
   }
 
@@ -110,14 +111,14 @@ h7 {
 @media screen and (max-width: 1150px) {
   .oldnew-image {
     width: auto;
-    height: 355px;
+    height: 335px;
     object-fit: contain;
     margin-bottom: 15px;
   }
 
   .desktop-image {
     width: auto;
-    height: 340px;
+    height: 325px;
     object-fit: contain;
   }
 
@@ -132,29 +133,35 @@ h7 {
 @media screen and (max-width: 900px) {
   .fourt-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .oldnew-image {
-    width: auto;
-    height: 300px;
+    width: 230px;
+    height: 230px;
     object-fit: contain;
   }
 
   .desktop-image {
-    width: auto;
-    height: 270px;
+    width: 230px;
+    height: 230px;
     object-fit: contain;
   }
 
   h7 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   h6 {
     font-size: 40px;
     padding: 20px 0;
+  }
+  .first2-fourtpage {
+    justify-content: center;
+    align-items: center;
+  }
+  .second2-fourtpage {
+    justify-content: center;
+    align-items: center;
   }
 }
 
