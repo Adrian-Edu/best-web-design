@@ -166,6 +166,12 @@ h7 {
 }
 
 @media screen and (max-width: 450px) {
+  .fourt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evently;
+  }
   .oldnew-image {
     width: auto;
     height: 300px;
