@@ -1,4 +1,4 @@
-body > element.style {
+element.style {
   padding-right: 0px;
   overflow: hidden;
 }

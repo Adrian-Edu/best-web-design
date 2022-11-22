@@ -170,26 +170,26 @@ h7 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-evently;
   }
   .oldnew-image {
-    width: auto;
-    height: 300px;
+    width: 220;
+    height: 220px;
     object-fit: contain;
   }
 
   .desktop-image {
-    width: auto;
-    height: 270px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
   }
 
   h7 {
     font-size: 20px;
+    margin-bottom: 0;
   }
 
   h6 {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
