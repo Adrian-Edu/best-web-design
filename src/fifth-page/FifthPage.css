@@ -66,7 +66,7 @@ h9 {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .search {
     width: 290px;
     object-fit: contain;
