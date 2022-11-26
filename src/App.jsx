@@ -5,6 +5,7 @@ import Navbar from "./navbar/Navbar";
 import ThirdPage from "./third-page/ThirdPage";
 import FourthPage from "./fourth-page/FourtPage";
 import FifthPage from "./fifth-page/FifthPage";
+import Sixth from "./sixth-page/SixthPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ThirdPage />
       <FourthPage />
       <FifthPage />
+      <Sixth />
     </section>
   );
 }
