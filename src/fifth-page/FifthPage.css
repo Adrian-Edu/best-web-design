@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-around;
   margin-top: 20px;
-  height: 70%;
+  height: 80%;
 }
 
 .first2-fifth {
@@ -85,6 +85,12 @@ h9 {
   .release {
     width: 290px;
     object-fit: contain;
+  }
+  .fifth-container {
+    height: 70%;
+  }
+  .header-fifth {
+    font-size: 45px;
   }
 }
 
