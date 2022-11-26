@@ -154,22 +154,22 @@ h9 {
 
 @media screen and (max-width: 700px) {
   .search {
-    width: 170px;
+    width: 150px;
     object-fit: contain;
   }
 
   .figma {
-    width: 170px;
+    width: 150px;
     object-fit: contain;
   }
 
   .laptop {
-    width: 170px;
+    width: 150px;
     object-fit: contain;
   }
 
   .release {
-    width: 170px;
+    width: 150px;
     object-fit: contain;
   }
   h9 {
@@ -193,9 +193,13 @@ h9 {
     align-items: center;
   }
   .header-fifth {
-    font-size: 25px;
+    font-size: 20px;
   }
   .fifth-container {
     height: 82%;
+  }
+  .test {
+    margin: 0;
+    align-items: center;
   }
 }
