@@ -4,7 +4,7 @@ import Desktop from "./Desktop.png";
 import OldNew from "./OldNew.png";
 import "./FourtPage.css";
 
-function ThirdPage() {
+function FourtPage() {
   return (
     <section
       className="page-height"
@@ -31,4 +31,4 @@ function ThirdPage() {
   );
 }
 
-export default ThirdPage;
+export default FourtPage;

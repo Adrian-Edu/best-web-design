@@ -19,7 +19,7 @@ function SecondPage() {
             online <br /> presence. <br />
           </h5>
           <h5>
-            Using thelatest technologies, I will
+            Using the latest technologies, I will
             <br />
             create a fully responsive <br />
             website.
