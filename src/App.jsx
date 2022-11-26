@@ -6,6 +6,7 @@ import ThirdPage from "./third-page/ThirdPage";
 import FourthPage from "./fourth-page/FourtPage";
 import FifthPage from "./fifth-page/FifthPage";
 import Sixth from "./sixth-page/SixthPage";
+import SeventhPage from "./seventh-page/SeventhPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <FourthPage />
       <FifthPage />
       <Sixth />
+      <SeventhPage />
     </section>
   );
 }
