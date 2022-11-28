@@ -50,10 +50,9 @@
   text-align: center;
   font-size: 50px;
   color: #f4b510;
-  padding: 50px 0;
+  padding: 30px 0;
   margin: 0;
   letter-spacing: 3px;
-  padding: 20px 0 0 0;
   font-weight: 700;
 }
 
@@ -66,7 +65,7 @@ h9 {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1800px) {
   .search {
     width: 300px;
     object-fit: contain;
@@ -91,6 +90,9 @@ h9 {
   }
   .header-fifth {
     font-size: 45px;
+  }
+  h9 {
+    font-size: 25px;
   }
 }
 
@@ -196,10 +198,14 @@ h9 {
     font-size: 20px;
   }
   .fifth-container {
-    height: 82%;
+    height: 85%;
   }
   .test {
     margin: 0;
     align-items: center;
+  }
+  .fifth-container {
+    justify-content: center;
+    margin-top: -20px;
   }
 }

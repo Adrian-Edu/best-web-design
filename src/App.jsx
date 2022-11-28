@@ -7,6 +7,7 @@ import FourthPage from "./fourth-page/FourtPage";
 import FifthPage from "./fifth-page/FifthPage";
 import Sixth from "./sixth-page/SixthPage";
 import SeventhPage from "./seventh-page/SeventhPage";
+import EighthPage from "./eighth-page/EighthPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <FifthPage />
       <Sixth />
       <SeventhPage />
+      <EighthPage />
     </section>
   );
 }

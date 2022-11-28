@@ -106,6 +106,9 @@ h7 {
   .desktop-image {
     margin-bottom: 20px;
   }
+  h6 {
+    font-size: 60px;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -165,7 +168,7 @@ h7 {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .fourt-container {
     display: flex;
     flex-direction: column;

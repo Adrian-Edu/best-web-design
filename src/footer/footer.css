@@ -1,0 +1,12 @@
+.prob {
+  background-color: #f4b510;
+  width: 88%;
+  height: 150px;
+}
+
+.cif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
