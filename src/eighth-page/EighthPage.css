@@ -39,6 +39,11 @@
   border-radius: 5px;
 }
 
+.eighth-page-display {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 1400px) {
   .passion {
     width: 380px;
