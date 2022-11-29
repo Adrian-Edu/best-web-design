@@ -1,6 +1,10 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "./Logo.png";
+import mobile from "./mobile.png";
+import whats from "./whats.png";
+import linkedin from "./linkedin.png";
+import github from "./github.png";
 
 function footer() {
   return (
@@ -10,10 +14,10 @@ function footer() {
           <div className="footer-column">
             <img src={Logo} className="logo" alt="" />
             <div className="all4">
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>4</button>
+              <img src={mobile} className="poza" alt="" />
+              <img src={whats} className="poza" alt="" />
+              <img src={linkedin} className="poza" alt="" />
+              <img src={github} className="poza" alt="" />
             </div>
           </div>
         </div>
