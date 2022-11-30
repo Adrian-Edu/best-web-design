@@ -5,14 +5,10 @@ import mobile from "./mobile.png";
 import whats from "./whats.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
-import background from "../background.png";
 
 function footer() {
   return (
-    <section
-      className="footer-position"
-      style={{ backgroundImage: `url(${background})` }}
-    >
+    <section className="footer-position">
       <div className="footer">
         <div className="footer-first2">
           <div className="footer-column">

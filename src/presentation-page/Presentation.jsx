@@ -14,7 +14,7 @@ function Presentation() {
         <h2>
           I am a FrontEnd <br /> Developer
         </h2>
-        <h3>Contact me !</h3>
+        <h3>Contact me ! </h3>
       </div>
       <div>
         <img src={pozamea} className="profilepic" alt="" />

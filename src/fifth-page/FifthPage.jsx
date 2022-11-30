@@ -20,30 +20,30 @@ function FifthPage() {
       <div className="fifth-container">
         <div className="first2-fifth">
           <div className="test">
-            <h9>
+            <p className="h9">
               Identifying the <br />
               client's needs
-            </h9>
+            </p>
             <img src={search} className="search" alt="" />
           </div>
           <div className="test">
-            <h9>
+            <p className="h9">
               Implementing the <br /> design
-            </h9>
+            </p>
             <img src={figma} className="figma" alt="" />
           </div>
         </div>
         <div className="second2-fifth">
           <div className="test">
-            <h9>
+            <p className="h9">
               Building the <br /> website
-            </h9>
+            </p>
             <img src={laptop} className="laptop" alt="" />
           </div>
           <div className="test">
-            <h9>
+            <p className="h9">
               Testing the <br /> website
-            </h9>
+            </p>
             <img src={release} className="release" alt="" />
           </div>
         </div>

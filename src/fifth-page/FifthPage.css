@@ -56,13 +56,39 @@
   font-weight: 700;
 }
 
-h9 {
+.h9 {
   color: white;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
   letter-spacing: 3px;
   margin: 10px 0;
+}
+
+@media screen and (max-width: 2400px) {
+  .search {
+    width: 360px;
+    object-fit: contain;
+  }
+
+  .figma {
+    width: 360px;
+    object-fit: contain;
+  }
+
+  .laptop {
+    width: 360px;
+    object-fit: contain;
+  }
+
+  .release {
+    width: 360px;
+    object-fit: contain;
+  }
+
+  .fifth-container {
+    height: 65%;
+  }
 }
 
 @media screen and (max-width: 1800px) {
@@ -91,7 +117,7 @@ h9 {
   .header-fifth {
     font-size: 45px;
   }
-  h9 {
+  .h9 {
     font-size: 20px;
   }
 }
@@ -138,7 +164,7 @@ h9 {
     width: 250px;
     object-fit: contain;
   }
-  h9 {
+  .h9 {
     color: white;
     font-size: 25px;
     font-weight: 700;
@@ -174,7 +200,7 @@ h9 {
     width: 135px;
     object-fit: contain;
   }
-  h9 {
+  .h9 {
     color: white;
     font-size: 14px;
   }

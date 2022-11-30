@@ -48,7 +48,7 @@
 .footer-last-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-last-column > p {
@@ -66,6 +66,7 @@
 @media screen and (max-width: 1600px) {
   .footer-last-column > p {
     font-size: 16px;
+    margin: 10px 0;
   }
   .footer-second-column > p {
     font-size: 16px;
@@ -137,5 +138,6 @@
     justify-content: center;
     height: 85vh;
     padding: 20px 0;
+    background-image: url("../background.png");
   }
 }

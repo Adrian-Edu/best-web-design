@@ -29,7 +29,7 @@ h6 {
   letter-spacing: 3px;
 }
 
-h7 {
+.h7 {
   text-align: center;
   color: white;
   font-size: 60px;
@@ -63,7 +63,7 @@ h7 {
     object-fit: contain;
   }
 
-  h7 {
+  .h7 {
     font-size: 50px;
   }
 }
@@ -81,7 +81,7 @@ h7 {
     object-fit: contain;
   }
 
-  h7 {
+  .h7 {
     font-size: 45px;
   }
 }
@@ -100,7 +100,7 @@ h7 {
     object-fit: contain;
   }
 
-  h7 {
+  .h7 {
     font-size: 40px;
   }
   .desktop-image {
@@ -125,7 +125,7 @@ h7 {
     object-fit: contain;
   }
 
-  h7 {
+  .h7 {
     font-size: 35px;
   }
   .desktop-image {
@@ -150,7 +150,7 @@ h7 {
     object-fit: contain;
   }
 
-  h7 {
+  .h7 {
     font-size: 25px;
   }
 
@@ -186,7 +186,7 @@ h7 {
     object-fit: contain;
   }
 
-  h7 {
+  .h7 {
     font-size: 20px;
     margin-bottom: 0;
   }

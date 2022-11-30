@@ -15,15 +15,15 @@ function FourtPage() {
       </div>
       <div className="fourt-container">
         <div className="first2-fourtpage">
-          <h7>
+          <p className="h7">
             Responsive website <br /> design
-          </h7>
+          </p>
           <img src={Desktop} className="desktop-image" alt="" />
         </div>
         <div className="second2-fourtpage">
-          <h7>
+          <p className="h7">
             Modify your old <br /> website
-          </h7>
+          </p>
           <img src={OldNew} className="oldnew-image" alt="" />
         </div>
       </div>

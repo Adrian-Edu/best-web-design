@@ -43,14 +43,12 @@
   text-align: center;
   font-size: 50px;
   color: #f4b510;
-  padding: 50px 0;
   margin: 0;
   letter-spacing: 3px;
-  padding: 20px 0 0 0;
   font-weight: 700;
 }
 
-h10 {
+.h10 {
   color: white;
   font-size: 30px;
   font-weight: 700;
@@ -80,7 +78,7 @@ h10 {
     font-size: 45px;
   }
 
-  h10 {
+  .h10 {
     font-size: 25px;
     font-weight: 700;
   }
@@ -104,7 +102,7 @@ h10 {
     font-size: 40px;
   }
 
-  h10 {
+  .h10 {
     font-size: 20px;
   }
 
@@ -127,7 +125,7 @@ h10 {
     font-size: 40px;
   }
 
-  h10 {
+  .h10 {
     font-size: 20px;
   }
 
@@ -157,7 +155,7 @@ h10 {
     font-size: 30px;
   }
 
-  h10 {
+  .h10 {
     font-size: 20px;
   }
 
