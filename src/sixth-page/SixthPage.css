@@ -170,16 +170,16 @@ h10 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
   }
   .sixth-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
   }
   .test2 {
-    margin-top: 10px;
+    margin: 5px 0;
   }
   .sixth-button {
     height: 25px;
