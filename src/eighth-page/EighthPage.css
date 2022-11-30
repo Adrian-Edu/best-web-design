@@ -168,3 +168,32 @@
     height: 160vh;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .passion {
+    width: 180px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .needs {
+    width: 180px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .quickly {
+    width: 180px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .header-eighth {
+    font-size: 25px;
+  }
+  .page-height-special {
+    height: 160vh;
+  }
+}
