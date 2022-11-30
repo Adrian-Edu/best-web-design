@@ -62,37 +62,37 @@ h9 {
   font-weight: 700;
   text-align: center;
   letter-spacing: 3px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 1800px) {
   .search {
-    width: 300px;
+    width: 280px;
     object-fit: contain;
   }
 
   .figma {
-    width: 300px;
+    width: 280px;
     object-fit: contain;
   }
 
   .laptop {
-    width: 300px;
+    width: 280px;
     object-fit: contain;
   }
 
   .release {
-    width: 300px;
+    width: 280px;
     object-fit: contain;
   }
   .fifth-container {
-    height: 70%;
+    height: 60%;
   }
   .header-fifth {
     font-size: 45px;
   }
   h9 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -156,31 +156,29 @@ h9 {
 
 @media screen and (max-width: 700px) {
   .search {
-    width: 150px;
+    width: 135px;
     object-fit: contain;
   }
 
   .figma {
-    width: 150px;
+    width: 135px;
     object-fit: contain;
   }
 
   .laptop {
-    width: 150px;
+    width: 135px;
     object-fit: contain;
   }
 
   .release {
-    width: 150px;
+    width: 135px;
     object-fit: contain;
   }
   h9 {
     color: white;
-    font-size: 15px;
+    font-size: 14px;
   }
-  .header-fifth {
-    font-size: 40px;
-  }
+
   .first2-fifth {
     display: flex;
     flex-direction: column;

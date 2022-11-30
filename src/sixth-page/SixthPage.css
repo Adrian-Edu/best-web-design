@@ -146,15 +146,15 @@ h10 {
 
 @media screen and (max-width: 700px) {
   .product {
-    width: 200px;
+    width: 190px;
   }
 
   .todo {
-    width: 200px;
+    width: 190px;
   }
 
   .header-sixth {
-    font-size: 40px;
+    font-size: 15px;
   }
 
   h10 {
@@ -176,7 +176,7 @@ h10 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .test2 {
     margin-top: 10px;
