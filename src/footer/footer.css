@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 20vh;
+  height: 22vh;
 }
 
 .footer {
   background-color: rgb(12, 11, 11);
-  width: 88%;
+  width: 83%;
   color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -19,6 +19,7 @@
 .footer-column {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .logo {
@@ -35,13 +36,107 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100%;
 }
 
 .footer-second-column > p {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
-  text-align: center;
   height: 80%;
   margin: 10px 0;
+}
+
+.footer-last-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-last-column > p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-first2,
+.footer-second2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1600px) {
+  .footer-last-column > p {
+    font-size: 16px;
+  }
+  .footer-second-column > p {
+    font-size: 16px;
+  }
+  .logo {
+    width: 220px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  .mobile,
+  .whats,
+  .linkedin,
+  .github {
+    width: 40px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-last-column > p {
+    font-size: 14px;
+  }
+  .footer-second-column > p {
+    font-size: 14px;
+  }
+  .logo {
+    width: 180px;
+    object-fit: contain;
+  }
+  .mobile,
+  .whats,
+  .linkedin,
+  .github {
+    width: 30px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 20px;
+  }
+  .footer-first2,
+  .footer-second2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .footer-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 90vh;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
 }
