@@ -154,7 +154,7 @@ h10 {
   }
 
   .header-sixth {
-    font-size: 15px;
+    font-size: 30px;
   }
 
   h10 {
@@ -180,5 +180,9 @@ h10 {
   }
   .test2 {
     margin-top: 10px;
+  }
+  .sixth-button {
+    height: 25px;
+    width: 110px;
   }
 }

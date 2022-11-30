@@ -136,7 +136,6 @@
     flex-direction: row;
     justify-content: center;
     height: 90vh;
-    margin-top: 10px;
-    padding-bottom: 20px;
+    padding: 20px 0;
   }
 }
