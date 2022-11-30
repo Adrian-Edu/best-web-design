@@ -13,17 +13,31 @@ function footer() {
         <div>
           <div className="footer-column">
             <img src={Logo} className="logo" alt="" />
-            <div className="all4">
-              <img src={mobile} className="poza" alt="" />
-              <img src={whats} className="poza" alt="" />
-              <img src={linkedin} className="poza" alt="" />
+            <div className="footer-first-column">
+              <img src={mobile} className="mobile" alt="" />
+              <img src={whats} className="whats" alt="" />
+              <img src={linkedin} className="linkedin" alt="" />
               <img src={github} className="poza" alt="" />
             </div>
           </div>
         </div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+        <div className="footer-second-column">
+          <p>Resources</p>
+          <p>About Us</p>
+          <p>Contact </p>
+          <p>FAQ</p>
+        </div>
+        <div className="footer-second-column">
+          <p>Legal Stuff</p>
+          <p>Privacy</p>
+          <p>Policy </p>
+          <p>Terms of Service</p>
+        </div>
+        <div className="footer-second-column">
+          <p>Get the best deal every time.</p>
+          <input type="text"></input>
+          <p>Sing Up Now.</p>
+        </div>
       </div>
     </section>
   );
