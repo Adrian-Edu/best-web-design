@@ -12,12 +12,14 @@ import MenuItem from "@mui/material/MenuItem";
 import LogoBWD from "../LogoBWD.png";
 import "./Navbar.css";
 import Switch from "../switch/Switch";
+import { Link } from "react-router-dom";
 
 const pages = [
   "Home",
   "Web Design",
   "Skills",
   "Services",
+  "Building Steps",
   "Portofolio",
   "Contact",
 ];
@@ -119,12 +121,16 @@ function ResponsiveAppBar() {
                 key={page}
                 onClick={() => {
                   if (page === pages[0]) {
-                    console.log("Home");
+                    console.log("home");
                   } else if (page === pages[1]) {
                     console.log("Web Design");
                   } else if (page === pages[2]) {
-                    console.log("Services");
+                    console.log("Skills");
                   } else if (page === pages[3]) {
+                    console.log("Services");
+                  } else if (page === pages[4]) {
+                    console.log("Building Stept");
+                  } else if (page === pages[5]) {
                     console.log("Portofolio");
                   } else {
                     console.log("Contact");

@@ -12,43 +12,18 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <section>
-      <Routes>
-        <Route path="/" element={<AllComponents />} />
-        <Route path="Home" element={<Home />} />
-        <Route path="webdesign" element={<WebDesign />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="services" element={<Services />} />
-        <Route element={<StepsPage />} />
-        <Route path="portofoliopageone" element={<PortofolioPageOne />} />
-        <Route path="portofoliopagetwo" element={<PortofolioPageTwo />} />
-        <Route path="contact" element={<ContactPage />} />
-      </Routes>
-    </section>
+    <Routes>
+      <Route path="/" element={<AllComponents />} />
+      <Route index element={<Home />} />
+      <Route path="webdesign" element={<WebDesign />} />
+      <Route path="skills" element={<Skills />} />
+      <Route path="services" element={<Services />} />
+      <Route element={<StepsPage />} />
+      <Route path="portofoliopageone" element={<PortofolioPageOne />} />
+      <Route path="portofoliopagetwo" element={<PortofolioPageTwo />} />
+      <Route path="contact" element={<ContactPage />} />
+    </Routes>
   );
 }
 
 export default App;
-
-/*
-<Navbar />
-      <Home />
-      <WebDesign />
-      <Skills />
-      <Services />
-      <StepsPage />
-      <PortofolioPageOne />
-      <PortofolioPageTwo />
-      <ContactPage />
-<Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="navbar" element={<Navbar />} />
-        <Route path="webdesign" element={<WebDesign />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="services" element={<Services />} />
-        <Route element={<StepsPage />} />
-        <Route path="portofoliopageone" element={<PortofolioPageOne />} />
-        <Route path="portofoliopagetwo" element={<PortofolioPageTwo />} />
-        <Route path="contact" element={<ContactPage />} />
-      </Routes>
-      */
