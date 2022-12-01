@@ -65,6 +65,10 @@
   background-color: #f4b510;
 }
 
+button {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1400px) {
   .product {
     width: 420px;

@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import LogoBWD from "../LogoBWD.png";
 import "./Navbar.css";
 import Switch from "../switch/Switch";
+
 const pages = ["Home", "Web Design", "Services", "Portofolio", "Contact"];
 
 function ResponsiveAppBar() {
@@ -109,7 +110,9 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => {
+                  console.log("click");
+                }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}

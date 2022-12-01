@@ -18,14 +18,28 @@ function Sixth() {
           <div className="test2">
             <p className="h10">Product website</p>
             <img src={product} className="product" alt="" />
-            <button className="sixth-button">See the project</button>
+
+            <a
+              href={"https://lading-page-12.adrianedu.repl.co/"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="sixth-button"> See the project </button>
+            </a>
           </div>
         </div>
         <div className="second2-fifth">
           <div className="test2">
             <p className="h10">Todo App</p>
             <img src={todo} className="todo" alt="" />
-            <button className="sixth-button">See the project</button>
+
+            <a
+              href={"https://todo-app-dun-phi.vercel.app/"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="sixth-button"> See the project </button>
+            </a>
           </div>
         </div>
       </div>

@@ -16,16 +16,28 @@ function Seventh() {
       <div className="sixth-container">
         <div className="first2-fifth">
           <div className="test2">
-            <h10>The lucky dice game</h10>
+            <p className="h10">The lucky dice game</p>
             <img src={lucky} className="product" alt="" />
-            <button className="sixth-button">See the project</button>
+            <a
+              href={"https://lucky-dice-alpha.vercel.app/"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="sixth-button"> See the project </button>
+            </a>
           </div>
         </div>
         <div className="second2-fifth">
           <div className="test2">
-            <h10>Robot joketeller</h10>
+            <p className="h10">Robot joketeller</p>
             <img src={robo} className="todo" alt="" />
-            <button className="sixth-button">See the project</button>
+            <a
+              href={"https://robo-joke-teller.adrianedu.repl.co/"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="sixth-button"> See the project </button>
+            </a>
           </div>
         </div>
       </div>

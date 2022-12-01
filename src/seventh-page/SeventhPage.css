@@ -50,7 +50,7 @@
   font-weight: 700;
 }
 
-h10 {
+.h10 {
   color: white;
   font-size: 30px;
   font-weight: 700;
@@ -80,7 +80,7 @@ h10 {
     font-size: 45px;
   }
 
-  h10 {
+  .h10 {
     font-size: 25px;
     font-weight: 700;
   }
@@ -104,7 +104,7 @@ h10 {
     font-size: 40px;
   }
 
-  h10 {
+  .h10 {
     font-size: 20px;
   }
 
@@ -127,7 +127,7 @@ h10 {
     font-size: 40px;
   }
 
-  h10 {
+  .h10 {
     font-size: 20px;
   }
 
@@ -157,7 +157,7 @@ h10 {
     font-size: 40px;
   }
 
-  h10 {
+  .h10 {
     font-size: 20px;
   }
 
