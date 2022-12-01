@@ -111,7 +111,17 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={() => {
-                  console.log("click");
+                  if (page === pages[0]) {
+                    console.log("Home");
+                  } else if (page === pages[1]) {
+                    console.log("Web Design");
+                  } else if (page === pages[2]) {
+                    console.log("Services");
+                  } else if (page === pages[3]) {
+                    console.log("Portofolio");
+                  } else {
+                    console.log("Contact");
+                  }
                 }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
