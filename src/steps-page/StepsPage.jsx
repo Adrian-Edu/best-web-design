@@ -1,12 +1,12 @@
 import React from "react";
 import background from "../background.png";
-import "./FifthPage.css";
+import "./StepsPage.css";
 import search from "./search.png";
 import figma from "./figma.png";
 import laptop from "./laptop.png";
 import release from "./release.png";
 
-function FifthPage() {
+function StepsPage() {
   return (
     <section
       className="page-height"
@@ -52,4 +52,4 @@ function FifthPage() {
   );
 }
 
-export default FifthPage;
+export default StepsPage;

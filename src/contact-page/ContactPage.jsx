@@ -3,10 +3,10 @@ import background from "../background.png";
 import passion from "./passion.png";
 import needs from "./needs.png";
 import quickly from "./quickly.png";
-import "./EighthPage.css";
-import Fouter from "../footer/Footer";
+import "./ContactPage.css";
+import Fouter from "../footer-page/Footer";
 
-function EighthPage() {
+function ContactPage() {
   return (
     <section
       className="page-height-special"
@@ -27,4 +27,4 @@ function EighthPage() {
   );
 }
 
-export default EighthPage;
+export default ContactPage;

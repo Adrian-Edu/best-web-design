@@ -1,12 +1,12 @@
 import React from "react";
-import "./ThirdPage.css";
+import "./SkillsPage.css";
 import background from "../background.png";
 import Image1 from "./Image1.png";
 import Image2 from "./Image2.png";
 import Image3 from "./Image3.png";
 import Image4 from "./Image4.png";
 
-function ThirdPage() {
+function SkillsPage() {
   return (
     <section
       className="page-height"
@@ -29,4 +29,4 @@ function ThirdPage() {
   );
 }
 
-export default ThirdPage;
+export default SkillsPage;

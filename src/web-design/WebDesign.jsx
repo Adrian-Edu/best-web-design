@@ -1,9 +1,9 @@
 import React from "react";
-import "./SecondPage.css";
+import "./WebDesign.css";
 import secondslicepicture from "./secondslidepicture.png";
 import background from "../background.png";
 
-function SecondPage() {
+function WebDesign() {
   return (
     <section
       className="page-height"
@@ -31,4 +31,4 @@ function SecondPage() {
   );
 }
 
-export default SecondPage;
+export default WebDesign;

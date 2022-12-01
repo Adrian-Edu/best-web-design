@@ -1,30 +1,54 @@
 import "./App.css";
-import Presentation from "./presentation-page/Presentation";
-import SecondPage from "./second-page/SecondPage";
-import Navbar from "./navbar/Navbar";
-import ThirdPage from "./third-page/ThirdPage";
-import FourthPage from "./fourth-page/FourtPage";
-import FifthPage from "./fifth-page/FifthPage";
-import Sixth from "./sixth-page/SixthPage";
-import SeventhPage from "./seventh-page/SeventhPage";
-import EighthPage from "./eighth-page/EighthPage";
+import Home from "./home/Home";
+import WebDesign from "./web-design/WebDesign";
+import Skills from "./skills-page/SkillsPage";
+import Services from "./services-page/Services";
+import StepsPage from "./steps-page/StepsPage";
+import PortofolioPageOne from "./portofolio-page-one/PortofolioPageOne";
+import PortofolioPageTwo from "./portofolio-page-two/PortofolioPageTwo";
+import ContactPage from "./contact-page/ContactPage";
+import AllComponents from "./all-components/AllComponents";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <section>
-      <Navbar />
-      <Presentation />
-      <SecondPage />
-      <ThirdPage />
-      <FourthPage />
-      <FifthPage />
-      <Sixth />
-      <SeventhPage />
-      <EighthPage />
+      <Routes>
+        <Route path="/" element={<AllComponents />} />
+        <Route path="Home" element={<Home />} />
+        <Route path="webdesign" element={<WebDesign />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="services" element={<Services />} />
+        <Route element={<StepsPage />} />
+        <Route path="portofoliopageone" element={<PortofolioPageOne />} />
+        <Route path="portofoliopagetwo" element={<PortofolioPageTwo />} />
+        <Route path="contact" element={<ContactPage />} />
+      </Routes>
     </section>
   );
 }
 
 export default App;
 
-// <img src={logo} className="App-logo" alt="logo" />
+/*
+<Navbar />
+      <Home />
+      <WebDesign />
+      <Skills />
+      <Services />
+      <StepsPage />
+      <PortofolioPageOne />
+      <PortofolioPageTwo />
+      <ContactPage />
+<Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="navbar" element={<Navbar />} />
+        <Route path="webdesign" element={<WebDesign />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="services" element={<Services />} />
+        <Route element={<StepsPage />} />
+        <Route path="portofoliopageone" element={<PortofolioPageOne />} />
+        <Route path="portofoliopagetwo" element={<PortofolioPageTwo />} />
+        <Route path="contact" element={<ContactPage />} />
+      </Routes>
+      */

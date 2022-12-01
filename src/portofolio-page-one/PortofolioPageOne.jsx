@@ -1,10 +1,10 @@
 import React from "react";
 import background from "../background.png";
-import "./SixthPage.css";
+import "./PortofolioPageOne.css";
 import product from "./product.png";
 import todo from "./todo.png";
 
-function Sixth() {
+function PortofolioPageOne() {
   return (
     <section
       className="page-height"
@@ -47,4 +47,4 @@ function Sixth() {
   );
 }
 
-export default Sixth;
+export default PortofolioPageOne;

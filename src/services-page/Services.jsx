@@ -2,9 +2,9 @@ import React from "react";
 import background from "../background.png";
 import Desktop from "./Desktop.png";
 import OldNew from "./OldNew.png";
-import "./FourtPage.css";
+import "./Services.css";
 
-function FourtPage() {
+function Services() {
   return (
     <section
       className="page-height"
@@ -31,4 +31,4 @@ function FourtPage() {
   );
 }
 
-export default FourtPage;
+export default Services;

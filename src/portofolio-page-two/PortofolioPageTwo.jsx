@@ -1,10 +1,10 @@
 import React from "react";
 import background from "../background.png";
-import "./SixthPage.css";
+import "./PortofolioPageTwo";
 import lucky from "./lucky.png";
 import robo from "./robo.png";
 
-function Seventh() {
+function PortofolioPageTwo() {
   return (
     <section
       className="page-height"
@@ -45,4 +45,4 @@ function Seventh() {
   );
 }
 
-export default Seventh;
+export default PortofolioPageTwo;

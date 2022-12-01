@@ -13,7 +13,14 @@ import LogoBWD from "../LogoBWD.png";
 import "./Navbar.css";
 import Switch from "../switch/Switch";
 
-const pages = ["Home", "Web Design", "Services", "Portofolio", "Contact"];
+const pages = [
+  "Home",
+  "Web Design",
+  "Skills",
+  "Services",
+  "Portofolio",
+  "Contact",
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
