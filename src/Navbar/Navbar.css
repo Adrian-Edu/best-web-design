@@ -24,6 +24,11 @@
   width: 100%;
 }
 
+.isDisabled {
+  color: currentColor;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 900px) {
   .css-1lfs2tq-MuiTypography-root {
     display: flex;

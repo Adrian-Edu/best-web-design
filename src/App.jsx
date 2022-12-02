@@ -14,11 +14,11 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<AllComponents />} />
-      <Route index element={<Home />} />
+      <Route path="home" element={<Home />} />
       <Route path="webdesign" element={<WebDesign />} />
       <Route path="skills" element={<Skills />} />
       <Route path="services" element={<Services />} />
-      <Route element={<StepsPage />} />
+      <Route path="steps" element={<StepsPage />} />
       <Route path="portofoliopageone" element={<PortofolioPageOne />} />
       <Route path="portofoliopagetwo" element={<PortofolioPageTwo />} />
       <Route path="contact" element={<ContactPage />} />

@@ -14,16 +14,6 @@ import "./Navbar.css";
 import Switch from "../switch/Switch";
 import { Link } from "react-router-dom";
 
-const pages = [
-  "Home",
-  "Web Design",
-  "Skills",
-  "Services",
-  "Building Steps",
-  "Portofolio",
-  "Contact",
-];
-
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -57,7 +47,6 @@ function ResponsiveAppBar() {
           >
             <img src={LogoBWD} alt="" />
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -89,11 +78,50 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "start",
+                }}
+                onClick={handleCloseNavMenu}
+              >
+                <Typography sx={{ my: 1 }} textAlign="center">
+                  <Link to="home" className="isDisabled">
+                    Home
+                  </Link>
+                </Typography>
+                <Typography sx={{ my: 1 }} textAlign="center">
+                  <Link to="webdesign" className="isDisabled">
+                    Web Design
+                  </Link>
+                </Typography>
+                <Typography sx={{ my: 1 }} textAlign="center">
+                  <Link to="skills" className="isDisabled">
+                    Skills
+                  </Link>
+                </Typography>
+                <Typography sx={{ my: 1 }} textAlign="center">
+                  <Link to="services" className="isDisabled">
+                    Services
+                  </Link>
+                </Typography>
+                <Typography sx={{ my: 1 }} textAlign="center">
+                  <Link to="steps" className="isDisabled">
+                    Building Steps
+                  </Link>
+                </Typography>
+                <Typography sx={{ my: 1 }} textAlign="center">
+                  <Link to="portofoliopageone" className="isDisabled">
+                    Portofolio
+                  </Link>
+                </Typography>
+                <Typography sx={{ my: 1 }} textAlign="center">
+                  <Link to="contact" className="isDisabled">
+                    Contact
+                  </Link>
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
 
@@ -116,31 +144,41 @@ function ResponsiveAppBar() {
             <img className="logo-small-view" src={LogoBWD} alt="logo" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={() => {
-                  if (page === pages[0]) {
-                    console.log("home");
-                  } else if (page === pages[1]) {
-                    console.log("Web Design");
-                  } else if (page === pages[2]) {
-                    console.log("Skills");
-                  } else if (page === pages[3]) {
-                    console.log("Services");
-                  } else if (page === pages[4]) {
-                    console.log("Building Stept");
-                  } else if (page === pages[5]) {
-                    console.log("Portofolio");
-                  } else {
-                    console.log("Contact");
-                  }
-                }}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Button sx={{ my: 2, color: "white", display: "block" }}>
+              <Link className="isDisabled" to="home">
+                Home
+              </Link>
+            </Button>
+            <Button sx={{ my: 2, color: "white", display: "block" }}>
+              <Link className="isDisabled" to="webdesign">
+                Web Design
+              </Link>
+            </Button>
+            <Button sx={{ my: 2, color: "white", display: "block" }}>
+              <Link className="isDisabled" to="skills">
+                Skills
+              </Link>
+            </Button>
+            <Button sx={{ my: 2, color: "white", display: "block" }}>
+              <Link className="isDisabled" to="services">
+                Services
+              </Link>
+            </Button>
+            <Button sx={{ my: 2, color: "white", display: "block" }}>
+              <Link className="isDisabled" to="steps">
+                Building Steps
+              </Link>
+            </Button>
+            <Button sx={{ my: 2, color: "white", display: "block" }}>
+              <Link className="isDisabled" to="portofoliopageone">
+                Portofolio
+              </Link>
+            </Button>
+            <Button sx={{ my: 2, color: "white", display: "block" }}>
+              <Link className="isDisabled" to="contact">
+                Contact
+              </Link>
+            </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "flex" } }}>
