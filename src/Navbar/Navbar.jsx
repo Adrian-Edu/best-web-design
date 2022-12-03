@@ -87,7 +87,7 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
               >
                 <Typography sx={{ my: 1 }} textAlign="center">
-                  <Link to="home" className="isDisabled">
+                  <Link to="/" className="isDisabled">
                     Home
                   </Link>
                 </Typography>
@@ -145,7 +145,7 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link className="isDisabled" to="home">
+              <Link className="isDisabled" to="/">
                 Home
               </Link>
             </Button>
@@ -182,7 +182,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "flex" } }}>
-            <IconButton sx={{ p: 0 }}>
+            <IconButton onClick={() => console.log("alb")} sx={{ p: 0 }}>
               <Switch />
             </IconButton>
           </Box>
