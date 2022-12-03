@@ -112,7 +112,7 @@ function ResponsiveAppBar() {
                   </Link>
                 </Typography>
                 <Typography sx={{ my: 1 }} textAlign="center">
-                  <Link to="portofoliopageone" className="isDisabled">
+                  <Link to="portofolio" className="isDisabled">
                     Portofolio
                   </Link>
                 </Typography>
@@ -170,7 +170,7 @@ function ResponsiveAppBar() {
               </Link>
             </Button>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link className="isDisabled" to="portofoliopageone">
+              <Link className="isDisabled" to="portofolio">
                 Portofolio
               </Link>
             </Button>

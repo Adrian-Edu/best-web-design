@@ -31,6 +31,7 @@
 .product {
   width: 460px;
   object-fit: contain;
+  border-radius: 5px;
 }
 
 .todo {

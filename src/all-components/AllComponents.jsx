@@ -4,8 +4,7 @@ import WebDesign from "../web-design/WebDesign";
 import Skills from "../skills-page/SkillsPage";
 import Services from "../services-page/Services";
 import StepsPage from "../steps-page/StepsPage";
-import PortofolioPageOne from "../portofolio-page-one/PortofolioPageOne";
-import PortofolioPageTwo from "../portofolio-page-two/PortofolioPageTwo";
+import Portofolio from "../portofolio/Portofolio";
 import ContactPage from "../contact-page/ContactPage";
 
 function AllComponents() {
@@ -16,8 +15,7 @@ function AllComponents() {
       <Skills />
       <Services />
       <StepsPage />
-      <PortofolioPageOne />
-      <PortofolioPageTwo />
+      <Portofolio />
       <ContactPage />
     </section>
   );
