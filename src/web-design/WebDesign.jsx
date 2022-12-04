@@ -10,7 +10,7 @@ function WebDesign() {
       style={{ backgroundImage: `url(${background})` }}
     >
       <div>
-        <h4>Web Design</h4>
+        <p className="h4">Web Design</p>
       </div>
       <div className="second-container">
         <div className="secondpagetext">
