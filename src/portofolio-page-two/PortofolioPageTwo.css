@@ -28,13 +28,13 @@
   margin: 0 20px;
 }
 
-.product {
+.lucky {
   width: 460px;
   object-fit: contain;
   border-radius: 5px;
 }
 
-.todo {
+.robo {
   width: 460px;
   object-fit: contain;
   border-radius: 5px;
@@ -68,12 +68,22 @@
   background-color: #f4b510;
 }
 
+@media screen and (max-width: 2000px) {
+  .lucky {
+    width: 450px;
+  }
+
+  .robo {
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
-  .product {
+  .lucky {
     width: 420px;
   }
 
-  .todo {
+  .robo {
     width: 420px;
   }
 
@@ -93,11 +103,11 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .product {
+  .lucky {
     width: 390px;
   }
 
-  .todo {
+  .robo {
     width: 390px;
   }
 
@@ -116,11 +126,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .product {
+  .lucky {
     width: 280px;
   }
 
-  .todo {
+  .robo {
     width: 280px;
   }
 
@@ -146,11 +156,11 @@
 }
 
 @media screen and (max-width: 700px) {
-  .product {
+  .lucky {
     width: 200px;
   }
 
-  .todo {
+  .robo {
     width: 200px;
   }
 

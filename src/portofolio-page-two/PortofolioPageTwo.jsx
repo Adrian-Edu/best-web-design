@@ -16,8 +16,9 @@ function PortofolioPageTwo() {
       <div className="sixth-container">
         <div className="first2-fifth">
           <div className="test2">
+            {" "}
             <p className="h10">The lucky dice game</p>
-            <img src={lucky} className="product" alt="" />
+            <img src={lucky} className="lucky" alt="" />
             <a
               href={"https://lucky-dice-alpha.vercel.app/"}
               target="_blank"
@@ -30,7 +31,7 @@ function PortofolioPageTwo() {
         <div className="second2-fifth">
           <div className="test2">
             <p className="h10">Robot joketeller</p>
-            <img src={robo} className="todo" alt="" />
+            <img src={robo} className="robo" alt="" />
             <a
               href={"https://robo-joke-teller.adrianedu.repl.co/"}
               target="_blank"

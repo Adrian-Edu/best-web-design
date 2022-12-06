@@ -71,6 +71,16 @@ button {
   cursor: pointer;
 }
 
+@media screen and (max-width: 2000px) {
+  .product {
+    width: 450px;
+  }
+
+  .todo {
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .product {
     width: 420px;
