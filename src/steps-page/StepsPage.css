@@ -91,31 +91,30 @@
   }
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2000px) {
   .search {
-    width: 280px;
+    width: 300px;
     object-fit: contain;
   }
 
   .figma {
-    width: 280px;
+    width: 300px;
     object-fit: contain;
   }
 
   .laptop {
-    width: 280px;
+    width: 300px;
     object-fit: contain;
   }
 
   .release {
-    width: 280px;
+    width: 300px;
     object-fit: contain;
   }
-  .fifth-container {
-    height: 60%;
-  }
+
   .header-fifth {
     font-size: 45px;
+    padding-top: 70px;
   }
   .h9 {
     font-size: 20px;

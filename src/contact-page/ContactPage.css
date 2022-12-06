@@ -7,7 +7,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  height: 62vh;
+  height: 55vh;
 }
 
 .header-eighth {
@@ -16,9 +16,8 @@
   color: #f4b510;
   margin: 0;
   letter-spacing: 3px;
-  padding: 30px 0 0 0;
+  padding: 70px 0 0 0;
   font-weight: 700;
-  height: 10vh;
 }
 
 .passion {
@@ -44,21 +43,41 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2000px) {
   .passion {
-    width: 380px;
+    width: 350px;
     object-fit: contain;
     border-radius: 5px;
   }
 
   .needs {
-    width: 380px;
+    width: 350px;
     object-fit: contain;
     border-radius: 5px;
   }
 
   .quickly {
-    width: 380px;
+    width: 350px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .passion {
+    width: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  .needs {
+    width: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  .quickly {
+    width: 300px;
     object-fit: contain;
     border-radius: 5px;
   }
@@ -66,19 +85,19 @@
 
 @media screen and (max-width: 1200px) {
   .passion {
-    width: 350px;
+    width: 280px;
     object-fit: contain;
     border-radius: 5px;
   }
 
   .needs {
-    width: 350px;
+    width: 280px;
     object-fit: contain;
     border-radius: 5px;
   }
 
   .quickly {
-    width: 350px;
+    width: 280px;
     object-fit: contain;
     border-radius: 5px;
   }
@@ -89,19 +108,19 @@
 
 @media screen and (max-width: 1100px) {
   .passion {
-    width: 300px;
+    width: 270px;
     object-fit: contain;
     border-radius: 5px;
   }
 
   .needs {
-    width: 300px;
+    width: 270px;
     object-fit: contain;
     border-radius: 5px;
   }
 
   .quickly {
-    width: 300px;
+    width: 270px;
     object-fit: contain;
     border-radius: 5px;
   }
@@ -192,6 +211,7 @@
   }
   .header-eighth {
     font-size: 25px;
+    padding: 50px 0;
   }
   .page-height-special {
     height: 160vh;
