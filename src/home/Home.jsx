@@ -2,12 +2,10 @@ import React from "react";
 import "./Home.css";
 import pozamea from "./pozamea.png";
 import background from "../background.png";
-import Navbar from "../navbar/Navbar";
 
 function Home() {
   return (
     <section>
-      <Navbar />
       <div
         className="container"
         style={{ backgroundImage: `url(${background})` }}

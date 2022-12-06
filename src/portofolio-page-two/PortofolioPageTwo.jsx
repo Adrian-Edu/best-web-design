@@ -1,6 +1,6 @@
 import React from "react";
 import background from "../background.png";
-import "./PortofolioPageTwo";
+import "./PortofolioPageTwo.css";
 import lucky from "./lucky.png";
 import robo from "./robo.png";
 
@@ -16,9 +16,8 @@ function PortofolioPageTwo() {
       <div className="sixth-container">
         <div className="first2-fifth">
           <div className="test2">
-            {" "}
             <p className="h10">The lucky dice game</p>
-            <img src={lucky} className="lucky" alt="" />
+            <img src={lucky} className="lucky-dice" alt="" />
             <a
               href={"https://lucky-dice-alpha.vercel.app/"}
               target="_blank"
