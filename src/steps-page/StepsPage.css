@@ -181,22 +181,22 @@
 
 @media screen and (max-width: 700px) {
   .search {
-    width: 135px;
+    width: 120px;
     object-fit: contain;
   }
 
   .figma {
-    width: 135px;
+    width: 120px;
     object-fit: contain;
   }
 
   .laptop {
-    width: 135px;
+    width: 120px;
     object-fit: contain;
   }
 
   .release {
-    width: 135px;
+    width: 120px;
     object-fit: contain;
   }
   .h9 {

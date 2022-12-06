@@ -59,11 +59,11 @@
 
 @media screen and (max-width: 2000px) {
   .lucky-dice {
-    width: 450px;
+    width: 435px;
   }
 
   .robo {
-    width: 450px;
+    width: 435px;
   }
 }
 
@@ -146,11 +146,11 @@
 
 @media screen and (max-width: 700px) {
   .lucky-dice {
-    width: 200px;
+    width: 180px;
   }
 
   .robo {
-    width: 200px;
+    width: 180px;
   }
 
   .header-sixth {

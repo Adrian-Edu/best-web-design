@@ -81,4 +81,7 @@ h3 {
     height: 300px;
     object-fit: contain;
   }
+  h1 {
+    padding-top: 55px;
+  }
 }
