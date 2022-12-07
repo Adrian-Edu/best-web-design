@@ -21,6 +21,7 @@ function App() {
         <Route path="steps" element={<StepsPage />} />
         <Route path="portofolio" element={<Portofolio />} />
         <Route path="contact" element={<ContactPage />} />
+        <Route path="*" render={() => <AllComponents />} />
       </Routes>
     </>
   );
