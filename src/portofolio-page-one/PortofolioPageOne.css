@@ -173,6 +173,7 @@ button {
 
   .h10 {
     font-size: 20px;
+    margin-top: 5px;
   }
 
   .sixth-button {
@@ -192,14 +193,11 @@ button {
     align-items: center;
     justify-content: center;
   }
-  .test2 {
-    margin: 5px 0;
-  }
   .sixth-button {
     height: 25px;
     width: 110px;
   }
   .header-sixth {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }

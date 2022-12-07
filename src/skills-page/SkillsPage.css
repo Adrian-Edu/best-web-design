@@ -166,30 +166,30 @@ h4 {
     align-items: center;
   }
   .image2 {
-    width: 140px;
-    height: 140px;
+    width: 135px;
+    height: 135px;
     object-fit: contain;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   .image1 {
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 125px;
     object-fit: contain;
     padding: 0 40px 0 0;
   }
 
   .image3 {
-    width: 140px;
-    height: 140px;
+    width: 135px;
+    height: 135px;
     object-fit: contain;
     padding: 0 60px 0 0;
   }
 
   .image4 {
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 125px;
     object-fit: contain;
     padding: 0 45px 0 0;
     margin: 0;
