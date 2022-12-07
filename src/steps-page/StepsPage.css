@@ -121,25 +121,31 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1600px) {
   .search {
-    width: 280px;
+    width: 260px;
     object-fit: contain;
   }
 
   .figma {
-    width: 280px;
+    width: 260px;
     object-fit: contain;
   }
 
   .laptop {
-    width: 280px;
+    width: 260px;
     object-fit: contain;
   }
 
   .release {
-    width: 280px;
+    width: 260px;
     object-fit: contain;
+  }
+
+  .header-fifth {
+    font-size: 45px;
+    padding-top: 70px;
+    padding-bottom: 15px;
   }
 }
 
