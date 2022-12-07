@@ -160,11 +160,11 @@ button {
 
 @media screen and (max-width: 700px) {
   .product {
-    width: 180px;
+    width: 170px;
   }
 
   .todo {
-    width: 180px;
+    width: 170px;
   }
 
   .header-sixth {
