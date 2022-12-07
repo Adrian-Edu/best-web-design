@@ -1,8 +1,8 @@
 import React from "react";
-import background from "../background.png";
+import background from "../assets/background.png";
 import "./PortofolioPageTwo.css";
-import lucky from "./lucky.png";
-import robo from "./robo.png";
+import lucky from "../assets/lucky.png";
+import robo from "../assets/robo.png";
 
 function PortofolioPageTwo() {
   return (

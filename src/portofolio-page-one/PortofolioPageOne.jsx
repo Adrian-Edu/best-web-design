@@ -1,8 +1,8 @@
 import React from "react";
-import background from "../background.png";
+import background from "../assets/background.png";
 import "./PortofolioPageOne.css";
-import product from "./product.png";
-import todo from "./todo.png";
+import product from "../assets/product.png";
+import todo from "../assets/todo.png";
 
 function PortofolioPageOne() {
   return (

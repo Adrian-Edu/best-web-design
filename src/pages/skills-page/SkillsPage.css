@@ -1,0 +1,208 @@
+.page-height {
+  height: 100vh;
+}
+
+h4 {
+  text-align: center;
+  font-size: 60px;
+  color: #f4b510;
+  padding: 80px 0 0 0;
+  margin: 0;
+}
+
+.third-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.css {
+  width: 420px;
+  height: 470px;
+  object-fit: contain;
+}
+
+.react {
+  width: 400x;
+  height: 450px;
+  object-fit: contain;
+  padding-right: 30px;
+}
+
+.js {
+  object-fit: contain;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 2500px) {
+  .css {
+    width: 350px;
+    height: 400px;
+    object-fit: contain;
+    padding-bottom: 20px;
+  }
+
+  .html {
+    width: 350px;
+    height: 400px;
+    object-fit: contain;
+    padding-bottom: 10px;
+  }
+
+  .js {
+    width: 430px;
+    height: 430px;
+    object-fit: contain;
+    padding-top: 10px;
+  }
+
+  .react {
+    width: 310x;
+    height: 360px;
+    object-fit: contain;
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .css {
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    padding-bottom: 70px;
+  }
+
+  .html {
+    width: 250px;
+    height: 400px;
+    object-fit: contain;
+    padding-top: 20px;
+  }
+
+  .js {
+    width: 330px;
+    height: 400px;
+    object-fit: contain;
+    padding-bottom: 5px;
+  }
+
+  .react {
+    width: 270px;
+    height: 320px;
+    object-fit: contain;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .third-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h4 {
+    text-align: center;
+    font-size: 50px;
+    color: #f4b510;
+    padding: 15px 0 20px 35px;
+  }
+  .css {
+    width: 180px;
+    height: 230px;
+    object-fit: contain;
+    padding: 0;
+  }
+
+  .html {
+    width: 180px;
+    height: 230px;
+    object-fit: contain;
+    padding: 20px 0 0 0;
+  }
+
+  .js {
+    width: 230px;
+    height: 260px;
+    object-fit: contain;
+    padding-bottom: 15px;
+  }
+
+  .react {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-right: 30px;
+  }
+  .first2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .second2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .third-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .first2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .second2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .css {
+    width: 135px;
+    height: 135px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .html {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    padding: 0 40px 0 0;
+  }
+
+  .js {
+    width: 135px;
+    height: 135px;
+    object-fit: contain;
+    padding: 0 60px 0 0;
+  }
+
+  .react {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    padding: 0 45px 0 0;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 30px;
+    padding: 70px 0 40px 10px;
+  }
+  .third-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64vh;
+  }
+}

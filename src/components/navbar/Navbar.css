@@ -1,0 +1,72 @@
+.css-1k0jequ {
+  background-color: rgb(12, 11, 11);
+}
+
+.MuiBox-root > button {
+  color: #f4b510;
+  font-size: 17px;
+}
+
+.css-r8u8y9 {
+  color: #f4b510;
+  background-color: rgb(12, 11, 11);
+  font-size: 10px;
+}
+
+.css-1oy63y8 {
+  color: #f4b510;
+}
+
+.css-1k0jequ {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.isDisabled {
+  color: currentColor;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .css-1lfs2tq-MuiTypography-root {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .MuiBox-root {
+    display: flex;
+    flex-direction: row;
+  }
+  .MuiBox-root > button {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .css-1t6c9ts {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.menu {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.css-1lfs2tq-MuiTypography-root {
+  overflow: visible;
+  margin-right: 0px;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-repeat: no-repeat;
+  margin-bottom: auto;
+}
