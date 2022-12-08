@@ -3,7 +3,7 @@ import WebDesign from "./pages/web-design/WebDesign";
 import Skills from "./components/../pages/skills-page/SkillsPage";
 import Services from "./components/../pages/services-page/Services";
 import StepsPage from "./components/../pages/steps-page/StepsPage";
-import Portofolio from "./portofolio/Portofolio";
+import Portofolio from "./components/../pages/portofolio/Portofolio";
 import ContactPage from "./components/../pages/contact-page/ContactPage";
 import AllComponents from "./components/../pages/all-pages/AllComponents";
 import { Route, Routes } from "react-router-dom";
