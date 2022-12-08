@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -13,6 +13,8 @@ import LogoBWD from "../../assets/LogoBWD.png";
 import "./Navbar.css";
 import Switch from "../switch/Switch";
 import { Link } from "react-router-dom";
+import background from "../../assets/background.png";
+import whitebackground from "../../assets/whitebackground.png";
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -23,6 +25,12 @@ function ResponsiveAppBar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const [handleBackground, setBackGround] = useState(background);
+
+  const changeBackground = () => {
+    setBackGround(whitebackground);
   };
 
   return (

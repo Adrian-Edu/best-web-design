@@ -1,4 +1,4 @@
-import "./App.css";
+import "./components/../assets/App.css";
 import WebDesign from "./pages/web-design/WebDesign";
 import Skills from "./components/../pages/skills-page/SkillsPage";
 import Services from "./components/../pages/services-page/Services";
@@ -8,12 +8,13 @@ import ContactPage from "./components/../pages/contact-page/ContactPage";
 import AllComponents from "./components/../pages/all-pages/AllComponents";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
+import background from "./component/../assets/background.png";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Routes>
+      <Routes style={{ backgroundImage: `url(${background})` }}>
         <Route path="/" element={<AllComponents />} />
         <Route path="webdesign" element={<WebDesign />} />
         <Route path="skills" element={<Skills />} />
