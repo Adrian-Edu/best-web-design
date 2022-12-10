@@ -1,16 +1,15 @@
 import React from "react";
-import background from "../../assets/background.png";
 import "./StepsPage.css";
 import search from "../../assets/search.png";
 import figma from "../../assets/figma.png";
 import laptop from "../../assets/laptop.png";
 import release from "../../assets/release.png";
 
-function StepsPage() {
+function StepsPage(props) {
   return (
     <section
       className="page-height"
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: `url(${props.background})` }}
     >
       <div>
         <p className="header-fifth">

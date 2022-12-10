@@ -7,16 +7,16 @@ import StepsPage from "../steps-page/StepsPage";
 import Portofolio from "../portofolio/Portofolio";
 import ContactPage from "../contact-page/ContactPage";
 
-function AllComponents() {
+function AllComponents(props) {
   return (
     <section>
-      <Home />
-      <WebDesign />
-      <Skills />
-      <Services />
-      <StepsPage />
-      <Portofolio />
-      <ContactPage />
+      <Home background={props.background} />
+      <WebDesign background={props.background} />
+      <Skills background={props.background} />
+      <Services background={props.background} />
+      <StepsPage background={props.background} />
+      <Portofolio background={props.background} />
+      <ContactPage background={props.background} />
     </section>
   );
 }

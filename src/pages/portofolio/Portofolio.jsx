@@ -1,17 +1,16 @@
 import React from "react";
-import background from "../../assets/background.png";
 import todo from "../../assets/todo.png";
 import product from "../../assets/product.png";
 import lucky from "../../assets/lucky.png";
 import robo from "../../assets/robo.png";
 import "./Portofolio.css";
 
-function portofolio() {
+function portofolio(props) {
   return (
     <section className="page-height-two">
       <div
         className="page-height"
-        style={{ backgroundImage: `url(${background})` }}
+        style={{ backgroundImage: `url(${props.background})` }}
       >
         <div>
           <p className="header-sixth">Portofolio</p>
@@ -49,7 +48,7 @@ function portofolio() {
       </div>
       <div
         className="page-height"
-        style={{ backgroundImage: `url(${background})` }}
+        style={{ backgroundImage: `url(${props.background})` }}
       >
         <div>
           <p className="header-sixth">Portofolio</p>

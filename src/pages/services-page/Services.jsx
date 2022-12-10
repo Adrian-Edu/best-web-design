@@ -1,14 +1,13 @@
 import React from "react";
-import background from "../../assets/background.png";
-import Desktop from "../../assets/Desktop.png";
-import OldNew from "../../assets/OldNew.png";
+import desktop from "../../assets/desktop.png";
+import oldnew from "../../assets/oldnew.png";
 import "./Services.css";
 
-function Services() {
+function Services(props) {
   return (
     <section
       className="page-height"
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: `url(${props.background})` }}
     >
       <div>
         <h6>Services</h6>
@@ -18,13 +17,13 @@ function Services() {
           <p className="h7">
             Responsive website <br /> design
           </p>
-          <img src={Desktop} className="desktop-image" alt="" />
+          <img src={desktop} className="desktop-image" alt="" />
         </div>
         <div className="second2-fourtpage">
           <p className="h7">
             Modify your old <br /> website
           </p>
-          <img src={OldNew} className="oldnew-image" alt="" />
+          <img src={oldnew} className="oldnew-image" alt="" />
         </div>
       </div>
     </section>

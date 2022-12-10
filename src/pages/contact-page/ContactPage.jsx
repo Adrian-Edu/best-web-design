@@ -1,16 +1,15 @@
 import React from "react";
-import background from "../../assets/background.png";
 import passion from "../../assets/passion.png";
 import needs from "../../assets/needs.png";
 import quickly from "../../assets/quickly.png";
 import "./ContactPage.css";
 import Fouter from "../../footer-page/Footer";
 
-function ContactPage() {
+function ContactPage(props) {
   return (
     <section
       className="page-height-special"
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: `url(${props.background})` }}
     >
       <div className="eighth-page-display">
         <div>

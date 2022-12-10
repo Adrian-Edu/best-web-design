@@ -1,14 +1,13 @@
 import React from "react";
 import "./Home.css";
 import pozamea from "../../assets/pozamea.png";
-import background from "../../assets/background.png";
 
-function Home() {
+function Home(props) {
   return (
     <section>
       <div
         className="container"
-        style={{ backgroundImage: `url(${background})` }}
+        style={{ backgroundImage: `url(${props.background})` }}
       >
         <div>
           <h1> My name is Adrian Edu, </h1>

@@ -1,16 +1,15 @@
 import React from "react";
 import "./SkillsPage.css";
-import background from "../../assets/background.png";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
 
-function SkillsPage() {
+function SkillsPage(props) {
   return (
     <section
       className="page-height"
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: `url(${props.background})` }}
     >
       <div>
         <h4>Skills & Experience</h4>

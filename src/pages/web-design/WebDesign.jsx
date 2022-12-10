@@ -1,13 +1,12 @@
 import React from "react";
 import "./WebDesign.css";
 import secondslicepicture from "../../assets/secondslidepicture.png";
-import background from "../../assets/background.png";
 
-function WebDesign() {
+function WebDesign(props) {
   return (
     <section
       className="page-height"
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: `url(${props.background})` }}
     >
       <div>
         <p className="h4">Web Design</p>

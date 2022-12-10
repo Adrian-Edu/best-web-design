@@ -13,10 +13,10 @@ import LogoBWD from "../../assets/LogoBWD.png";
 import "./Navbar.css";
 import Switch from "../switch/Switch";
 import { Link } from "react-router-dom";
-import background from "../../assets/background.png";
 import whitebackground from "../../assets/whitebackground.png";
+import background from "../../assets/background.png";
 
-function ResponsiveAppBar() {
+function ResponsiveAppBar(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -27,10 +27,11 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  const [handleBackground, setBackGround] = useState(background);
+  const [backgroundImage, setBackgroundImage] = useState(whitebackground);
 
-  const changeBackground = () => {
-    setBackGround(whitebackground);
+  const moveDataHandler = () => {
+    props.send(backgroundImage);
+    setBackgroundImage(background);
   };
 
   return (
@@ -190,7 +191,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "flex" } }}>
-            <IconButton onClick={() => console.log("alb")} sx={{ p: 0 }}>
+            <IconButton onClick={moveDataHandler}>
               <Switch />
             </IconButton>
           </Box>
