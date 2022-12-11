@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -14,7 +14,7 @@ import "./Navbar.css";
 import Switch from "../switch/Switch";
 import { Link } from "react-router-dom";
 import whitebackground from "../../assets/whitebackground.png";
-import background from "../../assets/background.png";
+import darkbackground from "../../assets/darkbackground.png";
 
 function ResponsiveAppBar(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,11 +27,20 @@ function ResponsiveAppBar(props) {
     setAnchorElNav(null);
   };
 
-  const [backgroundImage, setBackgroundImage] = useState(whitebackground);
+  const [isActive, setIsActive] = useState(false);
+  const backgroundImage = {
+    white: whitebackground,
+    dark: darkbackground,
+  };
 
-  const moveDataHandler = () => {
-    props.send(backgroundImage);
-    setBackgroundImage(background);
+  const click = () => {
+    if (isActive === false) {
+      props.send(backgroundImage.white);
+      setIsActive(true);
+    } else {
+      props.send(backgroundImage.dark);
+      setIsActive(false);
+    }
   };
 
   return (
@@ -191,7 +200,7 @@ function ResponsiveAppBar(props) {
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "flex" } }}>
-            <IconButton onClick={moveDataHandler}>
+            <IconButton onClick={click}>
               <Switch />
             </IconButton>
           </Box>
