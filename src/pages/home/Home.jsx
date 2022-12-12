@@ -10,11 +10,13 @@ function Home(props) {
         style={{ backgroundImage: `url(${props.background})` }}
       >
         <div>
-          <h1> My name is Adrian Edu, </h1>
-          <h2>
+          <h1 style={{ color: `${props.textColor}` }}>
+            My name is Adrian Edu,{" "}
+          </h1>
+          <h2 style={{ color: `${props.textColor}` }}>
             I am a FrontEnd <br /> Developer
           </h2>
-          <h3>Contact me ! </h3>
+          <h3 style={{ color: `${props.textColor}` }}>Contact me ! </h3>
         </div>
         <div>
           <img src={pozamea} className="profilepic" alt="" />

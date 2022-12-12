@@ -32,13 +32,16 @@ function ResponsiveAppBar(props) {
     white: whitebackground,
     dark: darkbackground,
   };
+  const textColor = { white: "#FFFFFF", dark: "#0e1111" };
 
   const click = () => {
     if (isActive === false) {
-      props.send(backgroundImage.white);
+      props.sendImage(backgroundImage.white);
+      props.sendTextColor(textColor.dark);
       setIsActive(true);
     } else {
-      props.send(backgroundImage.dark);
+      props.sendImage(backgroundImage.dark);
+      props.sendTextColor(textColor.white);
       setIsActive(false);
     }
   };

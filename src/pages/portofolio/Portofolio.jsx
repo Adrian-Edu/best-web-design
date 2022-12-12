@@ -56,7 +56,9 @@ function portofolio(props) {
         <div className="sixth-container">
           <div className="first2-fifth">
             <div className="test2">
-              <p className="h10">The lucky dice game</p>
+              <p className="h10" style={{ color: `${props.textColor}` }}>
+                The lucky dice game
+              </p>
               <img src={lucky} className="lucky-dice" alt="" />
               <a
                 href={"https://lucky-dice-alpha.vercel.app/"}
@@ -69,7 +71,9 @@ function portofolio(props) {
           </div>
           <div className="second2-fifth">
             <div className="test2">
-              <p className="h10">Robot joketeller</p>
+              <p className="h10" style={{ color: `${props.textColor}` }}>
+                Robot joketeller
+              </p>
               <img src={robo} className="robo" alt="" />
               <a
                 href={"https://robo-joke-teller.adrianedu.repl.co/"}

@@ -14,13 +14,13 @@ function Services(props) {
       </div>
       <div className="fourt-container">
         <div className="first2-fourtpage">
-          <p className="h7">
+          <p className="h7" style={{ color: `${props.textColor}` }}>
             Responsive website <br /> design
           </p>
           <img src={desktop} className="desktop-image" alt="" />
         </div>
         <div className="second2-fourtpage">
-          <p className="h7">
+          <p className="h7" style={{ color: `${props.textColor}` }}>
             Modify your old <br /> website
           </p>
           <img src={oldnew} className="oldnew-image" alt="" />

@@ -13,32 +13,64 @@ import Navbar from "./components/navbar/Navbar";
 import darkbackground from "./assets/darkbackground.png";
 
 function App() {
-  const [reciveData, setReciveData] = useState(darkbackground);
+  const [switchImage, setSwitchImage] = useState(darkbackground);
+  const [switchColor, setSwitchColor] = useState("#FFFFFF");
 
-  const moveData = (personalData) => {
-    setReciveData(personalData);
+  const getImage = (image) => {
+    setSwitchImage(image);
+  };
+
+  const getTextColor = (color) => {
+    setSwitchColor(color);
   };
 
   return (
     <>
-      <Navbar send={moveData} />
+      <Navbar sendImage={getImage} sendTextColor={getTextColor} />
       <Routes>
-        <Route path="/" element={<AllComponents background={reciveData} />} />
-        <Route path="home" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <AllComponents background={switchImage} textColor={switchColor} />
+          }
+        />
+        <Route
+          path="home"
+          element={<Home background={switchImage} textColor={switchColor} />}
+        />
         <Route
           path="webdesign"
-          element={<WebDesign background={reciveData} />}
+          element={
+            <WebDesign background={switchImage} textColor={switchColor} />
+          }
         />
-        <Route path="skills" element={<Skills background={reciveData} />} />
-        <Route path="services" element={<Services background={reciveData} />} />
-        <Route path="steps" element={<StepsPage background={reciveData} />} />
+        <Route
+          path="skills"
+          element={<Skills background={switchImage} textColor={switchColor} />}
+        />
+        <Route
+          path="services"
+          element={
+            <Services background={switchImage} textColor={switchColor} />
+          }
+        />
+        <Route
+          path="steps"
+          element={
+            <StepsPage background={switchImage} textColor={switchColor} />
+          }
+        />
         <Route
           path="portofolio"
-          element={<Portofolio background={reciveData} />}
+          element={
+            <Portofolio background={switchImage} textColor={switchColor} />
+          }
         />
         <Route
           path="contact"
-          element={<ContactPage background={reciveData} />}
+          element={
+            <ContactPage background={switchImage} textColor={switchColor} />
+          }
         />
       </Routes>
     </>

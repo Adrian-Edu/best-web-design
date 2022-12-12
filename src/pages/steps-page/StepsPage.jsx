@@ -19,14 +19,14 @@ function StepsPage(props) {
       <div className="fifth-container">
         <div className="first2-fifth">
           <div className="test">
-            <p className="h9">
+            <p className="h9" style={{ color: `${props.textColor}` }}>
               Identifying the <br />
               client's needs
             </p>
             <img src={search} className="search" alt="" />
           </div>
           <div className="test">
-            <p className="h9">
+            <p className="h9" style={{ color: `${props.textColor}` }}>
               Implementing the <br /> design
             </p>
             <img src={figma} className="figma" alt="" />
@@ -34,13 +34,13 @@ function StepsPage(props) {
         </div>
         <div className="second2-fifth">
           <div className="test">
-            <p className="h9">
+            <p className="h9" style={{ color: `${props.textColor}` }}>
               Building the <br /> website
             </p>
             <img src={laptop} className="laptop" alt="" />
           </div>
           <div className="test">
-            <p className="h9">
+            <p className="h9" style={{ color: `${props.textColor}` }}>
               Testing the <br /> website
             </p>
             <img src={release} className="release" alt="" />

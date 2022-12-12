@@ -10,13 +10,13 @@ import ContactPage from "../contact-page/ContactPage";
 function AllComponents(props) {
   return (
     <section>
-      <Home background={props.background} />
-      <WebDesign background={props.background} />
-      <Skills background={props.background} />
-      <Services background={props.background} />
-      <StepsPage background={props.background} />
-      <Portofolio background={props.background} />
-      <ContactPage background={props.background} />
+      <Home background={props.background} textColor={props.textColor} />
+      <WebDesign background={props.background} textColor={props.textColor} />
+      <Skills background={props.background} textColor={props.textColor} />
+      <Services background={props.background} textColor={props.textColor} />
+      <StepsPage background={props.background} textColor={props.textColor} />
+      <Portofolio background={props.background} textColor={props.textColor} />
+      <ContactPage background={props.background} textColor={props.textColor} />
     </section>
   );
 }

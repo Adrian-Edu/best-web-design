@@ -13,11 +13,11 @@ function WebDesign(props) {
       </div>
       <div className="second-container">
         <div className="secondpagetext">
-          <h5>
+          <h5 style={{ color: `${props.textColor}` }}>
             It is essential for any business to <br /> have a professional
             online <br /> presence. <br />
           </h5>
-          <h5>
+          <h5 style={{ color: `${props.textColor}` }}>
             Using the latest technologies, I will
             <br />
             create a fully responsive <br />
