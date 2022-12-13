@@ -11,6 +11,7 @@ import ContactPage from "./components/../pages/contact-page/ContactPage";
 import AllComponents from "./components/../pages/all-pages/AllComponents";
 import Navbar from "./components/navbar/Navbar";
 import darkbackground from "./assets/darkbackground.png";
+import NotFound from "./pages/not-found/NotFound";
 
 function App() {
   const [switchImage, setSwitchImage] = useState(darkbackground);
@@ -59,7 +60,7 @@ function App() {
           element={
             <StepsPage background={switchImage} textColor={switchColor} />
           }
-        />
+        />add 
         <Route
           path="portofolio"
           element={
@@ -72,6 +73,7 @@ function App() {
             <ContactPage background={switchImage} textColor={switchColor} />
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
