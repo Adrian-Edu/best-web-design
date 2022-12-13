@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import Home from "../src/pages/home/Home.jsx";
 import WebDesign from "./pages/web-design/WebDesign";
@@ -75,6 +75,7 @@ function App() {
           }
         />
         <Route path="/*" element={<NotFound />} />
+        <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );
