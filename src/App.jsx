@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "../src/pages/home/Home.jsx";
 import WebDesign from "./pages/web-design/WebDesign";
@@ -74,7 +74,7 @@ function App() {
             <ContactPage background={switchImage} textColor={switchColor} />
           }
         />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </>
   );
