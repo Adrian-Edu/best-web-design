@@ -74,7 +74,6 @@ function App() {
             <ContactPage background={switchImage} textColor={switchColor} />
           }
         />
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
