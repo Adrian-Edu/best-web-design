@@ -18,7 +18,9 @@ function portofolio(props) {
         <div className="sixth-container">
           <div className="first2-fifth">
             <div className="test2">
-              <p className="h10">Product website</p>
+              <p className="h10" style={{ color: `${props.textColor}` }}>
+                Product website
+              </p>
               <img src={product} className="product" alt="" />
 
               <a
@@ -32,7 +34,9 @@ function portofolio(props) {
           </div>
           <div className="second2-fifth">
             <div className="test2">
-              <p className="h10">Todo App</p>
+              <p className="h10" style={{ color: `${props.textColor}` }}>
+                Todo App
+              </p>
               <img src={todo} className="todo" alt="" />
 
               <a
