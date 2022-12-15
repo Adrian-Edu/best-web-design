@@ -77,7 +77,7 @@ function App() {
         <Route
           path="*"
           element={
-            <AllComponents background={switchImage} textColor={switchColor} />
+            <NotFound background={switchImage} textColor={switchColor} />
           }
         />
       </Routes>
