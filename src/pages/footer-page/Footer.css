@@ -1,0 +1,144 @@
+.footer-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 22vh;
+}
+
+.footer {
+  background-color: rgb(12, 11, 11);
+  width: 78%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+.footer-first-column {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.footer-second-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-second-column > p {
+  font-size: 20px;
+  font-weight: 700;
+  height: 80%;
+  margin: 12px 0;
+}
+
+.footer-last-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-last-column > p {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.footer-first2,
+.footer-second2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1600px) {
+  .footer-last-column > p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .footer-second-column > p {
+    font-size: 16px;
+  }
+  .logo {
+    width: 220px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  .mobile,
+  .whats,
+  .linkedin,
+  .github {
+    width: 40px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-last-column > p {
+    font-size: 14px;
+  }
+  .footer-second-column > p {
+    font-size: 14px;
+  }
+  .logo {
+    width: 180px;
+    object-fit: contain;
+  }
+  .mobile,
+  .whats,
+  .linkedin,
+  .github {
+    width: 30px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 20px;
+  }
+  .footer-first2,
+  .footer-second2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .footer-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 85vh;
+    padding: 20px 0;
+    background-image: url("../../assets/darkbackground.png");
+  }
+}

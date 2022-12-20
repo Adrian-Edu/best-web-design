@@ -3,7 +3,7 @@ import passion from "../../assets/passion.png";
 import needs from "../../assets/needs.png";
 import quickly from "../../assets/quickly.png";
 import "./ContactPage.css";
-import Fouter from "../../footer-page/Footer";
+import Fouter from "../footer-page/Footer";
 
 function ContactPage(props) {
   return (
