@@ -1,0 +1,12 @@
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-contact > p {
+  font-size: 20px;
+  font-weight: 700;
+}

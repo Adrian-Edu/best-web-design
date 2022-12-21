@@ -6,6 +6,7 @@ import Services from "../services-page/Services";
 import StepsPage from "../steps-page/StepsPage";
 import Portofolio from "../portofolio/Portofolio";
 import ClientsTestimonial from "../clients-testimonials/ClientsTestimonials";
+import Contact from "../contact/contact";
 
 function AllComponents(props) {
   return (
@@ -20,6 +21,7 @@ function AllComponents(props) {
         background={props.background}
         textColor={props.textColor}
       />
+      <Contact background={props.background} textColor={props.textColor} />
     </section>
   );
 }
