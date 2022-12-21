@@ -16,7 +16,6 @@ function AllComponents(props) {
       <Services background={props.background} textColor={props.textColor} />
       <StepsPage background={props.background} textColor={props.textColor} />
       <Portofolio background={props.background} textColor={props.textColor} />
-      <ContactPage background={props.background} textColor={props.textColor} />
     </section>
   );
 }

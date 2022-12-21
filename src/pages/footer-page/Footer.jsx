@@ -1,14 +1,17 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "./Logo.png";
-import mobile from "./mobile.png";
-import whats from "./whats.png";
-import linkedin from "./linkedin.png";
-import github from "./github.png";
+import Logo from "../../assets/Logo.png";
+import mobile from "../../assets/mobile.png";
+import whats from "../../assets/whats.png";
+import linkedin from "../../assets/linkedin.png";
+import github from "../../assets/github.png";
 
-function footer() {
+function footer(props) {
   return (
-    <section className="footer-position">
+    <section
+      className="footer-position"
+      style={{ backgroundImage: `url(${props.background})` }}
+    >
       <div className="footer">
         <div className="footer-first2">
           <div className="footer-column">

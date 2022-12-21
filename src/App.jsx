@@ -7,11 +7,11 @@ import Skills from "./components/../pages/skills-page/SkillsPage";
 import Services from "./components/../pages/services-page/Services";
 import StepsPage from "./components/../pages/steps-page/StepsPage";
 import Portofolio from "./components/../pages/portofolio/Portofolio";
-import ContactPage from "./components/../pages/contact-page/ContactPage";
 import AllComponents from "./components/../pages/all-pages/AllComponents";
 import Navbar from "./components/navbar/Navbar";
 import darkbackground from "./assets/darkbackground.png";
 import NotFound from "./pages/not-found/NotFound";
+import Footer from "./components/../pages/footer-page/Footer";
 
 function App() {
   const [switchImage, setSwitchImage] = useState(darkbackground);
@@ -69,18 +69,13 @@ function App() {
           }
         />
         <Route
-          path="contact"
-          element={
-            <ContactPage background={switchImage} textColor={switchColor} />
-          }
-        />
-        <Route
           path="*"
           element={
             <NotFound background={switchImage} textColor={switchColor} />
           }
         />
       </Routes>
+      <Footer background={switchImage} textColor={switchColor} />
     </>
   );
 }
