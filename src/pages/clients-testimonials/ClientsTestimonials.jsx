@@ -2,7 +2,7 @@ import React from "react";
 import passion from "../../assets/passion.png";
 import needs from "../../assets/needs.png";
 import quickly from "../../assets/quickly.png";
-import "./ContactPage.css";
+import "./ClientsTestimonials.css";
 
 function ContactPage(props) {
   return (

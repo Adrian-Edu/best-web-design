@@ -5,7 +5,7 @@ import Skills from "../skills-page/SkillsPage";
 import Services from "../services-page/Services";
 import StepsPage from "../steps-page/StepsPage";
 import Portofolio from "../portofolio/Portofolio";
-import ContactPage from "../contact-page/ContactPage";
+import ClientsTestimonial from "../clients-testimonials/ClientsTestimonials";
 
 function AllComponents(props) {
   return (
@@ -16,6 +16,10 @@ function AllComponents(props) {
       <Services background={props.background} textColor={props.textColor} />
       <StepsPage background={props.background} textColor={props.textColor} />
       <Portofolio background={props.background} textColor={props.textColor} />
+      <ClientsTestimonial
+        background={props.background}
+        textColor={props.textColor}
+      />
     </section>
   );
 }
