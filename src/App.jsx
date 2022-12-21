@@ -9,20 +9,19 @@ import StepsPage from "./components/../pages/steps-page/StepsPage";
 import Portofolio from "./components/../pages/portofolio/Portofolio";
 import AllComponents from "./components/../pages/all-pages/AllComponents";
 import Navbar from "./components/navbar/Navbar";
-import darkbackground from "./assets/darkbackground.png";
 import NotFound from "./pages/not-found/NotFound";
-import Footer from "./components/../pages/footer-page/Footer";
+import Footer from "./pages/footer-page/Footer";
 
 function App() {
-  const [switchImage, setSwitchImage] = useState(darkbackground);
-  const [switchColor, setSwitchColor] = useState("#FFFFFF");
+  const [switchBackgroundColor, setswitchBackgroundColor] = useState("#151B54");
+  const [switchTextColor, setswitchTextColor] = useState("#FFFFFF");
 
   const getImage = (image) => {
-    setSwitchImage(image);
+    setswitchBackgroundColor(image);
   };
 
   const getTextColor = (color) => {
-    setSwitchColor(color);
+    setswitchTextColor(color);
   };
 
   return (
@@ -32,50 +31,78 @@ function App() {
         <Route
           path="/"
           element={
-            <AllComponents background={switchImage} textColor={switchColor} />
+            <AllComponents
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="home"
-          element={<Home background={switchImage} textColor={switchColor} />}
+          element={
+            <Home
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
+          }
         />
         <Route
           path="webdesign"
           element={
-            <WebDesign background={switchImage} textColor={switchColor} />
+            <WebDesign
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="skills"
-          element={<Skills background={switchImage} textColor={switchColor} />}
+          element={
+            <Skills
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
+          }
         />
         <Route
           path="services"
           element={
-            <Services background={switchImage} textColor={switchColor} />
+            <Services
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="steps"
           element={
-            <StepsPage background={switchImage} textColor={switchColor} />
+            <StepsPage
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         add
         <Route
           path="portofolio"
           element={
-            <Portofolio background={switchImage} textColor={switchColor} />
+            <Portofolio
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="*"
           element={
-            <NotFound background={switchImage} textColor={switchColor} />
+            <NotFound
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
       </Routes>
-      <Footer background={switchImage} textColor={switchColor} />
+      <Footer background={switchBackgroundColor} textColor={switchTextColor} />
     </>
   );
 }

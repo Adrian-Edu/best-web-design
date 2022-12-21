@@ -7,7 +7,7 @@ function Home(props) {
     <section>
       <div
         className="container"
-        style={{ backgroundImage: `url(${props.background})` }}
+        style={{ backgroundColor: `${props.background}` }}
       >
         <div>
           <h1 style={{ color: `${props.textColor}` }}>

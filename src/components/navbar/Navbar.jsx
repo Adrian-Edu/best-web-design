@@ -13,8 +13,6 @@ import LogoBWD from "../../assets/LogoBWD.png";
 import "./Navbar.css";
 import Switch from "../switch/Switch";
 import { Link } from "react-router-dom";
-import whitebackground from "../../assets/whitebackground.png";
-import darkbackground from "../../assets/darkbackground.png";
 
 function ResponsiveAppBar(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -28,19 +26,19 @@ function ResponsiveAppBar(props) {
   };
 
   const [isActive, setIsActive] = useState(false);
-  const backgroundImage = {
-    white: whitebackground,
-    dark: darkbackground,
+  const backgroundColor = {
+    white: "#d0efff ",
+    dark: "#151B54",
   };
   const textColor = { white: "#FFFFFF", dark: "#0e1111" };
 
   const click = () => {
     if (isActive === false) {
-      props.sendImage(backgroundImage.white);
+      props.sendImage(backgroundColor.white);
       props.sendTextColor(textColor.dark);
       setIsActive(true);
     } else {
-      props.sendImage(backgroundImage.dark);
+      props.sendImage(backgroundColor.dark);
       props.sendTextColor(textColor.white);
       setIsActive(false);
     }

@@ -10,7 +10,7 @@ function footer(props) {
   return (
     <section
       className="footer-position"
-      style={{ backgroundImage: `url(${props.background})` }}
+      style={{ backgroundColor: `${props.background}` }}
     >
       <div className="footer">
         <div className="footer-first2">

@@ -9,7 +9,7 @@ function StepsPage(props) {
   return (
     <section
       className="page-height"
-      style={{ backgroundImage: `url(${props.background})` }}
+      style={{ backgroundColor: `${props.background}` }}
     >
       <div>
         <p className="header-fifth">

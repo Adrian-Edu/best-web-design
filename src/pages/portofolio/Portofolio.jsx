@@ -10,7 +10,7 @@ function portofolio(props) {
     <section className="page-height-two">
       <div
         className="page-height"
-        style={{ backgroundImage: `url(${props.background})` }}
+        style={{ backgroundColor: `${props.background}` }}
       >
         <div>
           <p className="header-sixth">Portofolio</p>
@@ -52,7 +52,7 @@ function portofolio(props) {
       </div>
       <div
         className="page-height"
-        style={{ backgroundImage: `url(${props.background})` }}
+        style={{ backgroundColor: `${props.background}` }}
       >
         <div>
           <p className="header-sixth">Portofolio</p>

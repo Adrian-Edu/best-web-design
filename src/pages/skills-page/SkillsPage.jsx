@@ -9,7 +9,7 @@ function SkillsPage(props) {
   return (
     <section
       className="page-height"
-      style={{ backgroundImage: `url(${props.background})` }}
+      style={{ backgroundColor: `${props.background}` }}
     >
       <div>
         <h4>Skills & Experience</h4>

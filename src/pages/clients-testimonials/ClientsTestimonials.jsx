@@ -8,7 +8,7 @@ function ContactPage(props) {
   return (
     <section
       className="page-height-special"
-      style={{ backgroundImage: `url(${props.background})` }}
+      style={{ backgroundColor: `${props.background}` }}
     >
       <div className="eighth-page-display">
         <div>

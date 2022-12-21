@@ -6,7 +6,7 @@ function WebDesign(props) {
   return (
     <section
       className="page-height"
-      style={{ backgroundImage: `url(${props.background})` }}
+      style={{ backgroundColor: `${props.background}` }}
     >
       <div>
         <p className="h4">Web Design</p>

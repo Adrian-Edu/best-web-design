@@ -7,7 +7,7 @@ function Services(props) {
   return (
     <section
       className="page-height"
-      style={{ backgroundImage: `url(${props.background})` }}
+      style={{ backgroundColor: `${props.background}` }}
     >
       <div>
         <h6>Services</h6>
