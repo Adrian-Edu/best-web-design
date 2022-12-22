@@ -44,3 +44,34 @@ select {
 .container-contact > label {
   text-align: flex-start;
 }
+
+.contact-message {
+  height: 120px;
+}
+
+@media screen and (max-width: 1400px) {
+  .container-contact > input[type="text"],
+  select {
+    padding: 12px 14px;
+    width: 40%;
+  }
+
+  .container-contact > input[type="submit"] {
+    width: 40%;
+    padding: 12px 16px;
+  }
+  .container-contact > p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-contact > input[type="text"],
+  select {
+    width: 55%;
+  }
+
+  .container-contact > input[type="submit"] {
+    width: 55%;
+  }
+}

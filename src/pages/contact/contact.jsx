@@ -8,6 +8,7 @@ function contact(props) {
         className="container-contact"
         style={{ backgroundColor: `${props.background}` }}
       >
+        <h1 style={{ color: `${props.textColor}` }}>Get in touch with us:</h1>
         <label style={{ color: `${props.textColor}` }} for="fname">
           First Name
         </label>
@@ -47,10 +48,11 @@ function contact(props) {
           Question
         </label>
         <input
-          style={{ color: `${props.textColor}`, height: "200px" }}
+          className="contact-message"
+          style={{ color: `${props.textColor}` }}
           type="text"
-          id="fname"
-          name="firstname"
+          id="question"
+          name="question"
           placeholder="Message..."
         ></input>
         <input type="submit" value="Submit"></input>
