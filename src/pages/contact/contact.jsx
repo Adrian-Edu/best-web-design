@@ -16,7 +16,7 @@ function contact(props) {
           type="text"
           id="fname"
           name="firstname"
-          placeholder="Your name.."
+          placeholder="Your name is..."
         ></input>
         <label style={{ color: `${props.textColor}` }} for="lname">
           Last Name
@@ -25,7 +25,7 @@ function contact(props) {
           type="text"
           id="lname"
           name="lastname"
-          placeholder="Your last name.."
+          placeholder="Your last name is..."
         ></input>
         <label style={{ color: `${props.textColor}` }} for="email">
           Email
@@ -34,7 +34,7 @@ function contact(props) {
           type="text"
           id="email"
           name="email"
-          placeholder="Your email is.."
+          placeholder="Your email is..."
         ></input>
         <label style={{ color: `${props.textColor}` }} for="subject">
           Topic

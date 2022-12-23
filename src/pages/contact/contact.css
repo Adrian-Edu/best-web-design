@@ -49,6 +49,12 @@ select {
   height: 120px;
 }
 
+label {
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+}
+
 @media screen and (max-width: 1400px) {
   .container-contact > input[type="text"],
   select {
@@ -63,6 +69,11 @@ select {
   .container-contact > p {
     font-size: 15px;
   }
+  label {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -73,5 +84,10 @@ select {
 
   .container-contact > input[type="submit"] {
     width: 55%;
+  }
+  label {
+    display: inline-block;
+    width: 55%;
+    text-align: left;
   }
 }
