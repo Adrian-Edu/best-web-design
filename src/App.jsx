@@ -10,7 +10,7 @@ import Portofolio from "./components/../pages/portofolio/Portofolio";
 import AllComponents from "./components/../pages/all-pages/AllComponents";
 import Navbar from "./components/navbar/Navbar";
 import NotFound from "./pages/not-found/NotFound";
-import Footer from "./pages/footer-page/Footer";
+import Footer from "./components/footer-page/Footer";
 import Contact from "./pages/contact/contact";
 
 function App() {

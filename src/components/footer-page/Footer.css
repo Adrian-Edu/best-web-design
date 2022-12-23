@@ -65,6 +65,13 @@
   justify-content: space-evenly;
 }
 
+.remove-format-footer {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1600px) {
   .footer-last-column > p {
     font-size: 16px;

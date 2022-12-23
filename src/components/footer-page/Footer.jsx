@@ -5,6 +5,7 @@ import mobile from "../../assets/mobile.png";
 import whats from "../../assets/whats.png";
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
+import { Link } from "react-router-dom";
 
 function footer(props) {
   return (
@@ -46,7 +47,9 @@ function footer(props) {
           </div>
           <div className="footer-second-column">
             <p>About Us</p>
-            <p>Contact </p>
+            <Link className="remove-format-footer" to="/Contact">
+              <p>Contact</p>
+            </Link>
             <p>FAQ</p>
           </div>
         </div>
