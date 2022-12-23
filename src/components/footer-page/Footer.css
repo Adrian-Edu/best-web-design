@@ -131,6 +131,28 @@
     height: 100%;
     text-align: center;
   }
+  .logo {
+    width: 170px;
+    object-fit: contain;
+    margin-top: 20px;
+  }
+  .remove-format-footer {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .mobile,
+  .whats,
+  .linkedin,
+  .github {
+    width: 30px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  .footer-first-column {
+    margin: 15px 0 0 0;
+  }
 }
 
 @media screen and (max-width: 500px) {

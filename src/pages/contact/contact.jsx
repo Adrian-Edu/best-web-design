@@ -1,7 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 
-function contact(props) {
+function Contact(props) {
+  const [message, setMessage] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    question: "",
+  });
+
+  const [messageSubmit, setMessageSubmit] = useState(false);
+
+  const handleNameInput = (e) => {
+    setMessage({ ...message, firstname: e.target.value });
+  };
+
+  const handleLastNameInput = (e) => {
+    setMessage({ ...message, lastname: e.target.value });
+  };
+
+  const handleEmailInput = (e) => {
+    setMessage({ ...message, email: e.target.value });
+  };
+
+  const handleQuestionInput = (e) => {
+    setMessage({ ...message, question: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.prevent.default();
+    setMessageSubmit(true);
+  };
+
   return (
     <section>
       <div
@@ -9,7 +39,12 @@ function contact(props) {
         style={{ backgroundColor: `${props.background}` }}
       >
         <h1 style={{ color: `${props.textColor}` }}>Get in touch with us:</h1>
-        <label style={{ color: `${props.textColor}` }} for="fname">
+
+        <label
+          style={{ color: `${props.textColor}` }}
+          for="fname"
+          onChange={handleNameInput}
+        >
           First Name
         </label>
         <input
@@ -26,6 +61,7 @@ function contact(props) {
           id="lname"
           name="lastname"
           placeholder="Your last name is..."
+          onChange={handleLastNameInput}
         ></input>
         <label style={{ color: `${props.textColor}` }} for="email">
           Email
@@ -35,6 +71,7 @@ function contact(props) {
           id="email"
           name="email"
           placeholder="Your email is..."
+          onChange={handleEmailInput}
         ></input>
         <label style={{ color: `${props.textColor}` }} for="subject">
           Topic
@@ -49,13 +86,19 @@ function contact(props) {
         </label>
         <input
           className="contact-message"
-          style={{ color: `${props.textColor}` }}
           type="text"
           id="question"
           name="question"
           placeholder="Message..."
+          onChange={handleQuestionInput}
         ></input>
         <input type="submit" value="Submit"></input>
+        {messageSubmit ? (
+          <div style={{ color: `${props.textColor}` }} for="fname">
+            Your message has been successfully sent!
+          </div>
+        ) : null}
+
         <p className="contact-p" style={{ color: `${props.textColor}` }}>
           Wanna chat with customer service? <br />
           Call 0766-775-420
@@ -68,4 +111,4 @@ function contact(props) {
   );
 }
 
-export default contact;
+export default Contact;
