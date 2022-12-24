@@ -66,6 +66,38 @@ label {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1800px) {
+  .container-contact > input[type="text"],
+  select {
+    padding: 10px 12px;
+    width: 40%;
+  }
+
+  .container-contact > input[type="submit"] {
+    width: 40%;
+    padding: 10px 14px;
+  }
+
+  label {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+  }
+  .contact-message {
+    width: 40%;
+  }
+  .header-contact {
+    font-size: 30px;
+    margin: 50px 0 10px 0;
+  }
+  .contact-message {
+    height: 60px;
+  }
+  .contact-p {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .container-contact > input[type="text"],
   select {
@@ -87,18 +119,58 @@ label {
     width: 40%;
   }
   .header-contact {
-    font-size: 30px;
-    margin: 40px 0 10px 0;
+    font-size: 25px;
+    margin: 100px 0 10px 0;
   }
   .contact-message {
     height: 40px;
   }
   .contact-p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 900px) {
+  .container-contact > input[type="text"],
+  select {
+    width: 45%;
+  }
+
+  .container-contact > input[type="submit"] {
+    width: 45%;
+  }
+  label {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+  }
+  .contact-message {
+    width: 45%;
+  }
+  .header-contact {
+    font-size: 25px;
+  }
+  .contact-p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-contact span {
+    font-size: 12.5px;
+    font-weight: 600;
+  }
+  .contact-message {
+    width: 55%;
+    font-size: 11px;
+  }
+  .header-contact {
+    font-size: 25px;
+    margin: 50px 0 10px 0;
+  }
+  .contact-p {
+    font-size: 15px;
+  }
   .container-contact > input[type="text"],
   select {
     width: 55%;
@@ -114,29 +186,5 @@ label {
   }
   .contact-message {
     width: 55%;
-  }
-  .header-contact {
-    font-size: 22px;
-  }
-  .contact-p {
-    font-size: 11px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container-contact span {
-    font-size: 12.5px;
-    font-weight: 600;
-  }
-  .contact-message {
-    width: 55%;
-    font-size: 12px;
-  }
-  .header-contact {
-    font-size: 18px;
-    margin: 40px 0 10px 0;
-  }
-  .contact-p {
-    font-size: 10px;
   }
 }
