@@ -69,13 +69,13 @@ label {
 @media screen and (max-width: 1400px) {
   .container-contact > input[type="text"],
   select {
-    padding: 10px 12px;
+    padding: 7px 9px;
     width: 40%;
   }
 
   .container-contact > input[type="submit"] {
     width: 40%;
-    padding: 10px 14px;
+    padding: 6px 10px;
   }
 
   label {
@@ -88,10 +88,13 @@ label {
   }
   .header-contact {
     font-size: 30px;
-    margin: 30px 0 10px 0;
+    margin: 40px 0 10px 0;
   }
   .contact-message {
-    height: 60px;
+    height: 40px;
+  }
+  .contact-p {
+    font-size: 13px;
   }
 }
 
@@ -114,7 +117,9 @@ label {
   }
   .header-contact {
     font-size: 22px;
-    margin: 30px 0 10px 0;
+  }
+  .contact-p {
+    font-size: 11px;
   }
 }
 
@@ -129,6 +134,9 @@ label {
   }
   .header-contact {
     font-size: 18px;
-    margin: 30px 0 10px 0;
+    margin: 40px 0 10px 0;
+  }
+  .contact-p {
+    font-size: 10px;
   }
 }
