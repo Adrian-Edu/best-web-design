@@ -4,23 +4,19 @@ import "./contact.css";
 function Contact(props) {
   const [message, setMessage] = useState({
     name: "",
-    surname: "",
+    lastname: "",
     email: "",
     question: "",
   });
 
-  const [errorName, setErrorName] = useState(false);
-  const [errorSurname, setErrorSurname] = useState(false);
-  const [errorEmail, setErrorEmail] = useState(false);
-  const [errorQuestion, setErrorQuestion] = useState(false);
-  const [messageSubmit, setMessageSubmit] = useState(false);
-  const [submit, setSubmit] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const [valid, setValid] = useState(false);
 
   const handleNameInput = (e) => {
     setMessage({ ...message, name: e.target.value });
   };
 
-  const handleSurnameInput = (e) => {
+  const handleLastNameInput = (e) => {
     setMessage({ ...message, lastname: e.target.value });
   };
 
@@ -34,49 +30,16 @@ function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessageSubmit(true);
-
-    setSubmit(
-      message.name +
-        " " +
-        message.surname +
-        " " +
-        message.email +
-        " " +
-        message.question
-    );
 
     if (
-      message.name === "" &&
-      message.surname === "" &&
-      message.email === "" &&
-      message.question === ""
+      message.name &&
+      message.lastname &&
+      message.email &&
+      message.question !== ""
     ) {
-      return (
-        setErrorName(true) +
-        setErrorSurname(true) +
-        setErrorQuestion(true) +
-        setErrorEmail(true)
-      );
-    } else if (message.name === "") {
-      return setErrorName(true);
-    } else if (message.surname === "") {
-      return setErrorSurname(true);
-    } else if (message.email === "") {
-      return setErrorEmail(true);
-    } else if (message.question === "") {
-      return setErrorQuestion(true);
-    } else {
-      setMessageSubmit(true) && setErrorName(false);
-      setErrorSurname(false);
-      setErrorEmail(false);
-      setErrorQuestion(false);
+      setValid(true);
     }
-
-    setErrorName(false);
-    setErrorSurname(false);
-    setErrorEmail(false);
-    setErrorQuestion(false);
+    setSubmitted(true);
   };
 
   return (
@@ -87,40 +50,41 @@ function Contact(props) {
         style={{ backgroundColor: `${props.background}` }}
       >
         <h1 style={{ color: `${props.textColor}` }}>Get in touch with us:</h1>
-
-        <label
-          style={{ color: `${props.textColor}` }}
-          for="fname"
-          onChange={handleNameInput}
-        >
+        <label style={{ color: `${props.textColor}` }} for="fname">
           Name
         </label>
         <input
           type="text"
           id="fname"
           name="firstname"
-          placeholder="Your name is..."
+          placeholder="Your name ..."
+          onChange={handleNameInput}
         ></input>
-        {errorName ? (
+        {submitted && !message.name ? (
           <div>
-            <span>Please fill in the name field!</span>
+            <span style={{ color: `${props.textColor}` }}>
+              Please fill in the name field!
+            </span>
           </div>
         ) : null}
         <label style={{ color: `${props.textColor}` }} for="lname">
-          Surname
+          Last Name
         </label>
         <input
           type="text"
           id="lname"
           name="lastname"
-          placeholder="Your surname is..."
-          onChange={handleSurnameInput}
+          placeholder="Your last name ..."
+          onChange={handleLastNameInput}
         ></input>
-        {errorSurname ? (
+        {submitted && !message.lastname ? (
           <div>
-            <span>Please fill in the surname field! </span>{" "}
+            <span style={{ color: `${props.textColor}` }}>
+              Please fill in the last name field!
+            </span>
           </div>
         ) : null}
+
         <label style={{ color: `${props.textColor}` }} for="email">
           Email
         </label>
@@ -128,14 +92,17 @@ function Contact(props) {
           type="text"
           id="email"
           name="email"
-          placeholder="Your email is..."
+          placeholder="Your email ..."
           onChange={handleEmailInput}
         ></input>
-        {errorEmail ? (
+        {submitted && !message.email ? (
           <div>
-            <span>Please fill your email!</span>{" "}
+            <span style={{ color: `${props.textColor}` }}>
+              Please fill your email!
+            </span>
           </div>
         ) : null}
+
         <label style={{ color: `${props.textColor}` }} for="fname">
           Question
         </label>
@@ -144,24 +111,21 @@ function Contact(props) {
           type="text"
           id="question"
           name="question"
-          placeholder="Message..."
+          placeholder="Message ..."
           onChange={handleQuestionInput}
         ></input>
-        {errorQuestion ? (
+        {submitted && !message.question ? (
           <div>
-            <span>Please fill the question!</span>{" "}
-          </div>
-        ) : null}
-        <input type="submit" value="Submit"></input>
-        {messageSubmit ? (
-          <div style={{ color: `${props.textColor}` }} for="fname">
-            Your message has been successfully sent!
+            <span style={{ color: `${props.textColor}` }}>
+              Please fill the question!
+            </span>
           </div>
         ) : null}
 
-        {messageSubmit ? (
-          <div>
-            <p>{submit}</p>
+        <input type="submit" value="Submit"></input>
+        {submitted && valid ? (
+          <div style={{ color: `${props.textColor}` }} for="fname">
+            Your message has been successfully sent!
           </div>
         ) : null}
 
