@@ -7,6 +7,7 @@ function Contact(props) {
   const [sender, setSender] = useState({
     name: "",
     lastname: "",
+    mobile: "",
     email: "",
     question: "",
   });
@@ -18,8 +19,8 @@ function Contact(props) {
     setSender({ ...sender, name: e.target.value });
   };
 
-  const handleLastNameInput = (e) => {
-    setSender({ ...sender, lastname: e.target.value });
+  const handleMobileInput = (e) => {
+    setSender({ ...sender, mobile: e.target.value });
   };
 
   const handleEmailInput = (e) => {
@@ -32,16 +33,14 @@ function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (
       sender.name &&
-      sender.lastname &&
+      sender.mobile &&
       sender.email &&
       sender.question !== ""
     ) {
       setValid(true);
     }
-
     setSubmitted(true);
   };
 
@@ -49,7 +48,7 @@ function Contact(props) {
 
   useEffect(() => {
     formRef.current?.reset();
-  }, [submitted, valid]);
+  }, [valid]);
 
   return (
     <section>
@@ -65,28 +64,29 @@ function Contact(props) {
           type="text"
           id="fname"
           name="firstname"
-          placeholder="Your name ..."
+          placeholder="Your name and last name  ..."
           onChange={handleNameInput}
         ></input>
-        {submitted && !sender.name ? (
+        {submitted && sender.name.length <= 2 ? (
           <div>
-            <span style={{ color: `${props.textColor}` }}>
-              Please fill in the name field!
+            <span style={{ color: `red` }}>
+              Name must have at least 3 characters!
             </span>
           </div>
         ) : null}
-        <label style={{ color: `${props.textColor}` }}>Last Name</label>
+
+        <label style={{ color: `${props.textColor}` }}>Mobile</label>
         <input
           type="text"
-          id="lname"
-          name="lastname"
-          placeholder="Your last name ..."
-          onChange={handleLastNameInput}
+          id="mobile"
+          name="mobile"
+          placeholder="Your mobile number ..."
+          onChange={handleMobileInput}
         ></input>
-        {submitted && !sender.lastname ? (
+        {submitted && sender.mobile.length <= 9 ? (
           <div>
-            <span style={{ color: `${props.textColor}` }}>
-              Please fill in the last name field!
+            <span style={{ color: `red` }}>
+              Mobile must have at least 10 characters!
             </span>
           </div>
         ) : null}
@@ -99,10 +99,10 @@ function Contact(props) {
           placeholder="Your email ..."
           onChange={handleEmailInput}
         ></input>
-        {submitted && !sender.email ? (
+        {submitted && sender.email.length <= 14 ? (
           <div>
-            <span style={{ color: `${props.textColor}` }}>
-              Please fill your email!
+            <span style={{ color: `red` }}>
+              Email must have at least 15 characters!
             </span>
           </div>
         ) : null}
@@ -116,10 +116,10 @@ function Contact(props) {
           placeholder="Message ..."
           onChange={handleQuestionInput}
         ></input>
-        {submitted && !sender.question ? (
+        {submitted && sender.question.length <= 20 ? (
           <div>
-            <span style={{ color: `${props.textColor}` }}>
-              Please fill the question!
+            <span style={{ color: `red` }}>
+              Question must have at least 20 characters!
             </span>
           </div>
         ) : null}
@@ -127,18 +127,19 @@ function Contact(props) {
         <input type="submit" value="Submit"></input>
         {submitted && valid ? (
           <div
+            className="contact-message "
             style={{
               backgroundColor: "red",
-              fontSize: "17px",
+
               fontWeight: 700,
               height: "4.5%",
-              width: "30%",
               display: "flex",
+              textAlign: "center",
               alignItems: "center",
               justifyContent: "center",
             }}
           >
-            Your message has been successfully sent! You will hear from us soon!
+            Your message has been successfully sent!
           </div>
         ) : null}
 
