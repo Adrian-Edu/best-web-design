@@ -58,7 +58,9 @@ function Contact(props) {
         className="container-contact"
         style={{ backgroundColor: `${props.background}` }}
       >
-        <h1 style={{ color: `${props.textColor}` }}>Get in touch with us:</h1>
+        <p className="header-contact" style={{ color: `${props.textColor}` }}>
+          Get in touch with us:
+        </p>
         <label style={{ color: `${props.textColor}` }}>Name</label>
         <input
           type="text"
