@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
+import { useRef } from "react";
 import "./contact.css";
 
 function Contact(props) {
-  const [message, setMessage] = useState({
+  const [sender, setSender] = useState({
     name: "",
     lastname: "",
     email: "",
@@ -13,46 +15,52 @@ function Contact(props) {
   const [valid, setValid] = useState(false);
 
   const handleNameInput = (e) => {
-    setMessage({ ...message, name: e.target.value });
+    setSender({ ...sender, name: e.target.value });
   };
 
   const handleLastNameInput = (e) => {
-    setMessage({ ...message, lastname: e.target.value });
+    setSender({ ...sender, lastname: e.target.value });
   };
 
   const handleEmailInput = (e) => {
-    setMessage({ ...message, email: e.target.value });
+    setSender({ ...sender, email: e.target.value });
   };
 
   const handleQuestionInput = (e) => {
-    setMessage({ ...message, question: e.target.value });
+    setSender({ ...sender, question: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (
-      message.name &&
-      message.lastname &&
-      message.email &&
-      message.question !== ""
+      sender.name &&
+      sender.lastname &&
+      sender.email &&
+      sender.question !== ""
     ) {
       setValid(true);
     }
+
     setSubmitted(true);
   };
+
+  let formRef = useRef();
+
+  useEffect(() => {
+    formRef.current?.reset();
+  }, [submitted, valid]);
 
   return (
     <section>
       <form
+        ref={formRef}
         onSubmit={handleSubmit}
         className="container-contact"
         style={{ backgroundColor: `${props.background}` }}
       >
         <h1 style={{ color: `${props.textColor}` }}>Get in touch with us:</h1>
-        <label style={{ color: `${props.textColor}` }} for="fname">
-          Name
-        </label>
+        <label style={{ color: `${props.textColor}` }}>Name</label>
         <input
           type="text"
           id="fname"
@@ -60,16 +68,14 @@ function Contact(props) {
           placeholder="Your name ..."
           onChange={handleNameInput}
         ></input>
-        {submitted && !message.name ? (
+        {submitted && !sender.name ? (
           <div>
             <span style={{ color: `${props.textColor}` }}>
               Please fill in the name field!
             </span>
           </div>
         ) : null}
-        <label style={{ color: `${props.textColor}` }} for="lname">
-          Last Name
-        </label>
+        <label style={{ color: `${props.textColor}` }}>Last Name</label>
         <input
           type="text"
           id="lname"
@@ -77,7 +83,7 @@ function Contact(props) {
           placeholder="Your last name ..."
           onChange={handleLastNameInput}
         ></input>
-        {submitted && !message.lastname ? (
+        {submitted && !sender.lastname ? (
           <div>
             <span style={{ color: `${props.textColor}` }}>
               Please fill in the last name field!
@@ -85,9 +91,7 @@ function Contact(props) {
           </div>
         ) : null}
 
-        <label style={{ color: `${props.textColor}` }} for="email">
-          Email
-        </label>
+        <label style={{ color: `${props.textColor}` }}>Email</label>
         <input
           type="text"
           id="email"
@@ -95,7 +99,7 @@ function Contact(props) {
           placeholder="Your email ..."
           onChange={handleEmailInput}
         ></input>
-        {submitted && !message.email ? (
+        {submitted && !sender.email ? (
           <div>
             <span style={{ color: `${props.textColor}` }}>
               Please fill your email!
@@ -103,9 +107,7 @@ function Contact(props) {
           </div>
         ) : null}
 
-        <label style={{ color: `${props.textColor}` }} for="fname">
-          Question
-        </label>
+        <label style={{ color: `${props.textColor}` }}>Question</label>
         <input
           className="contact-message"
           type="text"
@@ -114,7 +116,7 @@ function Contact(props) {
           placeholder="Message ..."
           onChange={handleQuestionInput}
         ></input>
-        {submitted && !message.question ? (
+        {submitted && !sender.question ? (
           <div>
             <span style={{ color: `${props.textColor}` }}>
               Please fill the question!
@@ -124,8 +126,19 @@ function Contact(props) {
 
         <input type="submit" value="Submit"></input>
         {submitted && valid ? (
-          <div style={{ color: `${props.textColor}` }} for="fname">
-            Your message has been successfully sent!
+          <div
+            style={{
+              backgroundColor: "red",
+              fontSize: "17px",
+              fontWeight: 700,
+              height: "4.5%",
+              width: "30%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            Your message has been successfully sent! You will hear from us soon!
           </div>
         ) : null}
 
