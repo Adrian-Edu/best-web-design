@@ -161,30 +161,30 @@ label {
     font-weight: 600;
   }
   .contact-message {
-    width: 55%;
+    width: 60%;
     font-size: 11px;
   }
   .header-contact {
     font-size: 25px;
-    margin: 50px 0 10px 0;
+    margin: 30px 0 10px 0;
   }
   .contact-p {
     font-size: 15px;
   }
   .container-contact > input[type="text"],
   select {
-    width: 55%;
+    width: 60%;
   }
 
   .container-contact > input[type="submit"] {
-    width: 55%;
+    width: 60%;
   }
   label {
     display: inline-block;
-    width: 55%;
+    width: 60%;
     text-align: left;
   }
   .contact-message {
-    width: 55%;
+    width: 60%;
   }
 }
