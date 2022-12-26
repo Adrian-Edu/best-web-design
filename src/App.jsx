@@ -12,6 +12,7 @@ import Navbar from "./components/navbar/Navbar";
 import NotFound from "./pages/not-found/NotFound";
 import Footer from "./components/footer-page/Footer";
 import Contact from "./pages/contact/contact";
+import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
 
 function App() {
   const [switchBackgroundColor, setswitchBackgroundColor] = useState("#151B54");
@@ -83,7 +84,6 @@ function App() {
             />
           }
         />
-        add
         <Route
           path="portofolio"
           element={
@@ -97,6 +97,15 @@ function App() {
           path="contact"
           element={
             <Contact
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
+          }
+        />
+        <Route
+          path="clients"
+          element={
+            <ClientsTestimonials
               background={switchBackgroundColor}
               textColor={switchTextColor}
             />

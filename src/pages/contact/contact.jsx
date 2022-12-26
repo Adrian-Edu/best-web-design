@@ -44,23 +44,23 @@ function Contact(props) {
       sender.question !== ""
     ) {
       setValid(true);
+      emailjs
+        .sendForm(
+          "service_c23ccw7",
+          "template_4nj9clw",
+          formRef.current,
+          "HpCU7YoSS5nlFrb7F"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
     setSubmitted(true);
-    emailjs
-      .sendForm(
-        "service_c23ccw7",
-        "template_4nj9clw",
-        formRef.current,
-        "HpCU7YoSS5nlFrb7F"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
   };
 
   useEffect(() => {

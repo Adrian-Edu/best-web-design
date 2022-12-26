@@ -4,7 +4,7 @@ import needs from "../../assets/needs.png";
 import quickly from "../../assets/quickly.png";
 import "./ClientsTestimonials.css";
 
-function ContactPage(props) {
+function ClientsTestimonials(props) {
   return (
     <section
       className="page-height-special"
@@ -24,4 +24,4 @@ function ContactPage(props) {
   );
 }
 
-export default ContactPage;
+export default ClientsTestimonials;
