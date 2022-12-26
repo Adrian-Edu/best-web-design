@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
 import "./contact.css";
+import emailjs from "@emailjs/browser";
 
 function Contact(props) {
   const [sender, setSender] = useState({
@@ -31,6 +32,8 @@ function Contact(props) {
     setSender({ ...sender, question: e.target.value });
   };
 
+  let formRef = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -42,9 +45,23 @@ function Contact(props) {
       setValid(true);
     }
     setSubmitted(true);
-  };
 
-  let formRef = useRef();
+    emailjs
+      .sendForm(
+        "service_c23ccw7",
+        "template_4nj9clw",
+        formRef.current,
+        "HpCU7YoSS5nlFrb7F"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   useEffect(() => {
     formRef.current?.reset();
@@ -65,7 +82,7 @@ function Contact(props) {
         <input
           type="text"
           id="fname"
-          name="firstname"
+          name="user_name"
           placeholder="Your name and last name  ..."
           onChange={handleNameInput}
         ></input>
@@ -81,7 +98,7 @@ function Contact(props) {
         <input
           type="text"
           id="mobile"
-          name="mobile"
+          name="user_mobile"
           placeholder="Your mobile number ..."
           onChange={handleMobileInput}
         ></input>
@@ -97,7 +114,7 @@ function Contact(props) {
         <input
           type="text"
           id="email"
-          name="email"
+          name="user_email"
           placeholder="Your email ..."
           onChange={handleEmailInput}
         ></input>
@@ -114,7 +131,7 @@ function Contact(props) {
           className="contact-message"
           type="text"
           id="question"
-          name="question"
+          name="user_question"
           placeholder="Message ..."
           onChange={handleQuestionInput}
         ></input>
