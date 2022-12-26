@@ -142,14 +142,18 @@ function Contact(props) {
             </span>
           </div>
         ) : null}
-
-        <input type="submit" value="Submit"></input>
+        <button
+          disabled={submitted && valid}
+          type="submit"
+          className="submited"
+        >
+          Submit
+        </button>
         {submitted && valid ? (
           <div
             className="contact-message "
             style={{
               backgroundColor: "red",
-
               fontWeight: 700,
               height: "4.5%",
               display: "flex",
