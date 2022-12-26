@@ -36,6 +36,7 @@ function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (
       sender.name &&
       sender.mobile &&
@@ -45,7 +46,6 @@ function Contact(props) {
       setValid(true);
     }
     setSubmitted(true);
-
     emailjs
       .sendForm(
         "service_c23ccw7",
