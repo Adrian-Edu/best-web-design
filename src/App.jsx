@@ -11,7 +11,7 @@ import AllComponents from "./components/../pages/all-pages/AllComponents";
 import Navbar from "./components/navbar/Navbar";
 import NotFound from "./pages/not-found/NotFound";
 import Footer from "./components/footer-page/Footer";
-import Contact from "./pages/contact/contact";
+import Contact from "./pages/contact/Contact";
 import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
 
 function App() {
@@ -94,7 +94,7 @@ function App() {
           }
         />
         <Route
-          path="contact"
+          path="Contact"
           element={
             <Contact
               background={switchBackgroundColor}

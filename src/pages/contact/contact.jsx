@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
-import "./contact.css";
+import "./Contact.css";
 import emailjs from "@emailjs/browser";
 
 function Contact(props) {
@@ -96,8 +96,8 @@ function Contact(props) {
 
         <label style={{ color: `${props.textColor}` }}>Mobile</label>
         <input
-          type="text"
-          id="mobile"
+          type="tel"
+          id="phone"
           name="user_mobile"
           placeholder="Your mobile number ..."
           onChange={handleMobileInput}
@@ -112,7 +112,7 @@ function Contact(props) {
 
         <label style={{ color: `${props.textColor}` }}>Email</label>
         <input
-          type="text"
+          type="email"
           id="email"
           name="user_email"
           placeholder="Your email ..."

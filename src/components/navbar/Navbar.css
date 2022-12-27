@@ -29,7 +29,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .css-1lfs2tq-MuiTypography-root {
     display: flex;
     justify-content: flex-start;

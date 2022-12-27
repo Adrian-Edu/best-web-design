@@ -6,7 +6,7 @@ import Services from "../services-page/Services";
 import StepsPage from "../steps-page/StepsPage";
 import Portofolio from "../portofolio/Portofolio";
 import ClientsTestimonial from "../clients-testimonials/ClientsTestimonials";
-import Contact from "../contact/contact";
+import Contact from "../contact/Contact";
 
 function AllComponents(props) {
   return (

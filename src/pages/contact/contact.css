@@ -29,6 +29,28 @@ select {
   box-sizing: border-box;
 }
 
+.container-contact > input[type="email"],
+select {
+  width: 30%;
+  padding: 18px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container-contact > input[type="tel"],
+select {
+  width: 30%;
+  padding: 18px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 .container-contact > button {
   width: 30%;
   background-color: #4caf50;
@@ -80,6 +102,18 @@ label {
     width: 40%;
   }
 
+  .container-contact > input[type="email"],
+  select {
+    padding: 10px 12px;
+    width: 40%;
+  }
+
+  .container-contact > input[type="tel"],
+  select {
+    padding: 10px 12px;
+    width: 40%;
+  }
+
   .container-contact > button {
     width: 40%;
     padding: 10px 14px;
@@ -112,6 +146,18 @@ label {
     width: 40%;
   }
 
+  .container-contact > input[type="email"],
+  select {
+    padding: 7px 9px;
+    width: 40%;
+  }
+
+  .container-contact > input[type="tel"],
+  select {
+    padding: 7px 9px;
+    width: 40%;
+  }
+
   .container-contact > button {
     width: 40%;
     padding: 6px 10px;
@@ -139,6 +185,16 @@ label {
 
 @media screen and (max-width: 900px) {
   .container-contact > input[type="text"],
+  select {
+    width: 45%;
+  }
+
+  .container-contact > input[type="email"],
+  select {
+    width: 45%;
+  }
+
+  .container-contact > input[type="tel"],
   select {
     width: 45%;
   }
@@ -179,6 +235,16 @@ label {
     font-size: 15px;
   }
   .container-contact > input[type="text"],
+  select {
+    width: 60%;
+  }
+
+  .container-contact > input[type="email"],
+  select {
+    width: 60%;
+  }
+
+  .container-contact > input[type="tel"],
   select {
     width: 60%;
   }
