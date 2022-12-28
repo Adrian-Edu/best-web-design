@@ -1,13 +1,14 @@
 .button-format {
   bottom: 120px;
   position: fixed;
-  right: 30px;
+  right: 15px;
   height: 50px;
   width: 50px;
   font-size: 50px;
   text-align: center;
   background-color: aqua;
-  border-radius: 30px;
+  border-radius: 5px;
+  border: none;
 }
 
 @media screen and (max-width: 1500px) {
@@ -15,7 +16,7 @@
     height: 40px;
     width: 40px;
     font-size: 40px;
-    right: 8px;
+    bottom: 90px;
   }
 }
 
@@ -25,6 +26,7 @@
     width: 30px;
     font-size: 30px;
     bottom: 90px;
+    right: 8px;
   }
 }
 
