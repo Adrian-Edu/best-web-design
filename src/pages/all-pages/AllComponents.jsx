@@ -7,6 +7,7 @@ import StepsPage from "../steps-page/StepsPage";
 import Portofolio from "../portofolio/Portofolio";
 import ClientsTestimonial from "../clients-testimonials/ClientsTestimonials";
 import Contact from "../contact/Contact";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function AllComponents(props) {
   return (
@@ -22,6 +23,10 @@ function AllComponents(props) {
         textColor={props.textColor}
       />
       <Contact background={props.background} textColor={props.textColor} />
+      <BackToTopButton
+        background={props.background}
+        textColor={props.textColor}
+      />
     </section>
   );
 }

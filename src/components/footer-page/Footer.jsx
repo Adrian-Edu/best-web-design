@@ -46,13 +46,13 @@ function Footer(props) {
             </div>
           </div>
           <div className="footer-second-column">
-            <Link className="remove-format-footer">
+            <Link className="remove-format-footer" to="/About-us">
               <p>About Us</p>
             </Link>
             <Link className="remove-format-footer" to="/Contact">
               <p>Contact</p>
             </Link>
-            <Link className="remove-format-footer" to="/clients">
+            <Link className="remove-format-footer" to="/Clients">
               <p>Testimonials</p>
             </Link>
           </div>

@@ -1,0 +1,51 @@
+.button-format {
+  bottom: 120px;
+  position: fixed;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+  .button-format {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .button-format {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    bottom: 90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button-format {
+    bottom: 140px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .button-format {
+    bottom: 140px;
+    height: 25px;
+    width: 25px;
+    font-size: 25px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button-format {
+    bottom: 300px;
+    height: 25px;
+    width: 25px;
+    font-size: 25px;
+    right: 30px;
+  }
+}

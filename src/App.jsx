@@ -13,6 +13,7 @@ import NotFound from "./pages/not-found/NotFound";
 import Footer from "./components/footer-page/Footer";
 import Contact from "./pages/contact/Contact";
 import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
+import AboutUs from "./pages/about-us/AboutUs";
 
 function App() {
   const [switchBackgroundColor, setswitchBackgroundColor] = useState("#151B54");
@@ -31,6 +32,7 @@ function App() {
       <Navbar sendImage={getImage} sendTextColor={getTextColor} />
       <Routes>
         <Route
+          exact
           path="/"
           element={
             <AllComponents
@@ -106,6 +108,15 @@ function App() {
           path="clients"
           element={
             <ClientsTestimonials
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
+          }
+        />
+        <Route
+          path="about-us"
+          element={
+            <AboutUs
               background={switchBackgroundColor}
               textColor={switchTextColor}
             />
