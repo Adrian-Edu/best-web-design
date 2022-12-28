@@ -1,1 +1,70 @@
+.page-height-about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+.header-about {
+  font-size: 50px;
+  color: #f4b510;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.about {
+  width: 700px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.about-us-value {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1600px) {
+  .header-about {
+    font-size: 40px;
+    color: #f4b510;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+
+  .about {
+    width: 500px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .header-about {
+    font-size: 40px;
+    color: #f4b510;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+
+  .about {
+    width: 400px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-about {
+    font-size: 40px;
+    color: #f4b510;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+
+  .about {
+    width: 350px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+}
