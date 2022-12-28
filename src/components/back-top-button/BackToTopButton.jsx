@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./BackToTopButton.css";
 
 function BackToTopButton(props) {
-  const [backToTopButton, setBackToTopButton] = useState(false);
+  const [backToTopButton, setBackToTopButton] = useState(true);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scroll > 100) {
+      if (window.scrollY > 100) {
         setBackToTopButton(true);
       } else {
         setBackToTopButton(false);
@@ -23,9 +23,11 @@ function BackToTopButton(props) {
 
   return (
     <div style={{ backgroundColor: `${props.background}` }}>
-      <button className="button-format" onClick={scrollUp}>
-        ^
-      </button>
+      {backToTopButton ? (
+        <button className="button-format" onClick={scrollUp}>
+          ^
+        </button>
+      ) : null}
     </div>
   );
 }
