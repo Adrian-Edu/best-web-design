@@ -33,7 +33,7 @@
   }
 
   .about {
-    width: 500px;
+    width: 470px;
     object-fit: contain;
     border-radius: 5px;
   }
@@ -44,11 +44,11 @@
     font-size: 40px;
     color: #f4b510;
     font-weight: 700;
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   .about {
-    width: 400px;
+    width: 430px;
     object-fit: contain;
     border-radius: 5px;
   }
@@ -59,7 +59,7 @@
     font-size: 40px;
     color: #f4b510;
     font-weight: 700;
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   .about {
