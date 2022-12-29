@@ -13,7 +13,7 @@ import NotFound from "./pages/not-found/NotFound";
 import Footer from "./components/footer-page/Footer";
 import Contact from "./pages/contact/Contact";
 import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
-import AboutUs from "./pages/about-us/AboutUs";
+import AboutMe from "./pages/about-me/AboutMe";
 
 function App() {
   const [switchBackgroundColor, setswitchBackgroundColor] = useState("#151B54");
@@ -114,9 +114,9 @@ function App() {
           }
         />
         <Route
-          path="about-us"
+          path="about-me"
           element={
-            <AboutUs
+            <AboutMe
               background={switchBackgroundColor}
               textColor={switchTextColor}
             />

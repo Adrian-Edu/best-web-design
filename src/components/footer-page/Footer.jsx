@@ -6,7 +6,6 @@ import whats from "../../assets/whats.png";
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
 import { Link } from "react-router-dom";
-import SearchBar from "../../components/search-bar/SeachBar";
 
 function Footer(props) {
   return (
@@ -50,8 +49,8 @@ function Footer(props) {
             <Link className="remove-format-footer" to="/">
               <p>Home</p>
             </Link>
-            <Link className="remove-format-footer" to="/About-us">
-              <p>About Us</p>
+            <Link className="remove-format-footer" to="/About-me">
+              <p>About me</p>
             </Link>
             <Link className="remove-format-footer" to="/Contact">
               <p>Contact</p>
@@ -74,8 +73,9 @@ function Footer(props) {
             <Link className="remove-format-footer">
               <p>Privacy</p>
             </Link>
-
-            <SearchBar />
+            <Link className="remove-format-footer">
+              <p>Blog</p>
+            </Link>
             <Link className="remove-format-footer">
               <p> All right reserved © BWD</p>
             </Link>

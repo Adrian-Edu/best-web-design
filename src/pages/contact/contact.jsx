@@ -101,6 +101,7 @@ function Contact(props) {
           id="phone"
           name="user_mobile"
           placeholder="Your mobile number ..."
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           onChange={handleMobileInput}
         ></input>
         {submitted && sender.mobile.length <= 9 ? (
