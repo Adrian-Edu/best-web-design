@@ -4,6 +4,7 @@ import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function SkillsPage(props) {
   return (
@@ -23,6 +24,10 @@ function SkillsPage(props) {
           <img src={js} className="js" alt="" />
           <img src={react} className="react" alt="" />
         </div>
+        <BackToTopButton
+          background={props.background}
+          textColor={props.textColor}
+        />
       </div>
     </section>
   );

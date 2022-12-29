@@ -2,6 +2,7 @@ import React from "react";
 import desktop from "../../assets/desktop.png";
 import oldnew from "../../assets/oldnew.png";
 import "./Services.css";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function Services(props) {
   return (
@@ -25,6 +26,10 @@ function Services(props) {
           </p>
           <img src={oldnew} className="oldnew-image" alt="" />
         </div>
+        <BackToTopButton
+          background={props.background}
+          textColor={props.textColor}
+        />
       </div>
     </section>
   );

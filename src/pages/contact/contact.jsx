@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function Contact(props) {
   const [sender, setSender] = useState({
@@ -173,6 +174,10 @@ function Contact(props) {
         <p className="contact-p" style={{ color: `${props.textColor}` }}>
           Contact us by email: <br /> adrian_edu@yahoo.com
         </p>
+        <BackToTopButton
+          background={props.background}
+          textColor={props.textColor}
+        />
       </form>
     </section>
   );

@@ -7,7 +7,7 @@ import Skills from "./components/../pages/skills-page/SkillsPage";
 import Services from "./components/../pages/services-page/Services";
 import StepsPage from "./components/../pages/steps-page/StepsPage";
 import Portofolio from "./components/../pages/portofolio/Portofolio";
-import AllComponents from "./components/../pages/all-pages/AllComponents";
+import AllComponents from "./pages/all-components/AllComponents";
 import Navbar from "./components/navbar/Navbar";
 import NotFound from "./pages/not-found/NotFound";
 import Footer from "./components/footer-page/Footer";

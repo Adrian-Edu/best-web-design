@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import about from "../../assets/about.png";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function AboutUs(props) {
   return (
@@ -19,6 +20,10 @@ function AboutUs(props) {
         programming will make your website look outstanding, <br /> whether it's
         your personal or professional website.
       </p>
+      <BackToTopButton
+        background={props.background}
+        textColor={props.textColor}
+      />
     </div>
   );
 }

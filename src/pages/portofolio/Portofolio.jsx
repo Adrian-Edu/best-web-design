@@ -4,6 +4,7 @@ import product from "../../assets/product.png";
 import lucky from "../../assets/lucky.png";
 import robo from "../../assets/robo.png";
 import "./Portofolio.css";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function portofolio(props) {
   return (
@@ -86,6 +87,10 @@ function portofolio(props) {
               >
                 <button className="sixth-button"> See the project </button>
               </a>
+              <BackToTopButton
+                background={props.background}
+                textColor={props.textColor}
+              />
             </div>
           </div>
         </div>

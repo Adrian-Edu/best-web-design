@@ -139,37 +139,37 @@ label {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .container-contact > input[type="text"],
   select {
     padding: 7px 9px;
-    width: 40%;
+    width: 35%;
   }
 
   .container-contact > input[type="email"],
   select {
     padding: 7px 9px;
-    width: 40%;
+    width: 35%;
   }
 
   .container-contact > input[type="tel"],
   select {
     padding: 7px 9px;
-    width: 40%;
+    width: 35%;
   }
 
   .container-contact > button {
-    width: 40%;
+    width: 35%;
     padding: 6px 10px;
   }
 
   label {
     display: inline-block;
-    width: 40%;
+    width: 35%;
     text-align: left;
   }
   .contact-message {
-    width: 40%;
+    width: 35%;
   }
   .header-contact {
     font-size: 25px;

@@ -6,6 +6,7 @@ import whats from "../../assets/whats.png";
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
 import { Link } from "react-router-dom";
+import SearchBar from "../../components/search-bar/SeachBar";
 
 function Footer(props) {
   return (
@@ -46,24 +47,24 @@ function Footer(props) {
             </div>
           </div>
           <div className="footer-second-column">
+            <Link className="remove-format-footer" to="/">
+              <p>Home</p>
+            </Link>
             <Link className="remove-format-footer" to="/About-us">
               <p>About Us</p>
             </Link>
             <Link className="remove-format-footer" to="/Contact">
               <p>Contact</p>
             </Link>
-            <Link className="remove-format-footer" to="/Clients">
-              <p>Testimonials</p>
-            </Link>
           </div>
         </div>
         <div className="footer-first2">
           <div className="footer-second-column">
-            <Link className="remove-format-footer">
-              <p>Legal Stuff</p>
+            <Link className="remove-format-footer" to="/Clients">
+              <p>Testimonials</p>
             </Link>
             <Link className="remove-format-footer">
-              <p>Privacy</p>
+              <p>Legal Stuff</p>
             </Link>
             <Link className="remove-format-footer">
               <p>Privacy</p>
@@ -71,10 +72,10 @@ function Footer(props) {
           </div>
           <div className="footer-last-column">
             <Link className="remove-format-footer">
-              <p>Search something ... </p>
+              <p>Privacy</p>
             </Link>
 
-            <input type="search"></input>
+            <SearchBar />
             <Link className="remove-format-footer">
               <p> All right reserved © BWD</p>
             </Link>

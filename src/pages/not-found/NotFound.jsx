@@ -1,4 +1,5 @@
 import React from "react";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function NotFound(props) {
   return (
@@ -15,6 +16,10 @@ function NotFound(props) {
         The page you requested <br />
         DOESN'T EXIST! !
       </h4>
+      <BackToTopButton
+        background={props.background}
+        textColor={props.textColor}
+      />
     </div>
   );
 }

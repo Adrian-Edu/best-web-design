@@ -3,6 +3,7 @@ import passion from "../../assets/passion.png";
 import needs from "../../assets/needs.png";
 import quickly from "../../assets/quickly.png";
 import "./ClientsTestimonials.css";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function ClientsTestimonials(props) {
   return (
@@ -20,6 +21,10 @@ function ClientsTestimonials(props) {
           <img src={quickly} className="quickly" alt="" />
         </div>
       </div>
+      <BackToTopButton
+        background={props.background}
+        textColor={props.textColor}
+      />
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./WebDesign.css";
 import secondslicepicture from "../../assets/secondslidepicture.png";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function WebDesign(props) {
   return (
@@ -26,6 +27,10 @@ function WebDesign(props) {
         </div>
         <img src={secondslicepicture} className="secondpicture" alt="" />
       </div>
+      <BackToTopButton
+        background={props.background}
+        textColor={props.textColor}
+      />
     </section>
   );
 }
