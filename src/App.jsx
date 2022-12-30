@@ -10,17 +10,17 @@ import Portofolio from "./components/../pages/portofolio/Portofolio";
 import AllComponents from "./pages/all-components/AllComponents";
 import Navbar from "./components/navbar/Navbar";
 import NotFound from "./pages/not-found/NotFound";
-import Footer from "./components/footer-page/Footer";
+import Footer from "./components/footer/Footer";
 import Contact from "./pages/contact/Contact";
 import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
 import AboutMe from "./pages/about-me/AboutMe";
 
 function App() {
-  const [switchBackgroundColor, setswitchBackgroundColor] = useState("#151B54");
+  const [switchBackgroundColor, setSwitchBackgroundColor] = useState("#151B54");
   const [switchTextColor, setswitchTextColor] = useState("#FFFFFF");
 
   const getImage = (image) => {
-    setswitchBackgroundColor(image);
+    setSwitchBackgroundColor(image);
   };
 
   const getTextColor = (color) => {

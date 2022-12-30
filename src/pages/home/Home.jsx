@@ -20,7 +20,7 @@ function Home(props) {
           </h2>
           <h3 style={{ color: `${props.textColor}` }}>
             <Link className="remove-format-footer-home" to="/Contact">
-              <p>Contact me !</p>
+              <p style={{ color: `${props.textColor}` }}>Contact me !</p>
             </Link>
           </h3>
         </div>
