@@ -49,6 +49,10 @@ h6 {
   object-fit: contain;
 }
 
+.fourt-container {
+  padding-bottom: 30px;
+}
+
 @media screen and (max-width: 1900px) {
   .oldnew-image {
     width: auto;
