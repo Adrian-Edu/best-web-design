@@ -2,7 +2,7 @@ import React from "react";
 import "./Services.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import desktop from "../../assets/newdesktop.png";
-// import oldnew from "../../assets/oldnew.png";
+import oldnew from "../../assets/oldvsnew.png";
 
 function Services(props) {
   return (
@@ -24,7 +24,7 @@ function Services(props) {
           <p className="h7" style={{ color: `${props.textColor}` }}>
             Modify your old <br /> website
           </p>
-          <img src={""} className="oldnew-image" alt="" />
+          <img src={oldnew} className="oldnew-image" alt="" />
         </div>
         <BackToTopButton
           background={props.background}
