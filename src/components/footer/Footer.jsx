@@ -8,7 +8,7 @@ import github from "../../assets/github.png";
 import { Link } from "react-router-dom";
 
 function Footer(props) {
-  const [backToTopButton, setBackToTopButton] = useState(false);
+  const [backToTopButton, setBackToTopButton] = useState(true);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -85,12 +85,8 @@ function Footer(props) {
           </div>
         </div>
         <div className="footer-first2">
-          <div className="footer-second-column">
-            <Link
-              onClick={scrollUp}
-              className="remove-format-footer"
-              to="/Clients"
-            >
+          <div onClick={scrollUp} className="footer-second-column">
+            <Link className="remove-format-footer" to="/Clients">
               <p>Testimonials</p>
             </Link>
             <Link className="remove-format-footer">

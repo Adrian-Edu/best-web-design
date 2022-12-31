@@ -4,7 +4,7 @@ import WebDesign from "../web-design/WebDesign";
 import Skills from "../skills-page/SkillsPage";
 import Services from "../services-page/Services";
 import StepsPage from "../steps-page/StepsPage";
-import Portofolio from "../portofolio/Portofolio";
+import Portfolio from "../portfolio/Portfolio";
 import ClientsTestimonial from "../clients-testimonials/ClientsTestimonials";
 import Contact from "../contact/ContactPage";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
@@ -17,7 +17,7 @@ function AllComponents(props) {
       <Skills background={props.background} textColor={props.textColor} />
       <Services background={props.background} textColor={props.textColor} />
       <StepsPage background={props.background} textColor={props.textColor} />
-      <Portofolio background={props.background} textColor={props.textColor} />
+      <Portfolio background={props.background} textColor={props.textColor} />
       <ClientsTestimonial
         background={props.background}
         textColor={props.textColor}

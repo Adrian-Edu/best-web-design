@@ -5,7 +5,7 @@
 .fourt-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -17,6 +17,7 @@
 .second2-fourtpage {
   display: flex;
   flex-direction: column;
+  padding-left: 80px;
 }
 
 h6 {
@@ -66,16 +67,16 @@ h6 {
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
   .oldnew-image {
     width: auto;
-    height: 390px;
+    height: 360px;
     object-fit: contain;
   }
 
   .desktop-image {
     width: auto;
-    height: 380px;
+    height: 350px;
     object-fit: contain;
   }
 
@@ -193,5 +194,8 @@ h6 {
     font-size: 30px;
     padding-bottom: 20px;
     padding-top: 70px;
+  }
+  .second2-fourtpage {
+    padding-left: 0px;
   }
 }

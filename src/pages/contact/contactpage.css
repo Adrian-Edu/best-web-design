@@ -9,7 +9,7 @@
 .container-contact > form {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
 }
 
 .contact-p {
@@ -20,7 +20,7 @@
 
 .container-contact > input[type="text"],
 select {
-  width: 30%;
+  width: 40%;
   padding: 18px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -31,7 +31,7 @@ select {
 
 .container-contact > input[type="email"],
 select {
-  width: 30%;
+  width: 40%;
   padding: 18px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -42,7 +42,7 @@ select {
 
 .container-contact > input[type="tel"],
 select {
-  width: 30%;
+  width: 40%;
   padding: 18px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -52,7 +52,7 @@ select {
 }
 
 .container-contact > button {
-  width: 30%;
+  width: 40%;
   background-color: #4caf50;
   color: white;
   padding: 14px 20px;
@@ -71,14 +71,14 @@ select {
 }
 
 .contact-message {
-  width: 30%;
+  width: 40%;
   height: 120px;
   font-size: 17px;
 }
 
 label {
   display: inline-block;
-  width: 30%;
+  width: 40%;
   text-align: left;
 }
 
@@ -99,36 +99,36 @@ label {
   .container-contact > input[type="text"],
   select {
     padding: 10px 12px;
-    width: 40%;
+    width: 35%;
   }
 
   .container-contact > input[type="email"],
   select {
     padding: 10px 12px;
-    width: 40%;
+    width: 35%;
   }
 
   .container-contact > input[type="tel"],
   select {
     padding: 10px 12px;
-    width: 40%;
+    width: 35%;
   }
 
   .container-contact > button {
-    width: 40%;
+    width: 35%;
     padding: 10px 14px;
   }
 
   label {
     display: inline-block;
-    width: 40%;
+    width: 35%;
     text-align: left;
   }
   .contact-message {
-    width: 40%;
+    width: 35%;
   }
   .header-contact {
-    font-size: 30px;
+    font-size: 35%;
     margin: 50px 0 10px 0;
   }
   .contact-message {
@@ -143,33 +143,33 @@ label {
   .container-contact > input[type="text"],
   select {
     padding: 7px 9px;
-    width: 35%;
+    width: 30%;
   }
 
   .container-contact > input[type="email"],
   select {
     padding: 7px 9px;
-    width: 35%;
+    width: 30%;
   }
 
   .container-contact > input[type="tel"],
   select {
     padding: 7px 9px;
-    width: 35%;
+    width: 30%;
   }
 
   .container-contact > button {
-    width: 35%;
+    width: 30%;
     padding: 6px 10px;
   }
 
   label {
     display: inline-block;
-    width: 35%;
+    width: 30%;
     text-align: left;
   }
   .contact-message {
-    width: 35%;
+    width: 30%;
   }
   .header-contact {
     font-size: 25px;

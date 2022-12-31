@@ -23,7 +23,7 @@ h2 {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .profilepic {
     width: 400px;
     height: 400px;
@@ -80,5 +80,15 @@ h2 {
     width: 270px;
     height: 270px;
     object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h2 {
+    font-size: 30px;
+  }
+  .remove-format-footer-home {
+    color: white;
+    font-size: 30px;
   }
 }

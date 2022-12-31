@@ -3,10 +3,10 @@ import todo from "../../assets/todo.png";
 import product from "../../assets/product.png";
 import lucky from "../../assets/lucky.png";
 import robo from "../../assets/robo.png";
-import "./Portofolio.css";
+import "./Portfolio.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
-function portofolio(props) {
+function Portfolio(props) {
   return (
     <section className="page-height-two">
       <div
@@ -14,7 +14,7 @@ function portofolio(props) {
         style={{ backgroundColor: `${props.background}` }}
       >
         <div>
-          <p className="header-sixth">Portofolio</p>
+          <p className="header-sixth">Portfolio</p>
         </div>
         <div className="sixth-container">
           <div className="first2-fifth">
@@ -56,7 +56,7 @@ function portofolio(props) {
         style={{ backgroundColor: `${props.background}` }}
       >
         <div>
-          <p className="header-sixth">Portofolio</p>
+          <p className="header-sixth">Portfolio</p>
         </div>
         <div className="sixth-container">
           <div className="first2-fifth">
@@ -99,4 +99,4 @@ function portofolio(props) {
   );
 }
 
-export default portofolio;
+export default Portfolio;
