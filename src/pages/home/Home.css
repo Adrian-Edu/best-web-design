@@ -82,3 +82,13 @@ h2 {
     object-fit: contain;
   }
 }
+
+@media screen and (max-width: 350px) {
+  h2 {
+    font-size: 30px;
+  }
+  .remove-format-footer-home {
+    color: white;
+    font-size: 30px;
+  }
+}
