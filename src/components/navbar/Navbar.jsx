@@ -131,8 +131,8 @@ function ResponsiveAppBar(props) {
                   </Link>
                 </Typography>
                 <Typography sx={{ my: 1 }} textAlign="center">
-                  <Link to="portofolio" className="isDisabled">
-                    Portofolio
+                  <Link to="portfolio" className="isDisabled">
+                    Portfolio
                   </Link>
                 </Typography>
                 <Typography sx={{ my: 1 }} textAlign="center">
@@ -189,7 +189,7 @@ function ResponsiveAppBar(props) {
               </Link>
             </Button>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link className="isDisabled" to="portofolio">
+              <Link className="isDisabled" to="portfolio">
                 Portofolio
               </Link>
             </Button>

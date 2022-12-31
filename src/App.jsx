@@ -85,10 +85,9 @@ function App() {
               textColor={switchTextColor}
             />
           }
-          git
         />
         <Route
-          path="Portfolio"
+          path="portfolio"
           element={
             <Portfolio
               background={switchBackgroundColor}
