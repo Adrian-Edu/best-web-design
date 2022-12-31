@@ -1,6 +1,8 @@
 import React from "react";
 import "./Services.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
+import desktop from "../../assets/desktop.png";
+import oldnew from "../../assets/oldnew.png";
 
 function Services(props) {
   return (
@@ -16,13 +18,13 @@ function Services(props) {
           <p className="h7" style={{ color: `${props.textColor}` }}>
             Responsive website <br /> design
           </p>
-          <img src={""} className="desktop-image" alt="" />
+          <img src={desktop} className="desktop-image" alt="" />
         </div>
         <div className="second2-fourtpage">
           <p className="h7" style={{ color: `${props.textColor}` }}>
             Modify your old <br /> website
           </p>
-          <img src={""} className="oldnew-image" alt="" />
+          <img src={oldnew} className="oldnew-image" alt="" />
         </div>
         <BackToTopButton
           background={props.background}
