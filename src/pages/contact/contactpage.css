@@ -9,7 +9,7 @@
 .container-contact > form {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 35%;
 }
 
 .contact-p {
@@ -20,7 +20,7 @@
 
 .container-contact > input[type="text"],
 select {
-  width: 40%;
+  width: 35%;
   padding: 18px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -31,7 +31,7 @@ select {
 
 .container-contact > input[type="email"],
 select {
-  width: 40%;
+  width: 35%;
   padding: 18px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -42,7 +42,7 @@ select {
 
 .container-contact > input[type="tel"],
 select {
-  width: 40%;
+  width: 35%;
   padding: 18px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -52,7 +52,7 @@ select {
 }
 
 .container-contact > button {
-  width: 40%;
+  width: 35%;
   background-color: #4caf50;
   color: white;
   padding: 14px 20px;
@@ -71,14 +71,14 @@ select {
 }
 
 .contact-message {
-  width: 40%;
+  width: 35%;
   height: 120px;
   font-size: 17px;
 }
 
 label {
   display: inline-block;
-  width: 40%;
+  width: 35%;
   text-align: left;
 }
 
