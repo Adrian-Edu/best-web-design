@@ -10,13 +10,8 @@ import Portofolio from "./components/../pages/portofolio/Portofolio";
 import AllComponents from "./pages/all-components/AllComponents";
 import Navbar from "./components/navbar/Navbar";
 import NotFound from "./pages/not-found/NotFound";
-<<<<<<< HEAD
 import Footer from "./components/footer/Footer";
-import Contact from "./pages/contact/Contact";
-=======
-import Footer from "./components/footer-page/Footer";
 import Contact from "./pages/contact/ContactPage";
->>>>>>> 53e219a558bfb751bd28b0a155cc82ec23b8f6d0
 import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
 import AboutMe from "./pages/about-me/AboutMe";
 
