@@ -52,7 +52,7 @@ h5 {
 @media screen and (max-width: 1700px) {
   .secondpicture {
     width: 520px;
-    height: 250px;
+    height: 520px;
     object-fit: contain;
   }
   h5 {
