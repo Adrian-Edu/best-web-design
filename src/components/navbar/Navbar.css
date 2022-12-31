@@ -29,8 +29,9 @@
   text-decoration: none;
 }
 
-.css-6jat1c {
-  padding: 0;
+.css-1t6c9ts > .css-6jat1c {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 @media screen and (max-width: 1100px) {
@@ -46,6 +47,7 @@
     display: flex;
     justify-content: flex-start;
     margin-left: 5px;
+    font-size: 10px;
   }
 }
 

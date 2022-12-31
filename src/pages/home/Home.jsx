@@ -16,7 +16,7 @@ function Home(props) {
             My name is Adrian Edu,
           </h1>
           <h2 style={{ color: `${props.textColor}` }}>
-            I am a FrontEnd <br /> Developer
+            I am a Front-End <br /> Developer
           </h2>
           <h3 style={{ color: `${props.textColor}` }}>
             <Link className="remove-format-footer-home" to="/Contact">
