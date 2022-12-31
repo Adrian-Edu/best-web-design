@@ -1,5 +1,4 @@
 import React from "react";
-import desktop from "../../assets/desktop.png";
 import oldnew from "../../assets/oldnew.png";
 import "./Services.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
@@ -18,7 +17,11 @@ function Services(props) {
           <p className="h7" style={{ color: `${props.textColor}` }}>
             Responsive website <br /> design
           </p>
-          <img src={desktop} className="desktop-image" alt="" />
+          <img
+            src={require("../../assets/desktop.png")}
+            className="desktop-image"
+            alt=""
+          />
         </div>
         <div className="second2-fourtpage">
           <p className="h7" style={{ color: `${props.textColor}` }}>
