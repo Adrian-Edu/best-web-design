@@ -77,18 +77,18 @@ function Footer(props) {
             <Link className="remove-format-footer" to="/Clients">
               <p>Testimonials</p>
             </Link>
-            <Link className="remove-format-footer">
+            <Link className="remove-format-footer" to="/NotFound">
               <p>Legal Stuff</p>
             </Link>
-            <Link className="remove-format-footer">
+            <Link className="remove-format-footer" to="/NotFound">
               <p>Privacy</p>
             </Link>
           </div>
           <div className="footer-last-column">
-            <Link className="remove-format-footer">
+            <Link className="remove-format-footer" to="/NotFound">
               <p>Radio</p>
             </Link>
-            <Link className="remove-format-footer">
+            <Link className="remove-format-footer" to="/NotFound">
               <p>Blog</p>
             </Link>
             <Link className="remove-format-footer">
