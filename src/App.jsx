@@ -11,7 +11,7 @@ import AllComponents from "./pages/all-components/AllComponents";
 import Navbar from "./components/navbar/Navbar";
 import NotFound from "./pages/not-found/NotFound";
 import Footer from "./components/footer-page/Footer";
-import Contact from "./pages/contact/Contact";
+import Contact from "./pages/contact/ContactPage";
 import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
 import AboutMe from "./pages/about-me/AboutMe";
 
