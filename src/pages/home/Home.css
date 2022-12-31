@@ -23,7 +23,7 @@ h2 {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .profilepic {
     width: 400px;
     height: 400px;
