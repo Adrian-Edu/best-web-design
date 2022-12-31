@@ -87,7 +87,7 @@ function App() {
           }
         />
         <Route
-          path="portfolio"
+          path="Portfolio"
           element={
             <Portfolio
               background={switchBackgroundColor}

@@ -105,7 +105,7 @@ function ResponsiveAppBar(props) {
                 }}
                 onClick={handleCloseNavMenu}
               >
-                <Typography sx={{ my: 1 }} textAlign="center">
+                <Typography sx={{ my: 1, padding: 0 }} textAlign="center">
                   <Link to="/" className="isDisabled">
                     Home
                   </Link>

@@ -47,8 +47,9 @@
     justify-content: flex-start;
     margin-left: 5px;
   }
-  .css-6jat1c {
-    padding: 0;
+  .css-6jat1c,
+  .css-1q39md6-MuiButtonBase-root-MuiButton-root {
+    padding: 0 !important ;
   }
 }
 
