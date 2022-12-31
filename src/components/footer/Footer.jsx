@@ -86,11 +86,7 @@ function Footer(props) {
           </div>
           <div className="footer-last-column">
             <Link className="remove-format-footer">
-<<<<<<< HEAD:src/components/footer/Footer.jsx
-              <p>Questions</p>
-=======
               <p>Radio</p>
->>>>>>> 6799f034e07be7b483b5b078c65e5ccfb968a972:src/components/footer-page/Footer.jsx
             </Link>
             <Link className="remove-format-footer">
               <p>Blog</p>
