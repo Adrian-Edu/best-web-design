@@ -85,6 +85,7 @@ function App() {
               textColor={switchTextColor}
             />
           }
+          git
         />
         <Route
           path="Portfolio"
