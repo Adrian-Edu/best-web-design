@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
-import "./Contact.css";
+import "./contactpage.css";
 import emailjs from "@emailjs/browser";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
