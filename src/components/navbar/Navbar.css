@@ -33,7 +33,7 @@
   padding: 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .css-1lfs2tq-MuiTypography-root {
     display: flex;
     justify-content: flex-start;
@@ -46,6 +46,9 @@
     display: flex;
     justify-content: flex-start;
     margin-left: 5px;
+  }
+  .css-6jat1c {
+    padding: 0;
   }
 }
 

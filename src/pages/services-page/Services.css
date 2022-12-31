@@ -70,13 +70,13 @@ h6 {
 @media screen and (max-width: 1700px) {
   .oldnew-image {
     width: auto;
-    height: 370px;
+    height: 360px;
     object-fit: contain;
   }
 
   .desktop-image {
     width: auto;
-    height: 360px;
+    height: 350px;
     object-fit: contain;
   }
 
