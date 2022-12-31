@@ -86,7 +86,7 @@ function Footer(props) {
           </div>
           <div className="footer-last-column">
             <Link className="remove-format-footer">
-              <p>Privacy</p>
+              <p>Radio</p>
             </Link>
             <Link className="remove-format-footer">
               <p>Blog</p>
