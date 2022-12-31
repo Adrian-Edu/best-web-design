@@ -1,8 +1,8 @@
 import React from "react";
-import desktop from "../../assets/desktop.png";
-import oldnew from "../../assets/oldnew.png";
 import "./Services.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
+import desktop from "../../assets/newdesktop.png";
+import oldnew from "../../assets/oldvsnew.png";
 
 function Services(props) {
   return (
