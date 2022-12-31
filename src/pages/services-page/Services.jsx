@@ -16,13 +16,13 @@ function Services(props) {
           <p className="h7" style={{ color: `${props.textColor}` }}>
             Responsive website <br /> design
           </p>
-          <img src={require("")} className="desktop-image" alt="" />
+          <img src={""} className="desktop-image" alt="" />
         </div>
         <div className="second2-fourtpage">
           <p className="h7" style={{ color: `${props.textColor}` }}>
             Modify your old <br /> website
           </p>
-          <img src={require("")} className="oldnew-image" alt="" />
+          <img src={""} className="oldnew-image" alt="" />
         </div>
         <BackToTopButton
           background={props.background}
