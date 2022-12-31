@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Footer.css";
 import Logo from "../../assets/Logo.png";
 import mobile from "../../assets/mobile.png";
@@ -8,18 +8,6 @@ import github from "../../assets/github.png";
 import { Link } from "react-router-dom";
 
 function Footer(props) {
-  const [backToTopButton, setBackToTopButton] = useState(true);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        setBackToTopButton(true);
-      } else {
-        setBackToTopButton(false);
-      }
-    });
-  }, []);
-
   const scrollUp = () => {
     window.scrollTo({
       top: 0,

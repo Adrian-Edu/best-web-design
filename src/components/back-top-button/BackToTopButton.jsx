@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./BackToTopButton.css";
 
 function BackToTopButton(props) {
-  const [backToTopButton, setBackToTopButton] = useState(true);
+  const [backToTopButton, setBackToTopButton] = useState("");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
