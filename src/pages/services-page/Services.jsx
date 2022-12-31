@@ -1,5 +1,4 @@
 import React from "react";
-import oldnew from "../../assets/oldnew.png";
 import "./Services.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
@@ -27,7 +26,11 @@ function Services(props) {
           <p className="h7" style={{ color: `${props.textColor}` }}>
             Modify your old <br /> website
           </p>
-          <img src={oldnew} className="oldnew-image" alt="" />
+          <img
+            src={require("../../assets/oldnew.png")}
+            className="oldnew-image"
+            alt=""
+          />
         </div>
         <BackToTopButton
           background={props.background}
