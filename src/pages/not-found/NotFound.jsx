@@ -4,7 +4,6 @@ import "./NotFound.css";
 import error404svg from "../../assets/Error404.gif";
 
 function NotFound(props) {
-  /*
   const [time, setTime] = useState(5);
 
   React.useEffect(() => {
@@ -20,11 +19,7 @@ function NotFound(props) {
     }, []);
   }
 
-
   RedirectExample();
-
-  
-*/
 
   return (
     <section
