@@ -25,7 +25,11 @@ function BackToTopButton(props) {
   return (
     <div style={{ backgroundColor: `${props.background}` }}>
       {backToTopButton ? (
-        <button className="button-format" onClick={scrollUp}>
+        <button
+          style={{ color: `#f4b510` }}
+          className="button-format"
+          onClick={scrollUp}
+        >
           ^
         </button>
       ) : null}

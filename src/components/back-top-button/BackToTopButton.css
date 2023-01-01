@@ -6,7 +6,7 @@
   width: 50px;
   font-size: 50px;
   text-align: center;
-  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.952);
   border-radius: 5px;
   border: none;
 }
