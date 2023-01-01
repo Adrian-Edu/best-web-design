@@ -90,6 +90,6 @@
     object-fit: contain;
   }
   .page-height-notfount {
-    justify-content: flex-start;
+    height: 80vh;
   }
 }

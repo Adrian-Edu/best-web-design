@@ -4,6 +4,7 @@ import "./NotFound.css";
 import error404svg from "../../assets/Error404.gif";
 
 function NotFound(props) {
+  /*
   const [time, setTime] = useState(5);
 
   React.useEffect(() => {
@@ -19,7 +20,10 @@ function NotFound(props) {
     }, []);
   }
 
+
   RedirectExample();
+
+  */
 
   return (
     <section
@@ -33,7 +37,7 @@ function NotFound(props) {
       </p>
       <img className="error404pic" src={error404svg} alt="error404svg" />
       <p className="error-p" style={{ color: `${props.textColor}` }}>
-        The page will automatically redirect in {time} seconds.
+        The page will automatically redirect in {0} seconds.
       </p>
       <a
         style={{ color: `${props.textColor}` }}
