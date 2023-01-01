@@ -33,7 +33,7 @@ function NotFound(props) {
       <h4 style={{ color: `${props.textColor}` }}>
         The page you requested DOESN'T EXIST! <br /> The page will automatically
         <br />
-        redirect in {time}....
+        redirect in {time} seconds.
       </h4>
       <BackToTopButton
         background={props.background}
