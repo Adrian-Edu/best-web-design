@@ -3,6 +3,13 @@
   text-decoration: none;
 }
 
+.error-p-first {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 30px;
+  text-align: center;
+}
+
 .error-p {
   font-size: 30px;
   font-weight: 700;
@@ -12,31 +19,17 @@
   width: 700px;
   height: 700px;
   object-fit: contain;
-  padding-top: 50px;
 }
 
 @media screen and (max-width: 2000px) {
   .error-p {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
   }
 
   .error404pic {
-    width: 600px;
-    height: 600px;
-    object-fit: contain;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .error-p {
-    font-size: 25px;
-    font-weight: 700;
-  }
-
-  .error404pic {
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     object-fit: contain;
   }
 }
