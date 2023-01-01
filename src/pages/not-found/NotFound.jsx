@@ -23,13 +23,9 @@ function NotFound(props) {
 
   return (
     <section
-      className="page-height"
+      className="page-height-notfount"
       style={{
         backgroundColor: `${props.background}`,
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
       }}
     >
       <p className="error-p-first" style={{ color: `${props.textColor}` }}>

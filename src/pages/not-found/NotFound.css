@@ -1,3 +1,11 @@
+.page-height-notfount {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .author {
   color: none;
   text-decoration: none;
@@ -81,7 +89,7 @@
     height: 300px;
     object-fit: contain;
   }
-  .error-p-first {
-    padding-top: -20px;
+  .page-height-notfount {
+    justify-content: flex-start;
   }
 }
