@@ -41,8 +41,8 @@
   }
 
   .error404pic {
-    width: 480px;
-    height: 480px;
+    width: 470px;
+    height: 470px;
     object-fit: contain;
   }
 }
