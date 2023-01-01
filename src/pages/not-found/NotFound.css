@@ -81,4 +81,7 @@
     height: 300px;
     object-fit: contain;
   }
+  .error-p-first {
+    padding-top: 0;
+  }
 }
