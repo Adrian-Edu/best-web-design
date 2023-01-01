@@ -6,7 +6,7 @@
 .error-p-first {
   font-size: 30px;
   font-weight: 700;
-  padding-top: 30px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -41,8 +41,8 @@
   }
 
   .error404pic {
-    width: 500px;
-    height: 500px;
+    width: 480px;
+    height: 480px;
     object-fit: contain;
   }
 }

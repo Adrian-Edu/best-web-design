@@ -37,7 +37,7 @@ function NotFound(props) {
       </p>
       <img className="error404pic" src={error404svg} alt="error404svg" />
       <p className="error-p" style={{ color: `${props.textColor}` }}>
-        The page will automatically redirect in {0} seconds.
+        The page will automatically redirect in {time} seconds.
       </p>
       <a
         style={{ color: `${props.textColor}` }}
