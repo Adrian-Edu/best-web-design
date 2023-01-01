@@ -82,6 +82,6 @@
     object-fit: contain;
   }
   .error-p-first {
-    padding-top: 0;
+    padding-top: -20px;
   }
 }
