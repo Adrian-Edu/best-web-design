@@ -42,7 +42,11 @@ function Contact(props) {
       sender.name &&
       sender.mobile &&
       sender.email &&
-      sender.question !== ""
+      sender.question !== "" &&
+      sender.name.length > 2 &&
+      sender.mobile.length > 9 &&
+      sender.email.length > 12 &&
+      sender.question.length > 20
     ) {
       setValid(true);
       emailjs
@@ -100,14 +104,14 @@ function Contact(props) {
           type="tel"
           id="phone"
           name="user_mobile"
-          placeholder="Your mobile number ..."
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="Enter phone number ..."
+          pattern="[0-9]{1-14}"
           onChange={handleMobileInput}
         ></input>
         {submitted && sender.mobile.length <= 9 ? (
           <div>
             <span style={{ color: `red` }}>
-              Mobile must have at least 10 characters!
+              Mobile must have at least 10 numbers!
             </span>
           </div>
         ) : null}
@@ -120,10 +124,10 @@ function Contact(props) {
           placeholder="Your email ..."
           onChange={handleEmailInput}
         ></input>
-        {submitted && sender.email.length <= 14 ? (
+        {submitted && sender.email.length <= 12 ? (
           <div>
             <span style={{ color: `red` }}>
-              Email must have at least 15 characters!
+              Email must have at least 12 characters!
             </span>
           </div>
         ) : null}
