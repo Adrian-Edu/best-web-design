@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 27vh;
+  height: 24vh;
 }
 
 .footer {
@@ -24,7 +24,18 @@
 }
 
 .logo {
-  margin-top: 10px;
+  margin-top: 20px;
+  width: 300px;
+  object-fit: contain;
+}
+
+.mobile,
+.whats,
+.linkedin,
+.github {
+  width: 60px;
+  object-fit: contain;
+  border-radius: 5px;
 }
 
 .footer-first-column {
@@ -69,9 +80,25 @@
 
 .remove-format-footer {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   text-decoration: none;
+}
+
+@media screen and (max-width: 2000px) {
+  .logo {
+    margin-top: 20px;
+    width: 220px;
+  }
+  .mobile,
+  .whats,
+  .linkedin,
+  .github {
+    width: 40px;
+  }
+  .remove-format-footer {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -83,20 +110,17 @@
     font-size: 16px;
   }
   .logo {
-    width: 220px;
-    object-fit: contain;
-    border-radius: 5px;
+    width: 190px;
+  }
+
+  .remove-format-footer {
+    font-size: 16px;
   }
   .mobile,
   .whats,
   .linkedin,
   .github {
-    width: 40px;
-    object-fit: contain;
-    border-radius: 5px;
-  }
-  .remove-format-footer {
-    font-size: 16px;
+    width: 35px;
   }
 }
 
@@ -109,14 +133,12 @@
   }
   .logo {
     width: 180px;
-    object-fit: contain;
   }
   .mobile,
   .whats,
   .linkedin,
   .github {
     width: 30px;
-    object-fit: contain;
   }
 }
 
@@ -138,8 +160,6 @@
   }
   .logo {
     width: 170px;
-    object-fit: contain;
-    margin-top: 20px;
   }
   .remove-format-footer {
     color: white;
@@ -152,8 +172,6 @@
   .linkedin,
   .github {
     width: 30px;
-    object-fit: contain;
-    border-radius: 5px;
   }
   .footer-first-column {
     margin: 15px 0 0 0;
@@ -164,15 +182,18 @@
   .footer {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 55%;
   }
 
   .footer-position {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 85vh;
+    height: 70vh;
     padding: 20px 0;
     background-color: #151b54;
+  }
+  .logo {
+    width: 165px;
   }
 }

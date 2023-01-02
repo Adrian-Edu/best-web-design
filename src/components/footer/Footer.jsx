@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../../assets/Logo.png";
+import logo from "../../assets/Logo.png";
 import mobile from "../../assets/mobile.png";
 import whats from "../../assets/whats.png";
 import linkedin from "../../assets/linkedin.png";
@@ -23,7 +23,7 @@ function Footer(props) {
       <div className="footer">
         <div className="footer-first2">
           <div className="footer-column">
-            <img src={Logo} className="logo" alt="" />
+            <img src={logo} className="logo" alt="" />
             <div className="footer-first-column">
               <a href="tel://+400766775420">
                 <img src={mobile} className="mobile" alt="" />
@@ -63,6 +63,10 @@ function Footer(props) {
             >
               <p>About me</p>
             </Link>
+          </div>
+        </div>
+        <div className="footer-first2">
+          <div className="footer-second-column">
             <Link
               onClick={scrollUp}
               className="remove-format-footer"
@@ -70,27 +74,23 @@ function Footer(props) {
             >
               <p>Contact</p>
             </Link>
-          </div>
-        </div>
-        <div className="footer-first2">
-          <div onClick={scrollUp} className="footer-second-column">
-            <Link className="remove-format-footer" to="/Clients">
+            <Link
+              onClick={scrollUp}
+              className="remove-format-footer"
+              to="/Clients"
+            >
               <p>Testimonials</p>
-            </Link>
-            <Link className="remove-format-footer" to="/NotFound">
-              <p>Legal Stuff</p>
-            </Link>
-            <Link className="remove-format-footer" to="/NotFound">
-              <p>Privacy</p>
             </Link>
           </div>
           <div className="footer-last-column">
-            <Link className="remove-format-footer" to="/NotFound">
-              <p>Radio</p>
-            </Link>
-            <Link className="remove-format-footer" to="/NotFound">
+            <Link
+              onClick={scrollUp}
+              className="remove-format-footer"
+              to="/NotFound"
+            >
               <p>Blog</p>
             </Link>
+
             <Link className="remove-format-footer">
               <p> All right reserved © BWD</p>
             </Link>
