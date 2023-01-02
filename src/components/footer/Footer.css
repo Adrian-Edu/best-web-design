@@ -24,7 +24,6 @@
 }
 
 .logo {
-  margin-top: 20px;
   width: 300px;
   object-fit: contain;
 }
@@ -41,7 +40,7 @@
 .footer-first-column {
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 0;
+  margin-top: 10px;
 }
 
 .footer-second-column {
@@ -51,24 +50,11 @@
   align-items: center;
 }
 
-.footer-second-column > p {
-  font-size: 20px;
-  font-weight: 700;
-  height: 80%;
-  margin: 12px 0;
-}
-
 .footer-last-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.footer-last-column > p {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 10px 0;
 }
 
 .footer-first2,
@@ -87,7 +73,6 @@
 
 @media screen and (max-width: 2000px) {
   .logo {
-    margin-top: 20px;
     width: 220px;
   }
   .mobile,
