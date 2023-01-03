@@ -167,7 +167,7 @@
   .footer {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 60%;
   }
 
   .footer-position {
