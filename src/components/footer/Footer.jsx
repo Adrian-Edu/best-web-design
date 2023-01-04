@@ -17,10 +17,10 @@ function Footer(props) {
 
   return (
     <section
-      className="footer-position"
+      className="footer-height"
       style={{ backgroundColor: `${props.background}` }}
     >
-      <div className="footer">
+      <div className="footer footer-position">
         <div className="footer-first2">
           <div className="footer-column">
             <img src={logo} className="logo" alt="" />

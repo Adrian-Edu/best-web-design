@@ -1,3 +1,10 @@
+.footer-height {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-position {
   display: flex;
   flex-direction: row;
@@ -128,6 +135,9 @@
 }
 
 @media screen and (max-width: 900px) {
+  .footer-height {
+    height: 50vh;
+  }
   .footer-position {
     display: flex;
     flex-direction: row;
@@ -164,20 +174,20 @@
 }
 
 @media screen and (max-width: 500px) {
+  .footer-height {
+    height: 90vh;
+  }
+  .footer-position {
+    height: 70vh;
+    padding: 20px 0;
+    margin-bottom: 70px;
+  }
   .footer {
     display: flex;
     flex-direction: column;
     width: 60%;
   }
 
-  .footer-position {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 70vh;
-    padding: 20px 0;
-    background-color: #151b54;
-  }
   .logo {
     width: 165px;
   }
