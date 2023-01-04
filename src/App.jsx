@@ -15,7 +15,7 @@ import Contact from "./pages/contact/ContactPage";
 import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
 import AboutMe from "./pages/about-me/AboutMe";
 
-gifunction App() {
+function App() {
   const [switchBackgroundColor, setSwitchBackgroundColor] = useState("#151B54");
   const [switchTextColor, setswitchTextColor] = useState("#FFFFFF");
 
