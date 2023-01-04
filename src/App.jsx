@@ -1,19 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "../src/pages/home/Home.jsx";
-import WebDesign from "./pages/web-design/WebDesign";
-import Skills from "./components/../pages/skills-page/SkillsPage";
-import Services from "./components/../pages/services-page/Services";
-import StepsPage from "./components/../pages/steps-page/StepsPage";
-import Portfolio from "./components/../pages/portfolio/Portfolio";
-import AllComponents from "./pages/all-components/AllComponents";
 import Navbar from "./components/navbar/Navbar";
-import NotFound from "./pages/not-found/NotFound";
 import Footer from "./components/footer/Footer";
-import Contact from "./pages/contact/ContactPage";
-import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
-import AboutMe from "./pages/about-me/AboutMe";
+
+const Home = lazy(() => import("../src/pages/home/Home.jsx"));
+const WebDesign = lazy(() => import("./pages/web-design/WebDesign"));
+const Skills = lazy(() =>
+  import("./components/../pages/skills-page/SkillsPage")
+);
+const Services = lazy(() =>
+  import("./components/../pages/services-page/Services")
+);
+const StepsPage = lazy(() =>
+  import("./components/../pages/steps-page/StepsPage")
+);
+const Portfolio = lazy(() =>
+  import("./components/../pages/portfolio/Portfolio")
+);
+const AllComponents = lazy(() =>
+  import("./pages/all-components/AllComponents")
+);
+const ClientsTestimonials = lazy(() =>
+  import("./pages/clients-testimonials/ClientsTestimonials")
+);
+const AboutMe = lazy(() => import("./pages/about-me/AboutMe"));
+const NotFound = lazy(() => import("./pages/not-found/NotFound"));
+const Contact = lazy(() => import("./pages/contact/ContactPage"));
 
 function App() {
   const [switchBackgroundColor, setSwitchBackgroundColor] = useState("#151B54");
@@ -44,91 +57,111 @@ function App() {
         <Route
           path="home"
           element={
-            <Home
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <Home
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="webdesign"
           element={
-            <WebDesign
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <WebDesign
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="skills"
           element={
-            <Skills
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <Skills
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="services"
           element={
-            <Services
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <Services
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="steps"
           element={
-            <StepsPage
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <StepsPage
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="portfolio"
           element={
-            <Portfolio
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <Portfolio
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="Contact"
           element={
-            <Contact
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <Contact
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="clients"
           element={
-            <ClientsTestimonials
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <ClientsTestimonials
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="about-me"
           element={
-            <AboutMe
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <AboutMe
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="*"
           element={
-            <NotFound
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense>
+              <NotFound
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
       </Routes>
