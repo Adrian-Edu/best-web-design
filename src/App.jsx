@@ -1,34 +1,21 @@
-import React, { useState, lazy, Suspense } from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "../src/pages/home/Home.jsx";
+import WebDesign from "./pages/web-design/WebDesign";
+import Skills from "./components/../pages/skills-page/SkillsPage";
+import Services from "./components/../pages/services-page/Services";
+import StepsPage from "./components/../pages/steps-page/StepsPage";
+import Portfolio from "./components/../pages/portfolio/Portfolio";
+import AllComponents from "./pages/all-components/AllComponents";
 import Navbar from "./components/navbar/Navbar";
+import NotFound from "./pages/not-found/NotFound";
 import Footer from "./components/footer/Footer";
+import Contact from "./pages/contact/ContactPage";
+import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
+import AboutMe from "./pages/about-me/AboutMe";
 
-const Home = lazy(() => import("../src/pages/home/Home.jsx"));
-const WebDesign = lazy(() => import("./pages/web-design/WebDesign"));
-const Skills = lazy(() =>
-  import("./components/../pages/skills-page/SkillsPage")
-);
-const Services = lazy(() =>
-  import("./components/../pages/services-page/Services")
-);
-const StepsPage = lazy(() =>
-  import("./components/../pages/steps-page/StepsPage")
-);
-const Portfolio = lazy(() =>
-  import("./components/../pages/portfolio/Portfolio")
-);
-const AllComponents = lazy(() =>
-  import("./pages/all-components/AllComponents")
-);
-const ClientsTestimonials = lazy(() =>
-  import("./pages/clients-testimonials/ClientsTestimonials")
-);
-const AboutMe = lazy(() => import("./pages/about-me/AboutMe"));
-const NotFound = lazy(() => import("./pages/not-found/NotFound"));
-const Contact = lazy(() => import("./pages/contact/ContactPage"));
-
-function App() {
+gifunction App() {
   const [switchBackgroundColor, setSwitchBackgroundColor] = useState("#151B54");
   const [switchTextColor, setswitchTextColor] = useState("#FFFFFF");
 
@@ -48,122 +35,100 @@ function App() {
           exact
           path="/"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <AllComponents
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <AllComponents
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="home"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <Home
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <Home
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="webdesign"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <WebDesign
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <WebDesign
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="skills"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <Skills
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <Skills
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="services"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <Services
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <Services
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="steps"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <StepsPage
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <StepsPage
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="portfolio"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <Portfolio
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <Portfolio
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="Contact"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <Contact
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <Contact
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="clients"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <ClientsTestimonials
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <ClientsTestimonials
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="about-me"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <AboutMe
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <AboutMe
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
         <Route
           path="*"
           element={
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <NotFound
-                background={switchBackgroundColor}
-                textColor={switchTextColor}
-              />
-            </Suspense>
+            <NotFound
+              background={switchBackgroundColor}
+              textColor={switchTextColor}
+            />
           }
         />
       </Routes>
