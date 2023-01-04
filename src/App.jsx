@@ -48,16 +48,18 @@ function App() {
           exact
           path="/"
           element={
-            <AllComponents
-              background={switchBackgroundColor}
-              textColor={switchTextColor}
-            />
+            <Suspense fallback={<h1>Loading...</h1>}>
+              <AllComponents
+                background={switchBackgroundColor}
+                textColor={switchTextColor}
+              />
+            </Suspense>
           }
         />
         <Route
           path="home"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <Home
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
@@ -68,7 +70,7 @@ function App() {
         <Route
           path="webdesign"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <WebDesign
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
@@ -79,7 +81,7 @@ function App() {
         <Route
           path="skills"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <Skills
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
@@ -90,7 +92,7 @@ function App() {
         <Route
           path="services"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <Services
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
@@ -101,7 +103,7 @@ function App() {
         <Route
           path="steps"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <StepsPage
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
@@ -112,7 +114,7 @@ function App() {
         <Route
           path="portfolio"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <Portfolio
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
@@ -123,7 +125,7 @@ function App() {
         <Route
           path="Contact"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <Contact
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
@@ -134,7 +136,7 @@ function App() {
         <Route
           path="clients"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <ClientsTestimonials
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
@@ -145,7 +147,7 @@ function App() {
         <Route
           path="about-me"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <AboutMe
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
@@ -156,7 +158,7 @@ function App() {
         <Route
           path="*"
           element={
-            <Suspense>
+            <Suspense fallback={<h1>Loading...</h1>}>
               <NotFound
                 background={switchBackgroundColor}
                 textColor={switchTextColor}
