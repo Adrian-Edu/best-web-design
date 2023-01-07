@@ -8,6 +8,7 @@ import Portfolio from "../portfolio/Portfolio";
 import ClientsTestimonial from "../clients-testimonials/ClientsTestimonials";
 import Contact from "../contact/ContactPage";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
+import SlidePortfolio from "../slide-protfolio/SlidePortfolio";
 
 function AllComponents(props) {
   return (
@@ -24,6 +25,10 @@ function AllComponents(props) {
       />
       <Contact background={props.background} textColor={props.textColor} />
       <BackToTopButton
+        background={props.background}
+        textColor={props.textColor}
+      />
+      <SlidePortfolio
         background={props.background}
         textColor={props.textColor}
       />
