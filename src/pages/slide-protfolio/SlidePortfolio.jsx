@@ -43,11 +43,11 @@ function SlidePortfolio(props) {
   ]);
 
   const changeProjectRight = () => {
-    setCurrentPortfolio((prevState) => prevState.currentPortfolio + 1);
+    setCurrentPortfolio();
   };
 
   const changeProjectLeft = () => {
-    setCurrentPortfolio();
+    setCurrentPortfolio((prevState) => prevState - 1);
   };
 
   return (
@@ -60,7 +60,7 @@ function SlidePortfolio(props) {
       </div>
       {[currentPortfolio[0]].map((project) => {
         return (
-          <div key={portfolioData.name}>
+          <div key={currentPortfolio.key}>
             <p className="h10" style={{ color: `${props.textColor}` }}>
               {project.name}
             </p>
