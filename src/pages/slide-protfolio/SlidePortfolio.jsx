@@ -37,19 +37,11 @@ function SlidePortfolio(props) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const changeProjectRight = () => {
+  const changeProject = () => {
     if (currentIndex === currentPortfolio.length - 1) {
       setCurrentIndex(0);
     } else {
       setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const changeProjectLeft = () => {
-    if (currentIndex === currentPortfolio.length - 1) {
-      setCurrentIndex(0);
-    } else {
-      setCurrentIndex(currentIndex - 1);
     }
   };
 
@@ -66,7 +58,7 @@ function SlidePortfolio(props) {
       </p>
       <div className="slide-flex">
         <button
-          onClick={changeProjectLeft}
+          onClick={changeProject}
           onMouseEnter={() => setButtonColor("rgba(0, 0, 0, 1)")}
           onMouseLeave={() => setButtonColor("#ffffff")}
           style={{ backgroundColor: `${buttonColor}` }}
@@ -89,7 +81,7 @@ function SlidePortfolio(props) {
         </div>
 
         <button
-          onClick={changeProjectRight}
+          onClick={changeProject}
           onMouseEnter={() => setButtonColor("rgba(0, 0, 0, 1)")}
           onMouseLeave={() => setButtonColor("#ffffff")}
           style={{ backgroundColor: `${buttonColor}` }}

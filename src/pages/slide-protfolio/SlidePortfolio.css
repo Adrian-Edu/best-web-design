@@ -59,6 +59,10 @@
   .slide-image {
     width: 450px;
   }
+  .button-slide {
+    font-size: 30px;
+    margin: 0 -39px;
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -67,10 +71,6 @@
   }
   .header-slide {
     font-size: 50px;
-  }
-  .button-slide {
-    font-size: 45px;
-    margin: 0 -55px;
   }
 }
 
@@ -89,8 +89,8 @@
     font-size: 15px;
   }
   .button-slide {
-    font-size: 40px;
-    margin: 0 -50px;
+    font-size: 25px;
+    margin: 0 -35px;
   }
 }
 
@@ -110,7 +110,7 @@
     font-size: 15px;
   }
   .button-slide {
-    font-size: 30px;
-    margin: 0 -40px;
+    font-size: 20px;
+    margin: 0 -30px;
   }
 }
