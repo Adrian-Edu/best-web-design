@@ -68,6 +68,10 @@
   .header-slide {
     font-size: 50px;
   }
+  .button-slide {
+    font-size: 45px;
+    margin: 0 -55px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -84,6 +88,10 @@
   .message-slide {
     font-size: 15px;
   }
+  .button-slide {
+    font-size: 40px;
+    margin: 0 -50px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -92,6 +100,7 @@
   }
   .header-slide {
     font-size: 30px;
+    padding: 50px 0 10px 0;
   }
   .subtitle-slide {
     font-size: 20px;
@@ -100,20 +109,8 @@
   .message-slide {
     font-size: 15px;
   }
-}
-
-/*
-.element {
-  animation: myAnimation 5s linear infinite;
-}
-
-@keyframes myAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100px);
+  .button-slide {
+    font-size: 30px;
+    margin: 0 -40px;
   }
 }
-
-*/
