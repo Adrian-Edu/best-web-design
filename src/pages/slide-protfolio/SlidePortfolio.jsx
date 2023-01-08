@@ -8,7 +8,7 @@ import robo from "../../assets/robo.png";
 function SlidePortfolio(props) {
   const [buttonColor, setButtonColor] = useState("#ffffff");
 
-  const [currentPortfolio, setCurrentPortfolio] = useState(
+  const [currentPortfolio, setCurrentPortfolio] = useState([
     {
       id: 1,
       name: "Product website",
@@ -32,21 +32,14 @@ function SlidePortfolio(props) {
       name: "Robot joketeller",
       image: robo,
       url: "https://robo-joke-teller.adrianedu.repl.co/",
-    }
-  );
+    },
+  ]);
 
   const changeProjectRight = () => {
-    for (const project of currentPortfolio) {
-      setCurrentPortfolio(project);
-      console.log(project);
-    }
-    console.log("Click dreapta", currentPortfolio.length);
+    console.log("Click dreapta");
   };
 
   const changeProjectLeft = () => {
-    for (let i = currentPortfolio.length; i >= 0; i--) {
-      setCurrentPortfolio(currentPortfolio[i]);
-    }
     console.log("Click stanga");
   };
 
@@ -68,18 +61,14 @@ function SlidePortfolio(props) {
         >
           ←
         </button>
-        {[currentPortfolio].map((project) => {
+        {currentPortfolio.map((project) => {
           return (
-            <div key={currentPortfolio.key}>
+            <div key={currentPortfolio[0].key}>
               <p className="h10" style={{ color: `${props.textColor}` }}>
                 {project.name}
               </p>
 
-              <a
-                href={"https://lading-page-12.adrianedu.repl.co/"}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={project.url} target="_blank" rel="noreferrer">
                 <img src={project.image} className="slide-image" alt="" />
               </a>
             </div>
