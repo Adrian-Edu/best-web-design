@@ -8,7 +8,7 @@ import robo from "../../assets/robo.png";
 function SlidePortfolio(props) {
   const [buttonColor, setButtonColor] = useState("#ffffff");
 
-  const [currentPortfolio, setCurrentPortfolio] = useState([
+  const currentPortfolio = [
     {
       id: 1,
       name: "Product website",
@@ -33,7 +33,7 @@ function SlidePortfolio(props) {
       image: robo,
       url: "https://robo-joke-teller.adrianedu.repl.co/",
     },
-  ]);
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
