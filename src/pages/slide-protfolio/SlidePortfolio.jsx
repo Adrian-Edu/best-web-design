@@ -69,7 +69,7 @@ function SlidePortfolio(props) {
       <div className="slide-flex">
         <button
           onClick={changeProjectPrevious}
-          onMouseEnter={() => setButtonColor(`${props.background}`)}
+          onMouseEnter={() => setButtonColor(" #3dd816")}
           onMouseLeave={() => setButtonColor(" Transparent")}
           style={{ backgroundColor: `${buttonColor}` }}
           className="button-slide"
@@ -92,7 +92,7 @@ function SlidePortfolio(props) {
 
         <button
           onClick={changeProjectTowards}
-          onMouseEnter={() => setButtonColor(`${props.background}`)}
+          onMouseEnter={() => setButtonColor(" #3dd816")}
           onMouseLeave={() => setButtonColor(" Transparent")}
           style={{ backgroundColor: `${buttonColor}` }}
           className="button-slide"
