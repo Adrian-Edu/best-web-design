@@ -8,7 +8,7 @@ import robo from "../../assets/robo.png";
 function SlidePortfolio(props) {
   const [buttonColor, setButtonColor] = useState("#ffffff");
 
-  const portfolioData = [
+  const [currentPortfolio, setCurrentPortfolio] = useState(
     {
       id: 1,
       name: "Product website",
@@ -32,22 +32,22 @@ function SlidePortfolio(props) {
       name: "Robot joketeller",
       image: robo,
       url: "https://robo-joke-teller.adrianedu.repl.co/",
-    },
-  ];
-
-  const [currentPortfolio, setCurrentPortfolio] = useState([
-    portfolioData[0],
-    portfolioData[1],
-    portfolioData[2],
-    portfolioData[3],
-  ]);
+    }
+  );
 
   const changeProjectRight = () => {
-    setCurrentPortfolio();
+    for (const project of currentPortfolio) {
+      setCurrentPortfolio(project);
+      console.log(project);
+    }
+    console.log("Click dreapta", currentPortfolio.length);
   };
 
   const changeProjectLeft = () => {
-    setCurrentPortfolio((prevState) => prevState - 1);
+    for (let i = currentPortfolio.length; i >= 0; i--) {
+      setCurrentPortfolio(currentPortfolio[i]);
+    }
+    console.log("Click stanga");
   };
 
   return (
@@ -58,36 +58,44 @@ function SlidePortfolio(props) {
       <div>
         <p className="header-slide">Portfolio</p>
       </div>
-      {[currentPortfolio[0]].map((project) => {
-        return (
-          <div key={currentPortfolio.key}>
-            <p className="h10" style={{ color: `${props.textColor}` }}>
-              {project.name}
-            </p>
-            <div className="slide-flex">
-              <button
-                onClick={changeProjectLeft}
-                onMouseEnter={() => setButtonColor("rgba(0, 0, 0, 1)")}
-                onMouseLeave={() => setButtonColor("#ffffff")}
-                style={{ backgroundColor: `${buttonColor}` }}
-                className="button-slide"
+      <div className="slide-flex">
+        <button
+          onClick={changeProjectLeft}
+          onMouseEnter={() => setButtonColor("rgba(0, 0, 0, 1)")}
+          onMouseLeave={() => setButtonColor("#ffffff")}
+          style={{ backgroundColor: `${buttonColor}` }}
+          className="button-slide"
+        >
+          ←
+        </button>
+        {[currentPortfolio].map((project) => {
+          return (
+            <div key={currentPortfolio.key}>
+              <p className="h10" style={{ color: `${props.textColor}` }}>
+                {project.name}
+              </p>
+
+              <a
+                href={"https://lading-page-12.adrianedu.repl.co/"}
+                target="_blank"
+                rel="noreferrer"
               >
-                ←
-              </button>
-              <img src={project.image} className="slide-image" alt="" />
-              <button
-                onClick={changeProjectRight}
-                onMouseEnter={() => setButtonColor("rgba(0, 0, 0, 1)")}
-                onMouseLeave={() => setButtonColor("#ffffff")}
-                style={{ backgroundColor: `${buttonColor}` }}
-                className="button-slide"
-              >
-                →
-              </button>
+                <img src={project.image} className="slide-image" alt="" />
+              </a>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+
+        <button
+          onClick={changeProjectRight}
+          onMouseEnter={() => setButtonColor("rgba(0, 0, 0, 1)")}
+          onMouseLeave={() => setButtonColor("#ffffff")}
+          style={{ backgroundColor: `${buttonColor}` }}
+          className="button-slide"
+        >
+          →
+        </button>
+      </div>
       <p style={{ color: `${props.textColor}` }}>
         See the project by clicking on the image!
       </p>
