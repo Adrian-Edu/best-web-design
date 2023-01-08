@@ -91,18 +91,6 @@ h2 {
   }
 }
 
-/*
 .element {
   animation: myAnimation 5s linear infinite;
 }
-
-@keyframes myAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100px);
-  }
-}
-
-*/
