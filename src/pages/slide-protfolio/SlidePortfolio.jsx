@@ -4,6 +4,7 @@ import product from "../../assets/product.png";
 import todo from "../../assets/todo.png";
 import lucky from "../../assets/lucky.png";
 import robo from "../../assets/robo.png";
+import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function SlidePortfolio(props) {
   const [buttonColor, setButtonColor] = useState("#ffffff");
@@ -93,6 +94,10 @@ function SlidePortfolio(props) {
       <p className="message-slide" style={{ color: `${props.textColor}` }}>
         See the project by clicking on the image!
       </p>
+      <BackToTopButton
+        background={props.background}
+        textColor={props.textColor}
+      />
     </section>
   );
 }
