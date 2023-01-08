@@ -6,7 +6,7 @@ import WebDesign from "./pages/web-design/WebDesign";
 import Skills from "./components/../pages/skills-page/SkillsPage";
 import Services from "./components/../pages/services-page/Services";
 import StepsPage from "./components/../pages/steps-page/StepsPage";
-import Portfolio from "./components/../pages/portfolio/Portfolio";
+import SlidePortfolio from "./components/../pages/slide-protfolio/SlidePortfolio";
 import AllComponents from "./pages/all-components/AllComponents";
 import Navbar from "./components/navbar/Navbar";
 import NotFound from "./pages/not-found/NotFound";
@@ -89,7 +89,7 @@ function App() {
         <Route
           path="portfolio"
           element={
-            <Portfolio
+            <SlidePortfolio
               background={switchBackgroundColor}
               textColor={switchTextColor}
             />

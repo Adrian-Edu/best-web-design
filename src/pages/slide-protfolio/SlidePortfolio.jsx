@@ -35,12 +35,22 @@ function SlidePortfolio(props) {
     },
   ]);
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const changeProjectRight = () => {
-    console.log("Click dreapta");
+    if (currentIndex === currentPortfolio.length - 1) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex(currentIndex + 1);
+    }
   };
 
   const changeProjectLeft = () => {
-    console.log("Click stanga");
+    if (currentIndex === currentPortfolio.length - 1) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex(currentIndex - 1);
+    }
   };
 
   return (
@@ -51,6 +61,9 @@ function SlidePortfolio(props) {
       <div>
         <p className="header-slide">Portfolio</p>
       </div>
+      <p className="subtitle-slide" style={{ color: `${props.textColor}` }}>
+        {currentPortfolio[currentIndex].name}
+      </p>
       <div className="slide-flex">
         <button
           onClick={changeProjectLeft}
@@ -61,19 +74,19 @@ function SlidePortfolio(props) {
         >
           ←
         </button>
-        {currentPortfolio.map((project) => {
-          return (
-            <div key={currentPortfolio[0].key}>
-              <p className="h10" style={{ color: `${props.textColor}` }}>
-                {project.name}
-              </p>
-
-              <a href={project.url} target="_blank" rel="noreferrer">
-                <img src={project.image} className="slide-image" alt="" />
-              </a>
-            </div>
-          );
-        })}
+        <div>
+          <a
+            href={currentPortfolio[currentIndex].url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={currentPortfolio[currentIndex].image}
+              className="slide-image"
+              alt=""
+            />
+          </a>
+        </div>
 
         <button
           onClick={changeProjectRight}
@@ -85,7 +98,7 @@ function SlidePortfolio(props) {
           →
         </button>
       </div>
-      <p style={{ color: `${props.textColor}` }}>
+      <p className="message-slide" style={{ color: `${props.textColor}` }}>
         See the project by clicking on the image!
       </p>
     </section>
@@ -93,34 +106,3 @@ function SlidePortfolio(props) {
 }
 
 export default SlidePortfolio;
-
-/*
-
-
-      <p className="h10" style={{ color: `${props.textColor}` }}>
-        Robot joketeller
-      </p>
-      <div className="slide-flex">
-        <button
-          onMouseEnter={() => setButtonColor("rgba(0, 0, 0, 1)")}
-          onMouseLeave={() => setButtonColor("#ffffff")}
-          style={{ backgroundColor: `${buttonColor}` }}
-          className="button-slide"
-        >
-          ←
-        </button>
-        <img src={product} className="slide-image" alt="" />
-        <button
-          onMouseEnter={() => setButtonColor("rgba(0, 0, 0, 1)")}
-          onMouseLeave={() => setButtonColor("#ffffff")}
-          style={{ backgroundColor: `${buttonColor}` }}
-          className="button-slide"
-        >
-          →
-        </button>
-      </div>
-      <p style={{ color: `${props.textColor}` }}>
-        See the project by clicking on the image!
-      </p>
-
-      */
