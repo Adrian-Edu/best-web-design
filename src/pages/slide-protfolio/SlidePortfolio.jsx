@@ -49,7 +49,6 @@ function SlidePortfolio(props) {
       setCurrentIndex(0);
     } else {
       setCurrentIndex(currentIndex + 1);
-      console.log(currentIndex + 1, "INAINTE");
     }
   };
 
