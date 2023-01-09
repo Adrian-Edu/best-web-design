@@ -12,9 +12,9 @@
   height: auto;
   width: auto;
   display: flex;
-  margin: 0 -60px;
-  background-color: Transparent;
+  margin: 0 10px;
   border: none;
+  background-color: #3dd816;
   color: black;
   font-weight: 700;
   z-index: 1000;
@@ -61,7 +61,6 @@
   }
   .button-slide {
     font-size: 30px;
-    margin: 0 -39px;
   }
 }
 
@@ -90,7 +89,6 @@
   }
   .button-slide {
     font-size: 25px;
-    margin: 0 -35px;
   }
 }
 
@@ -111,6 +109,6 @@
   }
   .button-slide {
     font-size: 20px;
-    margin: 0 -30px;
+    margin: 0 5px;
   }
 }
