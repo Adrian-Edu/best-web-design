@@ -22,7 +22,7 @@
   align-items: center;
   padding: 4px;
   cursor: pointer;
-  text-align: center;
+  text-align: center !important;
 }
 
 .slide-flex {
