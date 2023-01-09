@@ -7,8 +7,6 @@ import robo from "../../assets/robo.png";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 
 function SlidePortfolio(props) {
-  const [buttonColor, setButtonColor] = useState("#ffffff");
-
   const currentPortfolio = [
     {
       id: 1,
@@ -51,7 +49,6 @@ function SlidePortfolio(props) {
       setCurrentIndex(0);
     } else {
       setCurrentIndex(currentIndex + 1);
-      console.log(currentIndex + 1, "INAINTE");
     }
   };
 
@@ -67,11 +64,7 @@ function SlidePortfolio(props) {
         {currentPortfolio[currentIndex].name}
       </p>
       <div className="slide-flex">
-        <button
-          onClick={changeProjectPrevious}
-          style={{ backgroundColor: `${buttonColor}` }}
-          className="button-slide"
-        >
+        <button onClick={changeProjectPrevious} className="button-slide">
           ←
         </button>
         <div>
@@ -88,11 +81,7 @@ function SlidePortfolio(props) {
           </a>
         </div>
 
-        <button
-          onClick={changeProjectTowards}
-          style={{ backgroundColor: `${buttonColor}` }}
-          className="button-slide"
-        >
+        <button onClick={changeProjectTowards} className="button-slide">
           →
         </button>
       </div>
