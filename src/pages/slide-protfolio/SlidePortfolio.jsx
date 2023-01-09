@@ -72,7 +72,7 @@ function SlidePortfolio(props) {
           style={{ backgroundColor: `${buttonColor}` }}
           className="button-slide"
         >
-          S
+          ←
         </button>
         <div>
           <a
@@ -93,7 +93,7 @@ function SlidePortfolio(props) {
           style={{ backgroundColor: `${buttonColor}` }}
           className="button-slide"
         >
-          D
+          →
         </button>
       </div>
       <p className="message-slide" style={{ color: `${props.textColor}` }}>
