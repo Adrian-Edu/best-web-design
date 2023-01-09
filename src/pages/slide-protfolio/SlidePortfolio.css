@@ -12,8 +12,8 @@
   height: auto;
   width: auto;
   display: flex;
-  margin: 0 -60px;
-  background-color: Transparent;
+  margin: 0 10px;
+  background-color: #3dd816 !important;
   border: none;
   color: black;
   font-weight: 700;
@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   padding: 4px;
+  cursor: pointer;
 }
 
 .slide-flex {
@@ -61,7 +62,7 @@
   }
   .button-slide {
     font-size: 30px;
-    margin: 0 -39px;
+    margin: 10px;
   }
 }
 
@@ -90,7 +91,7 @@
   }
   .button-slide {
     font-size: 25px;
-    margin: 0 -35px;
+    margin: 0 5px;
   }
 }
 
@@ -111,6 +112,6 @@
   }
   .button-slide {
     font-size: 20px;
-    margin: 0 -30px;
+    margin: 0 3px;
   }
 }
