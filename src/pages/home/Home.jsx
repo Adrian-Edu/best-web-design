@@ -3,6 +3,7 @@ import "./Home.css";
 import pozamea from "../../assets/pozamea.png";
 import { Link } from "react-router-dom";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
+import "animate.css";
 
 function Home(props) {
   return (
@@ -11,7 +12,7 @@ function Home(props) {
         className="container"
         style={{ backgroundColor: `${props.background}` }}
       >
-        <div>
+        <div className="animate__animated animate__flash">
           <h1 style={{ color: `${props.textColor}` }}>
             My name is Adrian Edu,
           </h1>
@@ -26,10 +27,13 @@ function Home(props) {
             </Link>
           </h3>
         </div>
-
         <div>
-          <img src={pozamea} className="profilepic" alt="" />
-        </div>
+          <img
+            src={pozamea}
+            className="profilepic animate__animated animate__backInRight"
+            alt=""
+          />
+        </div>{" "}
       </div>
       <BackToTopButton
         background={props.background}

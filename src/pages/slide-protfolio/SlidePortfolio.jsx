@@ -5,6 +5,7 @@ import todo from "../../assets/todo.png";
 import lucky from "../../assets/lucky.png";
 import robo from "../../assets/robo.png";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
+import "animate.css";
 
 function SlidePortfolio(props) {
   const currentPortfolio = [
@@ -60,7 +61,7 @@ function SlidePortfolio(props) {
       <div>
         <p className="header-slide">Portfolio</p>
       </div>
-      <p className="subtitle-slide" style={{ color: `${props.textColor}` }}>
+      <p className="subtitle-slide " style={{ color: `${props.textColor}` }}>
         {currentPortfolio[currentIndex].name}
       </p>
       <div className="slide-flex">
@@ -85,7 +86,11 @@ function SlidePortfolio(props) {
           →
         </button>
       </div>
-      <p className="message-slide" style={{ color: `${props.textColor}` }}>
+      <p
+        className="message-slide  animate__animated
+              animate__flash"
+        style={{ color: `${props.textColor}` }}
+      >
         See the project by clicking on the image!
       </p>
       <BackToTopButton
