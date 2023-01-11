@@ -13,7 +13,7 @@ function NotFound(props) {
   function RedirectExample() {
     useEffect(() => {
       const timeout = setTimeout(() => {
-        window.location.replace("https://best-web-design.vercel.app/");
+        window.location.replace("https://bestwebdesign.ro/");
       }, 5000);
       return () => clearTimeout(timeout);
     }, []);
