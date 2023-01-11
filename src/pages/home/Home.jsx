@@ -28,11 +28,7 @@ function Home(props) {
           </h3>
         </div>
         <div>
-          <img
-            src={pozamea}
-            className="profilepic animate__animated animate__backInRight"
-            alt=""
-          />
+          <img src={pozamea} className="profilepic " alt="" />
         </div>{" "}
       </div>
       <BackToTopButton
