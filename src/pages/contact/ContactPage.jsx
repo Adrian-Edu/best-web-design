@@ -80,7 +80,10 @@ function Contact(props) {
         className="container-contact"
         style={{ backgroundColor: `${props.background}` }}
       >
-        <p className="header-contact" style={{ color: `${props.textColor}` }}>
+        <p
+          className="header-contact animate__animated animate__flash"
+          style={{ color: `${props.textColor}` }}
+        >
           Get in touch with us:
         </p>
         <label style={{ color: `${props.textColor}` }}>Name</label>
@@ -172,7 +175,10 @@ function Contact(props) {
           </div>
         ) : null}
 
-        <p className="contact-p" style={{ color: `${props.textColor}` }}>
+        <p
+          className="contact-p animate__animated animate__flash"
+          style={{ color: `${props.textColor}` }}
+        >
           Wanna chat with customer service? <br />
           Call 0766-775-420
         </p>

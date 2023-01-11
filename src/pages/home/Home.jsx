@@ -12,7 +12,7 @@ function Home(props) {
         className="container"
         style={{ backgroundColor: `${props.background}` }}
       >
-        <div className="animate__animated animate__flash">
+        <div>
           <h1 style={{ color: `${props.textColor}` }}>
             My name is Adrian Edu,
           </h1>
@@ -23,7 +23,12 @@ function Home(props) {
 
           <h3 style={{ color: `${props.textColor}` }}>
             <Link className="remove-format-footer-home" to="/Contact">
-              <p style={{ color: `${props.textColor}` }}>Contact me !</p>
+              <p
+                className="animate__animated animate__flash"
+                style={{ color: `${props.textColor}` }}
+              >
+                Contact me !
+              </p>
             </Link>
           </h3>
         </div>
