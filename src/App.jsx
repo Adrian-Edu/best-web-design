@@ -14,6 +14,7 @@ import Footer from "./components/footer/Footer";
 import Contact from "./pages/contact/ContactPage";
 import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
 import AboutMe from "./pages/about-me/AboutMe";
+import { useSelector } from "react-redux";
 
 function App() {
   const [switchBackgroundColor, setSwitchBackgroundColor] = useState("#151B54");
@@ -26,6 +27,8 @@ function App() {
   const getTextColor = (color) => {
     setswitchTextColor(color);
   };
+
+  const changeB = useSelector((state) => console.log(state));
 
   return (
     <>
