@@ -1,14 +1,21 @@
-export const changeBackgroundToWhite = () => {
+const changeBackgroundToWhite = () => {
   return {
     type: "CHANGEBACKGROUNDTOWHITE",
   };
 };
 
-export const changeBackgroundToDark = () => {
+export default changeBackgroundToWhite;
+
+/*
+
+const changeBackgroundToDark = () => {
   return {
     type: "CHANGEBACKGROUNDTODARK",
   };
 };
+
+export default changeBackgroundToDark;
+
 
 export const changeTextColorToWhite = () => {
   return {
@@ -21,3 +28,5 @@ export const changeTextColorToDark = () => {
     type: "CHANGECOLORTODARK",
   };
 };
+
+*/
