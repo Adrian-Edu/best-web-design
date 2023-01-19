@@ -14,22 +14,29 @@ import Footer from "./components/footer/Footer";
 import Contact from "./pages/contact/ContactPage";
 import ClientsTestimonials from "./pages/clients-testimonials/ClientsTestimonials";
 import AboutMe from "./pages/about-me/AboutMe";
+import { useSelector } from "react-redux";
 
 function App() {
+  const backgroundColor = useSelector((state) => state.bgColorSlice.themeColors.backgroundColor)
+  const textColor = useSelector((state) => state.bgColorSlice.themeColors.textColor)
+
+  console.log(backgroundColor, textColor);
   const [switchBackgroundColor, setSwitchBackgroundColor] = useState("#151B54");
   const [switchTextColor, setswitchTextColor] = useState("#FFFFFF");
+  
 
-  const getImage = (image) => {
-    setSwitchBackgroundColor(image);
+  const getBackgroundColor = () => {
+    setSwitchBackgroundColor(backgroundColor)
   };
 
-  const getTextColor = (color) => {
-    setswitchTextColor(color);
+  const getTextColor = () => {
+    setswitchTextColor(textColor);
   };
+
 
   return (
     <>
-      <Navbar sendImage={getImage} sendTextColor={getTextColor} />
+      <Navbar sendImage={getBackgroundColor} sendTextColor={getTextColor} />
       <Routes>
         <Route
           exact

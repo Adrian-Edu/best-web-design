@@ -14,9 +14,11 @@ import "./Navbar.css";
 import Switch from "../switch/Switch";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import changeBackgroundToWhite from "../../redux/action";
+import changeBackgroundColor from "../../redux/action";
+import changeTextColor from "../../redux/action";
 
 function ResponsiveAppBar(props) {
+  const dispatch = useDispatch();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -28,7 +30,7 @@ function ResponsiveAppBar(props) {
   };
 
   const changeB = useSelector((state) => console.log(state));
-  const dispach = useDispatch();
+
 
   const backgroundColor = {
     white: "#d0efff ",
@@ -40,12 +42,16 @@ function ResponsiveAppBar(props) {
 
   const click = () => {
     if (isActive === false) {
-      props.sendImage(backgroundColor.white);
-      props.sendTextColor(textColor.dark);
+      dispatch(changeBackgroundColor(backgroundColor.white));
+      dispatch(changeTextColor(textColor.dark));
+      //    props.sendImage(backgroundColor.white);
+      //  props.sendTextColor(textColor.dark);
       setIsActive(true);
     } else {
-      props.sendImage(backgroundColor.dark);
-      props.sendTextColor(textColor.white);
+      dispatch(changeBackgroundColor(backgroundColor.dark));
+      dispatch(changeTextColor(textColor.white));
+      //  props.sendImage(backgroundColor.dark);
+      //  props.sendTextColor(textColor.white);
       setIsActive(false);
     }
   };
