@@ -183,7 +183,7 @@ label {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
   .container-contact > input[type="text"],
   select {
     width: 45%;
@@ -218,7 +218,7 @@ label {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: landscape) {
   .container-contact span {
     font-size: 12.5px;
     font-weight: 600;
