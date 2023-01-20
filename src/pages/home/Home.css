@@ -42,7 +42,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 900px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 500px) and (orientation: landscape) {
+@media screen and (max-width: 500px) {
   .container {
     display: flex;
     flex-direction: column;

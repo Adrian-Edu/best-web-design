@@ -77,7 +77,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 1100px) and (orientation: landscape) {
+@media screen and (max-width: 1100px) {
   .secondpicture {
     width: 380px;
     height: 380px;
@@ -89,7 +89,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 900px) {
   .second-container {
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 600px) and (orientation: landscape) {
+@media screen and (max-width: 600px) {
   .secondpicture {
     width: 350px;
     height: 350px;
@@ -131,7 +131,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 450px) and (orientation: landscape) {
+@media screen and (max-width: 450px) {
   .secondpicture {
     width: 300px;
     height: 300px;
