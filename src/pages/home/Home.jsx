@@ -9,7 +9,7 @@ function Home(props) {
   return (
     <section>
       <div
-        className="container"
+        className="container "
         style={{ backgroundColor: `${props.background}` }}
       >
         <div>
