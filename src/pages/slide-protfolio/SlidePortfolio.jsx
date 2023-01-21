@@ -5,7 +5,6 @@ import todo from "../../assets/todo.png";
 import lucky from "../../assets/lucky.png";
 import robo from "../../assets/robo.png";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
-import "animate.css";
 
 function SlidePortfolio(props) {
   const currentPortfolio = [

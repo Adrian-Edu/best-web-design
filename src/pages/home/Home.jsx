@@ -3,38 +3,113 @@ import "./Home.css";
 import pozamea from "../../assets/pozamea.png";
 import { Link } from "react-router-dom";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
-import "animate.css";
+import { motion } from "framer-motion";
 
 function Home(props) {
+  const animationDiv = {
+    hidden: {
+      x: "-100vw",
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        duration: 2.5,
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+
+  const animationImage = {
+    hidden: {
+      x: "100vw",
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      animation: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        duration: 2.5,
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+
+  const animationButton = {
+    hidden: {},
+    visible: {},
+  };
+
   return (
     <section>
       <div
         className="container"
-        style={{ backgroundColor: `${props.background}` }}
+        style={{
+          backgroundColor: `${props.background}`,
+        }}
       >
-        <div>
-          <h1 style={{ color: `${props.textColor}` }}>
+        <motion.div variants={animationDiv} initial="hidden" animate="visible">
+          <h1
+            style={{
+              color: `${props.textColor}`,
+            }}
+          >
             My name is Adrian Edu,
           </h1>
 
-          <h2 style={{ color: `${props.textColor}` }}>
-            I am a Front-End <br /> Developer
+          <h2
+            style={{
+              color: `${props.textColor}`,
+            }}
+          >
+            I am a Front-End
+            <br />
+            Developer
           </h2>
 
-          <h3 style={{ color: `${props.textColor}` }}>
+          <h3
+            style={{
+              color: `${props.textColor}`,
+            }}
+          >
             <Link className="remove-format-footer-home" to="/Contact">
-              <p
-                className="animate__animated animate__flash"
-                style={{ color: `${props.textColor}` }}
+              <motion.button
+                whileHover={{
+                  scale: 1.2,
+                  textShadow: "0px 0px 8px black",
+                  boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+                  originX: 0,
+                  color: "blue",
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                }}
+                style={{
+                  color: `${props.textColor}`,
+                }}
               >
                 Contact me !
-              </p>
+              </motion.button>
             </Link>
           </h3>
-        </div>
+        </motion.div>
         <div>
-          <img src={pozamea} className="profilepic " alt="" />
-        </div>{" "}
+          <motion.img
+            variants={animationImage}
+            initial="hidden"
+            animate="visible"
+            src={pozamea}
+            className="profilepic "
+            alt=""
+          />
+        </div>
       </div>
       <BackToTopButton
         background={props.background}
@@ -45,3 +120,31 @@ function Home(props) {
 }
 
 export default Home;
+
+// FRAMER
+
+/*
+<motion.div
+  initial={{ x: "-100vw" }}
+  animate={{ x: 0 }}
+  transition={{
+    delay: 1.5,
+    duration: 2.5,
+    type: "spring",
+    stiffness: 100,
+  }}
+
+></motion.div>;
+
+
+*/
+
+/*
+ whileHover={{
+                  scale: 1.2,
+                  textShadow: "0px 0px 8px black",
+                  boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+                  originX: 0,
+                  color: "blue",
+                }}
+*/

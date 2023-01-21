@@ -15,11 +15,14 @@ h2 {
   letter-spacing: 3px;
 }
 
-.remove-format-footer-home {
+.remove-format-footer-home > button {
   font-size: 50px;
   letter-spacing: 3px;
   font-weight: 700;
   text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1600px) {
