@@ -4,6 +4,7 @@ import pozamea from "../../assets/pozamea.png";
 import { Link } from "react-router-dom";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import { motion } from "framer-motion";
+import "animate.css";
 
 function Home(props) {
   const animationButton = {
@@ -28,9 +29,8 @@ function Home(props) {
           backgroundColor: `${props.background}`,
         }}
       >
-        <div>
+        <div className="animate__animated animate__backInLeft">
           <h1
-            className="animate__fadeInLeft"
             style={{
               color: `${props.textColor}`,
             }}
@@ -67,7 +67,11 @@ function Home(props) {
           </h3>
         </div>
         <div>
-          <img src={pozamea} className="profilepic " alt="" />
+          <img
+            src={pozamea}
+            className="profilepic animate__animated animate__backInRight "
+            alt=""
+          />
         </div>
       </div>
       <BackToTopButton
