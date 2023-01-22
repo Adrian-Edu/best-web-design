@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home.css";
 import pozamea from "../../assets/pozamea.png";
 import { Link } from "react-router-dom";
@@ -6,41 +6,6 @@ import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import { motion } from "framer-motion";
 
 function Home(props) {
-  const animationDiv = {
-    hidden: {
-      x: "-100vw",
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        delay: 0.5,
-        duration: 2.5,
-        type: "spring",
-        stiffness: 100,
-      },
-    },
-  };
-
-  const animationImage = {
-    hidden: {
-      x: "100vw",
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      animation: 0,
-      opacity: 1,
-      transition: {
-        delay: 0.5,
-        duration: 2.5,
-        type: "spring",
-        stiffness: 100,
-      },
-    },
-  };
-
   const animationButton = {
     whileHover: {
       scale: 1.2,
@@ -49,8 +14,8 @@ function Home(props) {
       originX: 0,
       color: "blue",
       transition: {
-        type: "spring",
-        stiffness: 300,
+        duration: 0.6,
+        repeat: Infinity,
       },
     },
   };
@@ -63,8 +28,9 @@ function Home(props) {
           backgroundColor: `${props.background}`,
         }}
       >
-        <motion.div variants={animationDiv} initial="hidden" animate="visible">
+        <div>
           <h1
+            className="animate__fadeInLeft"
             style={{
               color: `${props.textColor}`,
             }}
@@ -99,16 +65,9 @@ function Home(props) {
               </motion.button>
             </Link>
           </h3>
-        </motion.div>
+        </div>
         <div>
-          <motion.img
-            variants={animationImage}
-            initial="hidden"
-            animate="visible"
-            src={pozamea}
-            className="profilepic "
-            alt=""
-          />
+          <img src={pozamea} className="profilepic " alt="" />
         </div>
       </div>
       <BackToTopButton

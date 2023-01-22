@@ -124,8 +124,9 @@ function Contact(props) {
           id="phone"
           name="user_mobile"
           placeholder="Enter phone number ..."
-          pattern="[0-9]{1-14}"
+          pattern="[0-9]{1,14}"
           onChange={handleMobileInput}
+          required
         ></input>
         {submitted && sender.mobile.length <= 9 ? (
           <div>
@@ -178,7 +179,7 @@ function Contact(props) {
         </motion.button>
         {submitted && valid ? (
           <div
-            className="contact-message "
+            className="contact-message"
             style={{
               backgroundColor: "red",
               fontWeight: 700,
