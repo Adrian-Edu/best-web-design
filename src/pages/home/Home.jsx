@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import pozamea from "../../assets/pozamea.png";
 import { Link } from "react-router-dom";
@@ -42,8 +42,17 @@ function Home(props) {
   };
 
   const animationButton = {
-    hidden: {},
-    visible: {},
+    whileHover: {
+      scale: 1.2,
+      textShadow: "0px 0px 8px black",
+      boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+      originX: 0,
+      color: "blue",
+      transition: {
+        type: "spring",
+        stiffness: 300,
+      },
+    },
   };
 
   return (
@@ -80,17 +89,8 @@ function Home(props) {
           >
             <Link className="remove-format-footer-home" to="/Contact">
               <motion.button
-                whileHover={{
-                  scale: 1.2,
-                  textShadow: "0px 0px 8px black",
-                  boxShadow: "0px 0px 8px rgb(255, 255, 255)",
-                  originX: 0,
-                  color: "blue",
-                }}
-                transition={{
-                  type: "spring",
-                  stiffness: 300,
-                }}
+                variants={animationButton}
+                whileHover="whileHover"
                 style={{
                   color: `${props.textColor}`,
                 }}
@@ -124,6 +124,9 @@ export default Home;
 // FRAMER
 
 /*
+
+INTO COMPONENTS
+
 <motion.div
   initial={{ x: "-100vw" }}
   animate={{ x: 0 }}
@@ -136,15 +139,73 @@ export default Home;
 
 ></motion.div>;
 
-
-*/
-
-/*
- whileHover={{
+  whileHover={{
                   scale: 1.2,
                   textShadow: "0px 0px 8px black",
                   boxShadow: "0px 0px 8px rgb(255, 255, 255)",
                   originX: 0,
                   color: "blue",
                 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                }}
+*/
+
+/*
+
+OUTSIDE COMPONENTS AS CONSTANTS
+
+ const animationImage = {
+    hidden: {
+      x: "100vw",
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      animation: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        duration: 2.5,
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+
+    <motion.img
+            variants={animationImage}
+            initial="hidden"
+            animate="visible"
+            src={pozamea}
+            className="profilepic "
+            alt=""
+          />
+
+  ---------------------------------------------------
+  const animationButton = {
+    whileHover: {
+      scale: 1.2,
+      textShadow: "0px 0px 8px black",
+      boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+      originX: 0,
+      color: "blue",
+      transition: {
+        type: "spring",
+        stiffness: 300,
+      },
+    },
+  };
+
+  <motion.button
+                variants={animationButton}
+                whileHover="whileHover"
+                style={{
+                  color: `${props.textColor}`,
+                }}
+              >
+                Contact me !
+              </motion.button>
+
 */

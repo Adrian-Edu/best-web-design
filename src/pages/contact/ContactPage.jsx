@@ -4,7 +4,7 @@ import { useRef } from "react";
 import "./contactpage.css";
 import emailjs from "@emailjs/browser";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 
 function Contact(props) {
   const [sender, setSender] = useState({
@@ -74,8 +74,18 @@ function Contact(props) {
   }, [valid]);
 
   const buttonAnimation = {
-    visible: {},
-    hidden: {},
+    hover: {
+      scale: 1.1,
+      textShadow: "0px 0px 8px black",
+      boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+      color: "blue",
+      fontWeight: 700,
+      fontSize: "16px",
+      transition: {
+        duration: 0.4,
+        repeat: Infinity,
+      },
+    },
   };
 
   return (
@@ -158,18 +168,8 @@ function Contact(props) {
           </div>
         ) : null}
         <motion.button
-          whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 8px black",
-            boxShadow: "0px 0px 8px rgb(255, 255, 255)",
-            color: "blue",
-            fontWeight: 700,
-            fontSize: "16px",
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-          }}
+          variants={buttonAnimation}
+          whileHover="hover"
           disabled={submitted && valid}
           type="submit"
           className="submited"
