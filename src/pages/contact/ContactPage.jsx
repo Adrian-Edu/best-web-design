@@ -4,7 +4,8 @@ import { useRef } from "react";
 import "./contactpage.css";
 import emailjs from "@emailjs/browser";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 function Contact(props) {
   const [sender, setSender] = useState({
@@ -100,7 +101,13 @@ function Contact(props) {
           className="header-contact animate__animated animate__flash"
           style={{ color: `${props.textColor}` }}
         >
-          Get in touch with us:
+          <Typewriter
+            options={{
+              strings: ["Get in touch with us:", "Please contact us:"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </p>
         <label style={{ color: `${props.textColor}` }}>Name</label>
         <input

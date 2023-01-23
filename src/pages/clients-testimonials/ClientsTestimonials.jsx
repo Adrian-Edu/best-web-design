@@ -4,6 +4,7 @@ import needs from "../../assets/needs.png";
 import quickly from "../../assets/quickly.png";
 import "./ClientsTestimonials.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
+import Typewriter from "typewriter-effect";
 
 function ClientsTestimonials(props) {
   return (
@@ -13,7 +14,15 @@ function ClientsTestimonials(props) {
     >
       <div className="eighth-page-display">
         <div>
-          <p className="header-eighth">Clients' Testimonials</p>
+          <p className="header-eighth">
+            <Typewriter
+              options={{
+                strings: ["Clients' Testimonials"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </p>
         </div>
         <div className="eighth-container">
           <img src={passion} className="passion" alt="" />

@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import { motion } from "framer-motion";
 import "animate.css";
+import Typewriter from "typewriter-effect";
 
 function Home(props) {
   const animationButton = {
     whileHover: {
-      scale: 1.2,
+      scale: 1.1,
       textShadow: "0px 0px 8px black",
       boxShadow: "0px 0px 8px rgb(255, 255, 255)",
       originX: 0,
@@ -29,7 +30,7 @@ function Home(props) {
           backgroundColor: `${props.background}`,
         }}
       >
-        <div className="animate__animated animate__backInLeft">
+        <div className="">
           <h1
             style={{
               color: `${props.textColor}`,
@@ -43,9 +44,13 @@ function Home(props) {
               color: `${props.textColor}`,
             }}
           >
-            I am a Front-End
-            <br />
-            Developer
+            <Typewriter
+              options={{
+                strings: ["  Front-End Developer.", " Web Developer."],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h2>
 
           <h3
@@ -67,11 +72,7 @@ function Home(props) {
           </h3>
         </div>
         <div>
-          <img
-            src={pozamea}
-            className="profilepic animate__animated animate__backInRight "
-            alt=""
-          />
+          <img src={pozamea} className="profilepic " alt="" />
         </div>
       </div>
       <BackToTopButton

@@ -5,6 +5,8 @@ import todo from "../../assets/todo.png";
 import lucky from "../../assets/lucky.png";
 import robo from "../../assets/robo.png";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
+import "animate.css";
+import Typewriter from "typewriter-effect";
 
 function SlidePortfolio(props) {
   const currentPortfolio = [
@@ -58,7 +60,16 @@ function SlidePortfolio(props) {
       style={{ backgroundColor: `${props.background}` }}
     >
       <div>
-        <p className="header-slide">Portfolio</p>
+        <p className="header-slide">
+          {" "}
+          <Typewriter
+            options={{
+              strings: ["Portfolio presentation", "Portfolio"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </p>
       </div>
       <p className="subtitle-slide " style={{ color: `${props.textColor}` }}>
         {currentPortfolio[currentIndex].name}
@@ -85,12 +96,14 @@ function SlidePortfolio(props) {
           →
         </button>
       </div>
-      <p
-        className="message-slide  animate__animated
-              animate__flash"
-        style={{ color: `${props.textColor}` }}
-      >
-        See the project by clicking on the image!
+      <p className="message-slide  " style={{ color: `${props.textColor}` }}>
+        <Typewriter
+          options={{
+            strings: ["See the project by clicking on the image!"],
+            autoStart: true,
+            loop: true,
+          }}
+        />{" "}
       </p>
       <BackToTopButton
         background={props.background}
