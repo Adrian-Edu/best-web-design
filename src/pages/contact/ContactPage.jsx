@@ -176,6 +176,10 @@ function Contact(props) {
           </div>
         ) : null}
         <motion.button
+          style={{
+            color: `${props.textColor}`,
+            borderColor: `${props.textColor}`,
+          }}
           variants={buttonAnimation}
           whileHover="hover"
           disabled={submitted && valid}
