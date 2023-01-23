@@ -13,7 +13,6 @@ import LogoBWD from "../../assets/LogoBWD.png";
 import "./Navbar.css";
 import Switch from "../switch/Switch";
 import { Link } from "react-router-dom";
-import "animate.css";
 
 function ResponsiveAppBar(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -46,11 +45,7 @@ function ResponsiveAppBar(props) {
   };
 
   return (
-    <AppBar
-      class="animate__animated animate__backInDown"
-      position="relative"
-      sx={{ backgroundColor: "rgb(12, 11, 11)" }}
-    >
+    <AppBar position="relative" sx={{ backgroundColor: "rgb(12, 11, 11)" }}>
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
           <Typography

@@ -71,6 +71,9 @@ h2 {
     font-size: 30px;
     text-align: center;
   }
+  .remove-format-footer-home > button {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 500px) {

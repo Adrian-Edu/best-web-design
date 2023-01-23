@@ -46,7 +46,10 @@ function Home(props) {
           >
             <Typewriter
               options={{
-                strings: ["  Front-End Developer.", " Web Developer."],
+                strings: [
+                  "I am a Front-End <br/> Developer.",
+                  " Web Developer.",
+                ],
                 autoStart: true,
                 loop: true,
               }}
