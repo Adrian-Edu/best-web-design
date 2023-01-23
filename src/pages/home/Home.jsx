@@ -13,7 +13,6 @@ function Home(props) {
       scale: 1.1,
       textShadow: "0px 0px 8px black",
       boxShadow: "0px 0px 8px rgb(255, 255, 255)",
-      originX: 0,
       color: "blue",
       transition: {
         duration: 0.6,
