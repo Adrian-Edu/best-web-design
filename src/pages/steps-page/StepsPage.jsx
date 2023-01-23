@@ -5,6 +5,8 @@ import figma from "../../assets/figma.png";
 import laptop from "../../assets/laptop.png";
 import release from "../../assets/release.png";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
+import "animate.css";
+import Typewriter from "typewriter-effect";
 
 function StepsPage(props) {
   return (
@@ -14,11 +16,17 @@ function StepsPage(props) {
     >
       <div>
         <p className="header-fifth">
-          Steps for building <br /> a website
+          <Typewriter
+            options={{
+              strings: ["Steps for building <br /> a website"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </p>
       </div>
       <div className="fifth-container">
-        <div className="first2-fifth">
+        <div className="first2-fifth animate__animated animate__backInLeft">
           <div className="test">
             <p className="h9" style={{ color: `${props.textColor}` }}>
               Identifying the <br />
@@ -33,7 +41,7 @@ function StepsPage(props) {
             <img src={figma} className="figma" alt="" />
           </div>
         </div>
-        <div className="second2-fifth">
+        <div className="second2-fifth animate__animated animate__backInRight">
           <div className="test">
             <p className="h9" style={{ color: `${props.textColor}` }}>
               Building the <br /> website
@@ -46,11 +54,11 @@ function StepsPage(props) {
             </p>
             <img src={release} className="release" alt="" />
           </div>
-          <BackToTopButton
-            background={props.background}
-            textColor={props.textColor}
-          />
         </div>
+        <BackToTopButton
+          background={props.background}
+          textColor={props.textColor}
+        />
       </div>
     </section>
   );

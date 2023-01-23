@@ -4,6 +4,8 @@ import { useRef } from "react";
 import "./contactpage.css";
 import emailjs from "@emailjs/browser";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
+import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 function Contact(props) {
   const [sender, setSender] = useState({
@@ -72,6 +74,21 @@ function Contact(props) {
     formRef.current?.reset();
   }, [valid]);
 
+  const buttonAnimation = {
+    hover: {
+      scale: 1.1,
+      textShadow: "0px 0px 8px black",
+      boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+      color: "blue",
+      fontWeight: 700,
+      fontSize: "16px",
+      transition: {
+        duration: 0.4,
+        repeat: Infinity,
+      },
+    },
+  };
+
   return (
     <section>
       <form
@@ -84,7 +101,13 @@ function Contact(props) {
           className="header-contact animate__animated animate__flash"
           style={{ color: `${props.textColor}` }}
         >
-          Get in touch with us:
+          <Typewriter
+            options={{
+              strings: ["Get in touch with us:", "Please contact us:"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </p>
         <label style={{ color: `${props.textColor}` }}>Name</label>
         <input
@@ -108,8 +131,9 @@ function Contact(props) {
           id="phone"
           name="user_mobile"
           placeholder="Enter phone number ..."
-          pattern="[0-9]{1-14}"
+          pattern="[0-9]{1,14}"
           onChange={handleMobileInput}
+          required
         ></input>
         {submitted && sender.mobile.length <= 9 ? (
           <div>
@@ -151,16 +175,18 @@ function Contact(props) {
             </span>
           </div>
         ) : null}
-        <button
+        <motion.button
+          variants={buttonAnimation}
+          whileHover="hover"
           disabled={submitted && valid}
           type="submit"
           className="submited"
         >
           Submit
-        </button>
+        </motion.button>
         {submitted && valid ? (
           <div
-            className="contact-message "
+            className="contact-message"
             style={{
               backgroundColor: "red",
               fontWeight: 700,

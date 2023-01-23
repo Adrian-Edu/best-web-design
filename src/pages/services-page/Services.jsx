@@ -3,6 +3,8 @@ import "./Services.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import desktop from "../../assets/newdesktop.png";
 import oldnew from "../../assets/oldvsnew.png";
+import "animate.css";
+import Typewriter from "typewriter-effect";
 
 function Services(props) {
   return (
@@ -11,16 +13,24 @@ function Services(props) {
       style={{ backgroundColor: `${props.background}` }}
     >
       <div>
-        <h6>Services</h6>
+        <h6>
+          <Typewriter
+            options={{
+              strings: ["Services", "Assistance"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h6>
       </div>
       <div className="fourt-container">
-        <div className="first2-fourtpage">
+        <div className="first2-fourtpage  animate__animated animate__backInLeft">
           <p className="h7" style={{ color: `${props.textColor}` }}>
             Responsive website <br /> design
           </p>
           <img src={desktop} className="desktop-image" alt="" />
         </div>
-        <div className="second2-fourtpage">
+        <div className="second2-fourtpage  animate__animated animate__backInRight">
           <p className="h7" style={{ color: `${props.textColor}` }}>
             Modify your old <br /> website
           </p>
