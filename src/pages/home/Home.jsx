@@ -62,11 +62,12 @@ function Home(props) {
           >
             <Link className="remove-format-footer-home" to="/Contact">
               <motion.button
-                variants={animationButton}
-                whileHover="whileHover"
                 style={{
                   color: `${props.textColor}`,
+                  borderColor: `${props.textColor}`,
                 }}
+                variants={animationButton}
+                whileHover="whileHover"
               >
                 Contact me !
               </motion.button>
