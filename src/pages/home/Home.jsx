@@ -47,7 +47,7 @@ function Home(props) {
               options={{
                 strings: [
                   "I am a Front-End <br/> Developer.",
-                  " Web Developer.",
+                  "Web Developer.",
                 ],
                 autoStart: true,
                 loop: true,
