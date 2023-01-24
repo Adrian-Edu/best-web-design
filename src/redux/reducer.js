@@ -20,6 +20,36 @@ export const colorSlice = createSlice({
   },
 });
 
-export const { white } = colorSlice.actions;
+export const { white, dark } = colorSlice.actions;
 
 export default colorSlice.reducer;
+
+/*
+
+import { createSlice } from "@reduxjs/toolkit";
+
+const intialColors = {
+  backgroundColor: "#151B54",
+  color: "#FFFFFF",
+};
+
+export const colorSlice = createSlice({
+  name: "changeColors",
+  initialState,
+  reducers: {
+    white: (state) => {
+      backgroundColor.state = "#d0efff";
+      color.state = "#0e1111";
+    },
+    dark: (state) => {
+      backgroundColor.state = "#151B54";
+      color.state = "#FFFFFF";
+    },
+  },
+});
+
+export const { white, dark } = colorSlice.actions;
+
+export default colorSlice.reducer;
+
+*/

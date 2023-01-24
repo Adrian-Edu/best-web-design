@@ -13,8 +13,20 @@ import LogoBWD from "../../assets/LogoBWD.png";
 import "./Navbar.css";
 import Switch from "../switch/Switch";
 import { Link } from "react-router-dom";
+import { white, dark } from "../../redux/reducer";
+import { useDispatch, useSelector } from "react-redux";
 
 function ResponsiveAppBar(props) {
+  
+  const count = useSelector((state) => state.changeColor.context);
+  const dispatch = useDispatch();
+
+  console.log(count);
+
+  //onClick={() => dispatch(white())}>
+
+  //onClick={() => dispatch(dark())}>
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
