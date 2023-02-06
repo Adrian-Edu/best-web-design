@@ -28,16 +28,19 @@
 
 .search {
   width: 360px;
+  height: auto;
   object-fit: contain;
 }
 
 .figma {
   width: 360px;
+  height: auto;
   object-fit: contain;
 }
 
 .laptop {
   width: 360px;
+  height: auto;
   object-fit: contain;
 }
 
