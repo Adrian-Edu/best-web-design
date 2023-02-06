@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import pozamea from "../../assets/pozamea.png";
+import pozamea from "../../assets/pozamea.avif";
 import { Link } from "react-router-dom";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import { motion } from "framer-motion";

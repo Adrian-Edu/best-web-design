@@ -1,7 +1,7 @@
 import React from "react";
-import passion from "../../assets/passion.png";
-import needs from "../../assets/needs.png";
-import quickly from "../../assets/quickly.png";
+import passion from "../../assets/passion.avif";
+import needs from "../../assets/needs.avif";
+import quickly from "../../assets/quickly.avif";
 import "./ClientsTestimonials.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import Typewriter from "typewriter-effect";

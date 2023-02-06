@@ -1,9 +1,9 @@
 import React from "react";
 import "./StepsPage.css";
-import search from "../../assets/search.png";
-import figma from "../../assets/figma.png";
-import laptop from "../../assets/laptop.png";
-import release from "../../assets/release.png";
+import search from "../../assets/search.avif";
+import figma from "../../assets/figma.avif";
+import laptop from "../../assets/laptop.avif";
+import release from "../../assets/release.avif";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import "animate.css";
 import Typewriter from "typewriter-effect";

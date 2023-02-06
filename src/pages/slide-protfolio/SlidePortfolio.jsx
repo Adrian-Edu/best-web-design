@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./SlidePortfolio.css";
-import product from "../../assets/product.png";
-import todo from "../../assets/todo.png";
-import lucky from "../../assets/lucky.png";
-import robo from "../../assets/robo.png";
+import product from "../../assets/product.avif";
+import todo from "../../assets/todo.avif";
+import lucky from "../../assets/lucky.avif";
+import robo from "../../assets/robo.avif";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import "animate.css";
 import Typewriter from "typewriter-effect";
