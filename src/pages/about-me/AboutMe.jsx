@@ -10,7 +10,7 @@ function AboutMe(props) {
       style={{ backgroundColor: `${props.background}` }}
     >
       <p className="header-about">About me</p>
-      <img src={about} alt="" className="about" />
+      <img src={about} alt="mountains img" className="about" />
       <p className="about-us-value" style={{ color: `${props.textColor}` }}>
         FOLLOW YOUR PASSION AND YOU'LL NEVER WORK A DAY!
       </p>

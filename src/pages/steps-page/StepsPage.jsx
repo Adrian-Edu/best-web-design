@@ -32,13 +32,13 @@ function StepsPage(props) {
               Identifying the <br />
               client's needs
             </p>
-            <img src={search} className="search" alt="search" />
+            <img src={search} className="search" alt="search img" />
           </div>
           <div className="test">
             <p className="h9" style={{ color: `${props.textColor}` }}>
               Implementing the <br /> design
             </p>
-            <img src={figma} className="figma" alt="figma" />
+            <img src={figma} className="figma" alt="figma img" />
           </div>
         </div>
         <div className="second2-fifth animate__animated animate__backInRight">
@@ -46,13 +46,13 @@ function StepsPage(props) {
             <p className="h9" style={{ color: `${props.textColor}` }}>
               Building the <br /> website
             </p>
-            <img src={laptop} className="laptop" alt="laptop" />
+            <img src={laptop} className="laptop" alt="laptop img" />
           </div>
           <div className="test">
             <p className="h9" style={{ color: `${props.textColor}` }}>
               Testing the <br /> website
             </p>
-            <img src={release} className="release" alt="release" />
+            <img src={release} className="release" alt="release img" />
           </div>
         </div>
         <BackToTopButton

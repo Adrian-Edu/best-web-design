@@ -25,9 +25,9 @@ function ClientsTestimonials(props) {
           </p>
         </div>
         <div className="eighth-container">
-          <img src={passion} className="passion" alt="" />
-          <img src={needs} className="needs" alt="" />
-          <img src={quickly} className="quickly" alt="" />
+          <img src={passion} className="passion" alt="succes img" />
+          <img src={needs} className="needs" alt="phone img" />
+          <img src={quickly} className="quickly" alt="presentation img" />
         </div>
       </div>
       <BackToTopButton

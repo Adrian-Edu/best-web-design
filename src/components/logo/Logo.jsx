@@ -4,7 +4,7 @@ import LogoBWD from "../assets/LogoBWD.png";
 function Logo() {
   return (
     <div>
-      <img src={LogoBWD} className="App-logo" alt="logo" />
+      <img src={LogoBWD} className="App-logo" alt="BWD logo" />
     </div>
   );
 }

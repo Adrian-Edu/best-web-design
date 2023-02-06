@@ -64,7 +64,11 @@ function ResponsiveAppBar(props) {
               marginRight: "70px",
             }}
           >
-            <img src={LogoBWD} alt="" />
+            <img
+              src={LogoBWD}
+              alt="BWD logo"
+              sx={{ width: "auto", height: "auto" }}
+            />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -160,7 +164,7 @@ function ResponsiveAppBar(props) {
               textDecoration: "none",
             }}
           >
-            <img className="logo-small-view" src={LogoBWD} alt="logo" />
+            <img className="logo-small-view" src={LogoBWD} alt="BWD logo" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button sx={{ my: 2, color: "white", display: "block" }}>

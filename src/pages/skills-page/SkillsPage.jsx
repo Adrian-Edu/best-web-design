@@ -27,12 +27,12 @@ function SkillsPage(props) {
       </div>
       <div className="third-container">
         <div className="first2 animate__animated animate__backInLeft">
-          <img src={css} className="css" alt="" />
-          <img src={html} className="html" alt="" />
+          <img src={css} className="css" alt="css img" />
+          <img src={html} className="html" alt="html img" />
         </div>
         <div className="second2 animate__animated animate__backInRight">
-          <img src={js} className="js" alt="" />
-          <img src={react} className="react" alt="" />
+          <img src={js} className="js" alt="js img" />
+          <img src={react} className="react" alt="react img" />
         </div>
         <BackToTopButton
           background={props.background}

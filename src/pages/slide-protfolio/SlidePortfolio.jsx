@@ -87,7 +87,7 @@ function SlidePortfolio(props) {
             <img
               src={currentPortfolio[currentIndex].image}
               className="slide-image"
-              alt=""
+              alt="portfolio img"
             />
           </a>
         </div>

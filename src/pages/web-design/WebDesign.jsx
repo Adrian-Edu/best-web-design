@@ -53,7 +53,7 @@ function WebDesign(props) {
         <img
           src={secondslicepicture}
           className="secondpicture animate__animated animate__backInRight "
-          alt=""
+          alt="presentation img"
         />
       </div>
       <BackToTopButton
