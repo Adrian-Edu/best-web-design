@@ -60,7 +60,8 @@ export default function CustomizedSwitches() {
           <MaterialUISwitch
             sx={{ m: 1 }}
             defaultChecked
-            label="Switch Button"
+            aria-label="Toggle Switch"
+            label="Switch button"
           />
         }
       />
