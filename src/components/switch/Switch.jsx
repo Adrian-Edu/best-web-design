@@ -62,6 +62,7 @@ export default function CustomizedSwitches() {
             defaultChecked
             aria-label="Toggle Switch"
             label="Switch button"
+            rel="nofollow"
           />
         }
       />

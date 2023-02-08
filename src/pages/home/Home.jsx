@@ -75,7 +75,12 @@ function Home(props) {
           </h3>
         </div>
         <div>
-          <img src={pozamea} className="profilepic " alt="Adrian Edu img" />
+          <img
+            src={pozamea}
+            className="profilepic "
+            alt="Adrian Edu img"
+            loading="lazy"
+          />
         </div>
       </div>
       <BackToTopButton
