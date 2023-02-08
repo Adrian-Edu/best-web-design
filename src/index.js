@@ -8,7 +8,19 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItem: "center",
+            }}
+          >
+            Loading...
+          </div>
+        }
+      >
         <App />
       </Suspense>
     </BrowserRouter>
