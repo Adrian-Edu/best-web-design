@@ -11,10 +11,11 @@ root.render(
       <Suspense
         fallback={
           <div
-            sx={{
+            style={{
               display: "flex",
               justifyContent: "center",
-              alignItem: "center",
+              alignItems: "center",
+              height: "100vh",
             }}
           >
             Loading...
