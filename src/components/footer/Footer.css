@@ -44,6 +44,7 @@
   max-height: 60px;
   object-fit: contain;
   border-radius: 5px;
+  margin-right: 5px;
 }
 
 .footer-first-column {

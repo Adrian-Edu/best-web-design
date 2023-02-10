@@ -145,10 +145,10 @@ function ResponsiveAppBar(props) {
           </Box>
 
           <Typography
-            variant="h5"
+            className="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 0,
               display: { xs: "flex", md: "none" },
