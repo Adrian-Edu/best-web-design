@@ -13,15 +13,14 @@ function Services(props) {
       style={{ backgroundColor: `${props.background}` }}
     >
       <div>
-        <h6>
-          <Typewriter
-            options={{
-              strings: ["Services", "Assistance"],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </h6>
+        <Typewriter
+          variant="h6"
+          options={{
+            strings: ["Services", "Assistance"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
       </div>
       <div className="fourt-container">
         <div className="first2-fourtpage  animate__animated animate__backInLeft">
