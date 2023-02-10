@@ -26,7 +26,8 @@ function WebDesign(props) {
       </div>
       <div className="second-container ">
         <div className="secondpagetext animate__animated animate__backInLeft">
-          <h5
+          <p
+            className="h5"
             style={{
               color: `${props.textColor}`,
             }}
@@ -37,8 +38,9 @@ function WebDesign(props) {
             <br />
             presence.
             <br />
-          </h5>
-          <h5
+          </p>
+          <p
+            className="h5"
             style={{
               color: `${props.textColor}`,
             }}
@@ -48,7 +50,7 @@ function WebDesign(props) {
             create a fully responsive
             <br />
             website.
-          </h5>
+          </p>
         </div>
         <img
           src={secondslicepicture}
