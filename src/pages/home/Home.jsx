@@ -21,7 +21,6 @@ function Home(props) {
     },
   };
 
-const LCPImage = () => {
   useEffect(() => {
     const link = document.createElement("link");
     link.rel = "preload";
@@ -29,7 +28,6 @@ const LCPImage = () => {
     link.href = pozamea;
     document.head.appendChild(link);
   }, []);
-
 
   return (
     <section>
@@ -85,7 +83,7 @@ const LCPImage = () => {
           </h3>
         </div>
         <div>
-           <img src={pozamea} className="profilepic" alt="Adrian Edu img" />
+          <img src={pozamea} className="profilepic" alt="Adrian Edu img" />
         </div>
       </div>
       <BackToTopButton
