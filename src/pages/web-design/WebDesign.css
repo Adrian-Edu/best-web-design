@@ -109,8 +109,8 @@
 
 @media screen and (max-width: 600px) {
   .secondpicture {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 280px;
+    max-height: 280px;
   }
   .h5 {
     font-size: 15px;
@@ -127,8 +127,8 @@
 
 @media screen and (max-width: 450px) {
   .secondpicture {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 270px;
+    max-height: 270px;
   }
   .h4 {
     font-size: 40px;
