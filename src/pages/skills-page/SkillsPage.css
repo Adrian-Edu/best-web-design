@@ -18,14 +18,14 @@ h4 {
 }
 
 .css {
-  width: 420px;
-  height: 470px;
+  max-width: 420px;
+  max-height: 470px;
   object-fit: contain;
 }
 
 .react {
-  width: 400x;
-  height: 450px;
+  max-width: 400x;
+  max-height: 450px;
   object-fit: contain;
   padding-right: 30px;
 }

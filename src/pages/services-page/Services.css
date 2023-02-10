@@ -51,13 +51,11 @@ h6 {
 
 @media screen and (max-width: 1900px) {
   .oldnew-image {
-    width: auto;
     height: 410px;
     object-fit: contain;
   }
 
   .desktop-image {
-    width: auto;
     height: 400px;
     object-fit: contain;
   }
@@ -69,13 +67,11 @@ h6 {
 
 @media screen and (max-width: 1700px) {
   .oldnew-image {
-    width: auto;
     height: 360px;
     object-fit: contain;
   }
 
   .desktop-image {
-    width: auto;
     height: 350px;
     object-fit: contain;
   }
@@ -87,14 +83,12 @@ h6 {
 
 @media screen and (max-width: 1300px) {
   .oldnew-image {
-    width: auto;
     height: 335px;
     object-fit: contain;
     margin-bottom: 15px;
   }
 
   .desktop-image {
-    width: auto;
     height: 320px;
     object-fit: contain;
   }
@@ -113,14 +107,12 @@ h6 {
 
 @media screen and (max-width: 1150px) {
   .oldnew-image {
-    width: auto;
     height: 335px;
     object-fit: contain;
     margin-bottom: 15px;
   }
 
   .desktop-image {
-    width: auto;
     height: 325px;
     object-fit: contain;
   }

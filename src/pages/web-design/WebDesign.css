@@ -20,8 +20,10 @@ h5 {
 }
 
 .secondpicture {
-  width: 670px;
-  height: 650px;
+  max-width: 670px;
+  max-height: 650px;
+  width: auto;
+  height: auto;
   object-fit: contain;
 }
 
@@ -39,9 +41,8 @@ h5 {
 
 @media screen and (max-width: 2000px) {
   .secondpicture {
-    width: 520px;
-    height: 520px;
-    object-fit: contain;
+    max-width: 520px;
+    max-height: 520px;
   }
   h5 {
     font-size: 50px;
@@ -51,9 +52,8 @@ h5 {
 
 @media screen and (max-width: 1700px) {
   .secondpicture {
-    width: 480px;
-    height: 480px;
-    object-fit: contain;
+    max-width: 480px;
+    max-height: 480px;
   }
   h5 {
     font-size: 40px;
@@ -63,9 +63,8 @@ h5 {
 
 @media screen and (max-width: 1400px) {
   .secondpicture {
-    width: 450px;
-    height: 450px;
-    object-fit: contain;
+    max-width: 450px;
+    max-height: 450px;
   }
   h5 {
     font-size: 30px;
@@ -79,9 +78,8 @@ h5 {
 
 @media screen and (max-width: 1100px) {
   .secondpicture {
-    width: 380px;
+    max-width: 380px;
     height: 380px;
-    object-fit: contain;
   }
   h5 {
     font-size: 25px;
@@ -98,9 +96,8 @@ h5 {
   }
 
   .secondpicture {
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
+    max-width: 300px;
+    max-height: 300px;
   }
   h5 {
     margin-bottom: 20px;
@@ -114,14 +111,13 @@ h5 {
 
 @media screen and (max-width: 600px) {
   .secondpicture {
-    width: 350px;
-    height: 350px;
-    object-fit: contain;
+    max-width: 350px;
+    max-height: 350px;
   }
   h5 {
     font-size: 15px;
     letter-spacing: 3px;
-    margin: 40px 0 20px 0;
+    margin: 40px 4px 20px 4px;
   }
   .h4 {
     padding: 40px 0 0 0;
@@ -133,9 +129,8 @@ h5 {
 
 @media screen and (max-width: 450px) {
   .secondpicture {
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
+    max-width: 300px;
+    max-height: 300px;
   }
   .h4 {
     font-size: 40px;
