@@ -15,14 +15,15 @@ function SkillsPage(props) {
       style={{ backgroundColor: `${props.background}` }}
     >
       <div>
-        <Typewriter
-          className="h4"
-          options={{
-            strings: ["Skills & Experience", "Abilities & Expertise"],
-            autoStart: true,
-            loop: true,
-          }}
-        />
+        <h4>
+          <Typewriter
+            options={{
+              strings: ["Skills & Experience", "Abilities & Expertise"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h4>
       </div>
       <div className="third-container">
         <div className="first2 animate__animated animate__backInLeft">
