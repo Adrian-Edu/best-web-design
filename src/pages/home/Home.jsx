@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import pozamea from "../../assets/pozamea.avif";
 import { Link } from "react-router-dom";
@@ -20,6 +20,16 @@ function Home(props) {
       },
     },
   };
+
+const LCPImage = () => {
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = pozamea;
+    document.head.appendChild(link);
+  }, []);
+
 
   return (
     <section>
@@ -75,12 +85,7 @@ function Home(props) {
           </h3>
         </div>
         <div>
-          <link
-            rel="preload"
-            as="image"
-            href={pozamea}
-            className="profilepic "
-          />
+           <img src={pozamea} className="profilepic" alt="Adrian Edu img" />
         </div>
       </div>
       <BackToTopButton
@@ -92,5 +97,3 @@ function Home(props) {
 }
 
 export default Home;
-
-//    <img src={pozamea} className="profilepic " alt="Adrian Edu img" />
