@@ -52,7 +52,7 @@ function ResponsiveAppBar(props) {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href={process.env.PUBLIC_URL + "/"}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
