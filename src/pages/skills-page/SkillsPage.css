@@ -2,7 +2,7 @@
   height: 100vh;
 }
 
-h4 {
+.h4 {
   text-align: center;
   font-size: 60px;
   color: #f4b510;
@@ -96,7 +96,7 @@ h4 {
     justify-content: center;
     align-items: center;
   }
-  h4 {
+  .h4 {
     text-align: center;
     font-size: 50px;
     color: #f4b510;
@@ -180,7 +180,7 @@ h4 {
     margin: 0;
   }
 
-  h4 {
+  .h4 {
     font-size: 30px;
     padding: 70px 0 40px 10px;
   }
