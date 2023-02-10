@@ -52,7 +52,7 @@ function ResponsiveAppBar(props) {
             variant="h6"
             noWrap
             component="a"
-            href={process.env.PUBLIC_URL + "/"}
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -64,11 +64,7 @@ function ResponsiveAppBar(props) {
               marginRight: "70px",
             }}
           >
-            <img
-              src={LogoBWD}
-              alt="BWD logo"
-              sx={{ width: "auto", height: "auto" }}
-            />
+            <img src={LogoBWD} alt="BWD logo" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton

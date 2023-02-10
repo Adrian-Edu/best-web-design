@@ -9,10 +9,10 @@
 
 .button-slide {
   font-size: 50px;
-  height: auto;
-  width: auto;
+  max-height: 50px;
+  max-width: 50;
   display: flex;
-  margin: 0 10px;
+  margin: 0 15px;
   background-color: #3dd816;
   border: none;
   color: black;
@@ -60,8 +60,8 @@
 
 @media screen and (max-width: 2000px) {
   .slide-image {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 450px;
+    max-height: 450px;
   }
   .button-slide {
     font-size: 30px;
@@ -71,8 +71,8 @@
 
 @media screen and (max-width: 1500px) {
   .slide-image {
-    max-width: 450px;
-    max-height: 500px;
+    max-width: 380px;
+    max-height: 380px;
   }
   .header-slide {
     font-size: 50px;
