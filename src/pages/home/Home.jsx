@@ -75,12 +75,11 @@ function Home(props) {
           </h3>
         </div>
         <div>
-          <img
+          <link
             rel="preload"
             as="image"
-            src={pozamea}
+            href={pozamea}
             className="profilepic "
-            alt="Adrian Edu img"
           />
         </div>
       </div>
@@ -93,3 +92,5 @@ function Home(props) {
 }
 
 export default Home;
+
+//    <img src={pozamea} className="profilepic " alt="Adrian Edu img" />
