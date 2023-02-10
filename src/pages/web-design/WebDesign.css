@@ -22,8 +22,6 @@ h5 {
 .secondpicture {
   max-width: 670px;
   max-height: 650px;
-  width: auto;
-  height: auto;
   object-fit: contain;
 }
 

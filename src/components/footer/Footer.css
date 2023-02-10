@@ -31,7 +31,8 @@
 }
 
 .logo {
-  width: 300px;
+  max-width: 300px;
+  max-height: auto;
   object-fit: contain;
 }
 
@@ -39,7 +40,8 @@
 .whats,
 .linkedin,
 .github {
-  width: 60px;
+  max-width: 60px;
+  max-height: 60px;
   object-fit: contain;
   border-radius: 5px;
 }
@@ -80,13 +82,15 @@
 
 @media screen and (max-width: 2000px) {
   .logo {
-    width: 220px;
+    max-width: 220px;
+    max-height: auto;
   }
   .mobile,
   .whats,
   .linkedin,
   .github {
-    width: 40px;
+    max-width: 40px;
+    max-height: 40px;
   }
   .remove-format-footer {
     font-size: 20px;
@@ -102,7 +106,8 @@
     font-size: 16px;
   }
   .logo {
-    width: 190px;
+    max-width: 190px;
+    max-height: auto;
   }
 
   .remove-format-footer {
@@ -112,7 +117,8 @@
   .whats,
   .linkedin,
   .github {
-    width: 35px;
+    max-width: 35px;
+    max-height: 35px;
   }
 }
 
@@ -124,13 +130,15 @@
     font-size: 14px;
   }
   .logo {
-    width: 180px;
+    max-width: 180px;
+    max-height: auto;
   }
   .mobile,
   .whats,
   .linkedin,
   .github {
-    width: 30px;
+    max-width: 30px;
+    max-height: 30px;
   }
 }
 
@@ -154,7 +162,8 @@
     text-align: center;
   }
   .logo {
-    width: 170px;
+    max-width: 170px;
+    max-height: auto;
   }
   .remove-format-footer {
     color: white;
@@ -166,7 +175,8 @@
   .whats,
   .linkedin,
   .github {
-    width: 30px;
+    max-width: 30px;
+    max-height: 30px;
   }
   .footer-first-column {
     margin: 15px 0 0 0;
@@ -188,6 +198,7 @@
     width: 60%;
   }
   .logo {
-    width: 165px;
+    max-width: 165px;
+    max-height: auto;
   }
 }

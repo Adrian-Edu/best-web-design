@@ -29,10 +29,7 @@ h2 {
 .profilepic {
   max-width: 650px;
   max-height: 650px;
-  width: auto;
-  height: auto;
   object-fit: contain;
-  border-radius: 5px;
 }
 
 @media screen and (max-width: 1600px) {

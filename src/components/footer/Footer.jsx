@@ -23,44 +23,24 @@ function Footer(props) {
       <div className="footer footer-position">
         <div className="footer-first2">
           <div className="footer-column">
-            <img
-              src={logo}
-              className="logo"
-              alt="BWD logo"
-              sx={{ with: "auto", height: "auto" }}
-            />
+            <img src={logo} className="logo" alt="BWD logo" />
             <div className="footer-first-column">
               <a href="tel://+400766775420">
-                <img
-                  src={mobile}
-                  className="mobile"
-                  alt="mobile img"
-                  sx={{ with: "auto", height: "auto" }}
-                />
+                <img src={mobile} className="mobile" alt="mobile img" />
               </a>
               <a
                 href="https://wa.me/+400766775420"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  src={whats}
-                  className="whats"
-                  alt="WhatsApp img"
-                  sx={{ with: "auto", height: "auto" }}
-                />
+                <img src={whats} className="whats" alt="WhatsApp img" />
               </a>
               <a
                 href="https://www.linkedin.com/in/adrian-edu/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={linkedin}
-                  className="linkedin"
-                  alt="LinkedIn img"
-                  sx={{ with: "auto", height: "auto" }}
-                />
+                <img src={linkedin} className="linkedin" alt="LinkedIn img" />
               </a>
 
               <a
@@ -68,12 +48,7 @@ function Footer(props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={github}
-                  className="github"
-                  alt="Git img"
-                  sx={{ with: "auto", height: "auto" }}
-                />
+                <img src={github} className="github" alt="Git img" />
               </a>
             </div>
           </div>

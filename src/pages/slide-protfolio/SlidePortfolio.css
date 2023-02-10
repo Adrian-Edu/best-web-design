@@ -32,8 +32,8 @@
 }
 
 .slide-image {
-  width: 680px;
-  height: auto;
+  max-width: 680px;
+  max-height: 680px;
   object-fit: contain;
   border-radius: 5px;
 }
@@ -60,7 +60,8 @@
 
 @media screen and (max-width: 2000px) {
   .slide-image {
-    width: 500px;
+    max-width: 500px;
+    max-height: 500px;
   }
   .button-slide {
     font-size: 30px;
@@ -70,7 +71,8 @@
 
 @media screen and (max-width: 1500px) {
   .slide-image {
-    width: 450px;
+    max-width: 450px;
+    max-height: 500px;
   }
   .header-slide {
     font-size: 50px;
@@ -79,7 +81,8 @@
 
 @media screen and (max-width: 800px) {
   .slide-image {
-    width: 330px;
+    max-width: 330px;
+    max-height: 500px;
   }
   .header-slide {
     font-size: 40px;
@@ -99,7 +102,8 @@
 
 @media screen and (max-width: 500px) {
   .slide-image {
-    width: 270px;
+    max-width: 270px;
+    max-height: 270px;
   }
   .header-slide {
     font-size: 30px;
