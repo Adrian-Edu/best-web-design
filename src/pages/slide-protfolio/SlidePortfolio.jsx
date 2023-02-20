@@ -20,13 +20,13 @@ function SlidePortfolio(props) {
       id: 2,
       name: "Todo App",
       image: todo,
-      url: "https://vercel.com/adrian-edu/todo-app",
+      url: "https://todo-app-six-lyart.vercel.app/",
     },
     {
       id: 3,
       name: "The lucky dice game",
       image: lucky,
-      url: "https://vercel.com/adrian-edu/lucky-dice",
+      url: "https://lucky-dice-ruby.vercel.app/",
     },
     {
       id: 4,
