@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./SlidePortfolio.css";
-import product from "../../assets/product.avif";
-import todo from "../../assets/todo.avif";
-import lucky from "../../assets/lucky.avif";
-import robo from "../../assets/robo.avif";
+import product from "../../assets/product.png";
+import todo from "../../assets/todo.png";
+import lucky from "../../assets/lucky.png";
+import robo from "../../assets/robo.png";
+import career from "../../assets/career.png";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import "animate.css";
 import Typewriter from "typewriter-effect";
@@ -12,24 +13,31 @@ function SlidePortfolio(props) {
   const currentPortfolio = [
     {
       id: 1,
-      name: "Product website",
-      image: product,
-      url: "https://lading-page-12.adrianedu.repl.co/",
+      name: "Career opportunities",
+      image: career,
+      url: "https://firme.peviitor.ro/",
     },
     {
       id: 2,
+      name: "The lucky dice game",
+      image: lucky,
+      url: "https://lucky-dice-ruby.vercel.app/",
+    },
+
+    {
+      id: 3,
       name: "Todo App",
       image: todo,
       url: "https://todo-app-six-lyart.vercel.app/",
     },
     {
-      id: 3,
-      name: "The lucky dice game",
-      image: lucky,
-      url: "https://lucky-dice-ruby.vercel.app/",
+      id: 4,
+      name: "Product website",
+      image: product,
+      url: "https://lading-page-12.adrianedu.repl.co/",
     },
     {
-      id: 4,
+      id: 5,
       name: "Robot joketeller",
       image: robo,
       url: "https://robo-joke-teller.adrianedu.repl.co/",

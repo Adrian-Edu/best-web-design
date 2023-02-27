@@ -1,8 +1,8 @@
 import React from "react";
 import "./Services.css";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
-import desktopul from "../../assets/dekstop.avif";
-import oldnew from "../../assets/oldvsnew.avif";
+import desktopul from "../../assets/dekstop.png";
+import oldnew from "../../assets/oldvsnew.png";
 import "animate.css";
 import Typewriter from "typewriter-effect";
 

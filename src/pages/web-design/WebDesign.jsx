@@ -1,6 +1,6 @@
 import React from "react";
 import "./WebDesign.css";
-import secondslicepicture from "../../assets/secondslidepicture.avif";
+import secondslicepicture from "../../assets/secondslidepicture.png";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import "animate.css";
 import Typewriter from "typewriter-effect";

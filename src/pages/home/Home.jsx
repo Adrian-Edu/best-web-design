@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Home.css";
-import pozamea from "../../assets/pozamea.avif";
+import pozamea from "../../assets/pozamea.png";
 import { Link } from "react-router-dom";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import { motion } from "framer-motion";
