@@ -27,7 +27,7 @@ function WebDesign(props) {
       <div className="second-container ">
         <div className="secondpagetext animate__animated animate__backInLeft">
           <p
-            className="h5"
+            className="h6"
             style={{
               color: `${props.textColor}`,
             }}
@@ -40,7 +40,7 @@ function WebDesign(props) {
             <br />
           </p>
           <p
-            className="h5"
+            className="h6"
             style={{
               color: `${props.textColor}`,
             }}

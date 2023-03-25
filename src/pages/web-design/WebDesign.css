@@ -13,7 +13,7 @@
   font-weight: 700;
 }
 
-.h5 {
+.h6 {
   text-align: center;
   font-size: 60px;
   letter-spacing: 3px;
@@ -42,7 +42,7 @@
     max-width: 520px;
     max-height: 520px;
   }
-  .h5 {
+  .h6 {
     font-size: 50px;
     letter-spacing: 3px;
   }
@@ -64,7 +64,7 @@
     max-width: 450px;
     max-height: 450px;
   }
-  .h5 {
+  .h6 {
     font-size: 30px;
     letter-spacing: 3px;
   }
@@ -79,7 +79,7 @@
     max-width: 380px;
     height: 380px;
   }
-  .h5 {
+  .h6 {
     font-size: 25px;
     letter-spacing: 3px;
   }
@@ -97,7 +97,7 @@
     max-width: 300px;
     max-height: 300px;
   }
-  .h5 {
+  .h6 {
     margin-bottom: 20px;
     font-size: 20px;
   }
@@ -112,7 +112,7 @@
     max-width: 280px;
     max-height: 280px;
   }
-  .h5 {
+  .h6 {
     font-size: 15px;
     letter-spacing: 3px;
     margin: 40px 4px 20px 4px;
@@ -134,7 +134,7 @@
     font-size: 40px;
     padding-top: 70px;
   }
-  .h5 {
+  .h6 {
     font-size: 16px;
     letter-spacing: 3px;
     margin-bottom: 20px 0;
