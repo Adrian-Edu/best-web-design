@@ -5,6 +5,7 @@ import todo from "../../assets/todo.png";
 import lucky from "../../assets/lucky.png";
 import robo from "../../assets/robo.png";
 import career from "../../assets/career.png";
+import movie from "../../assets/movie.png";
 import BackToTopButton from "../../components/back-top-button/BackToTopButton";
 import "animate.css";
 import Typewriter from "typewriter-effect";
@@ -41,6 +42,12 @@ function SlidePortfolio(props) {
       name: "Robot joketeller",
       image: robo,
       url: "https://robo-joke-teller.adrianedu.repl.co/",
+    },
+    {
+      id: 6,
+      name: "Movie App",
+      image: movie,
+      url: "https://movies-app-theta-smoky.vercel.app/",
     },
   ];
 
@@ -122,7 +129,6 @@ function SlidePortfolio(props) {
 }
 
 export default SlidePortfolio;
-
 
 /*
 
