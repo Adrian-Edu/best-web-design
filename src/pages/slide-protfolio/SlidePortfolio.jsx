@@ -14,22 +14,21 @@ function SlidePortfolio(props) {
   const currentPortfolio = [
     {
       id: 1,
-      name: "Career opportunities",
-      image: career,
-      url: "https://firme.peviitor.ro/",
-    },
-    {
-      id: 2,
-      name: "The lucky dice game",
-      image: lucky,
-      url: "https://lucky-dice-ruby.vercel.app/",
-    },
-
-    {
-      id: 3,
       name: "Todo App",
       image: todo,
       url: "https://todo-app-six-lyart.vercel.app/",
+    },
+    {
+      id: 2,
+      name: "Movie App",
+      image: movie,
+      url: "https://movies-app-theta-smoky.vercel.app/",
+    },
+    {
+      id: 3,
+      name: "Career opportunities",
+      image: career,
+      url: "https://firme.peviitor.ro/",
     },
     {
       id: 4,
@@ -45,9 +44,9 @@ function SlidePortfolio(props) {
     },
     {
       id: 6,
-      name: "Movie App",
-      image: movie,
-      url: "https://movies-app-theta-smoky.vercel.app/",
+      name: "The lucky dice game",
+      image: lucky,
+      url: "https://lucky-dice-ruby.vercel.app/",
     },
   ];
 
