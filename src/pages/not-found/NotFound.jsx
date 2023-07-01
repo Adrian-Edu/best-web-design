@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import BackToTopButton from "../../components/back-top-button/BackToTopButton";
-import "./NotFound.css";
 import error404svg from "../../assets/Error404.gif";
 
 function NotFound(props) {
@@ -46,10 +44,6 @@ function NotFound(props) {
       >
         Internet illustrations by Storyset
       </a>
-      <BackToTopButton
-        background={props.background}
-        textColor={props.textColor}
-      />
     </section>
   );
 }

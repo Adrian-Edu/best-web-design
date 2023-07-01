@@ -133,7 +133,6 @@ function Contact(props) {
           placeholder="Enter phone number ..."
           pattern="[0-9]{1,14}"
           onChange={handleMobileInput}
-          required
         ></input>
         {submitted && sender.mobile.length <= 9 ? (
           <div>
