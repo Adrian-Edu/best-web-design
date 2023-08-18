@@ -1,205 +1,176 @@
-.footer-height {
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-position {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 24vh;
-}
-
 .footer {
-  background-color: rgb(12, 11, 11);
-  width: 78%;
-  color: #ffffff;
+  height: 25vh;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  border-radius: 20px;
-  margin-bottom: 30px;
+  padding: 10px 0;
 }
 
-.footer-column {
+.first-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.first-column-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-column-list a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  margin-right: 5px;
+  color: rgba(255, 255, 255);
+  font-weight: 700;
+}
+
+.all-rights {
+  font-size: 16px;
+  color: rgba(255, 255, 255);
+  font-weight: 500;
 }
 
 .logo {
   max-width: 300px;
   max-height: auto;
   object-fit: contain;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
-.mobile,
+.email,
+.mobile {
+  object-fit: contain;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
 .whats,
 .linkedin,
 .github {
-  max-width: 60px;
-  max-height: 60px;
   object-fit: contain;
   border-radius: 5px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
-.footer-first-column {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 10px;
-}
-
-.footer-second-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-last-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-first2,
-.footer-second2 {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-.remove-format-footer {
-  color: white;
+.footer-text-color {
+  color: rgba(255, 255, 255);
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
 }
 
-@media screen and (max-width: 2000px) {
-  .logo {
-    max-width: 220px;
-    max-height: auto;
+.email-display,
+.mobile-display {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.email-display p,
+.mobile-display p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 3000px) {
+  .footer {
+    height: 20vh;
   }
-  .mobile,
+  p {
+    font-size: 20px;
+  }
+
+  .all-rights {
+    font-size: 20px;
+  }
+  .email,
+  .mobile {
+    max-width: 40px;
+  }
+
   .whats,
   .linkedin,
   .github {
     max-width: 40px;
-    max-height: 40px;
-  }
-  .remove-format-footer {
-    font-size: 20px;
   }
 }
 
-@media screen and (max-width: 1600px) {
-  .footer-last-column > p {
-    font-size: 16px;
-    margin: 10px 0;
+@media screen and (max-width: 1800px) {
+  .footer {
+    height: 25vh;
   }
-  .footer-second-column > p {
-    font-size: 16px;
-  }
-  .logo {
-    max-width: 190px;
-    max-height: auto;
-  }
-
-  .remove-format-footer {
+  p {
     font-size: 16px;
   }
-  .mobile,
-  .whats,
-  .linkedin,
-  .github {
-    max-width: 35px;
-    max-height: 35px;
+  .all-rights {
+    font-size: 16px;
   }
-}
-
-@media screen and (max-width: 1200px) {
-  .footer-last-column > p {
-    font-size: 14px;
+  .email,
+  .mobile {
+    max-width: 30px;
   }
-  .footer-second-column > p {
-    font-size: 14px;
-  }
-  .logo {
-    max-width: 180px;
-    max-height: auto;
-  }
-  .mobile,
   .whats,
   .linkedin,
   .github {
     max-width: 30px;
-    max-height: 30px;
+  }
+  .email-display p,
+  .mobile-display p {
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .footer-height {
-    height: 50vh;
+@media screen and (max-width: 1250px) {
+  p {
+    font-size: 14px;
   }
-  .footer-position {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 40vh;
+
+  .all-rights {
+    font-size: 14px;
   }
-  .footer-first2,
-  .footer-second2 {
+  .email,
+  .mobile {
+    max-width: 30px;
+  }
+
+  .whats,
+  .linkedin,
+  .github {
+    max-width: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 100%;
+  }
+  .first-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-column,
+  .third-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-  }
-  .logo {
-    max-width: 170px;
-    max-height: auto;
-  }
-  .remove-format-footer {
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .mobile,
-  .whats,
-  .linkedin,
-  .github {
-    max-width: 30px;
-    max-height: 30px;
-  }
-  .footer-first-column {
-    margin: 15px 0 0 0;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .footer-height {
-    height: 90vh;
-  }
-  .footer-position {
-    height: 60vh;
-    padding: 20px 0;
-    margin-bottom: 0px;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-  }
-  .logo {
-    max-width: 165px;
-    max-height: auto;
-  }
 }
