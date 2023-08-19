@@ -21,23 +21,23 @@ function Footer(props) {
       <div className="first-column">
         <img src={logo} className="logo" alt="BWD logo" />
         <div className="first-column-list">
-          <Link onClick={scrollUp} to="/">
-            <p>Home </p>
+          <Link className="nav-link" onClick={scrollUp} to="/">
+            Home
           </Link>
-          <Link onClick={scrollUp} to="/About-me">
-            <p>About me </p>
+          <Link className="nav-link" onClick={scrollUp} to="/About-me">
+            About me
           </Link>
-          <Link onClick={scrollUp} to="/Contact">
-            <p>Contact </p>
+          <Link className="nav-link" onClick={scrollUp} to="/Contact">
+            Contact
           </Link>
-          <Link onClick={scrollUp} to="/Clients">
-            <p>Testimonials </p>
+          <Link className="nav-link" onClick={scrollUp} to="/Clients">
+            Testimonials
           </Link>
-          <Link onClick={scrollUp} to="/NotFound">
-            <p>Blog </p>
+          <Link className="nav-link" onClick={scrollUp} to="/">
+            Legal
           </Link>
         </div>
-        <p className="all-rights"> All rights reserved © BWD</p>
+        <p className="all-rights"> All rights reserved © AFE</p>
       </div>
       <div className="second-column footer-text-color">
         <p>Location Bucharest, Romania</p>
@@ -66,7 +66,7 @@ function Footer(props) {
         <div className="third-column">
           <p>About the company</p>
           <p>
-            BestWebDesign is one of the best web design <br />
+            AFE is one of the best web development <br />
             companies in Romania.
           </p>
           <div>
