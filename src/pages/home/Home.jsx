@@ -37,7 +37,7 @@ function Home(props) {
           backgroundColor: `${props.background}`,
         }}
       >
-        <div className="">
+        <div>
           <h1
             style={{
               color: `${props.textColor}`,
