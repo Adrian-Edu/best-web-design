@@ -22,16 +22,16 @@ function Footer(props) {
         <img src={logo} className="logo" alt="BWD logo" />
         <div className="first-column-list">
           <Link onClick={scrollUp} to="/">
-            <p>Home |</p>
+            <p>Home </p>
           </Link>
           <Link onClick={scrollUp} to="/About-me">
-            <p>About me |</p>
+            <p>About me </p>
           </Link>
           <Link onClick={scrollUp} to="/Contact">
-            <p>Contact |</p>
+            <p>Contact </p>
           </Link>
           <Link onClick={scrollUp} to="/Clients">
-            <p>Testimonials |</p>
+            <p>Testimonials </p>
           </Link>
           <Link onClick={scrollUp} to="/NotFound">
             <p>Blog </p>
@@ -100,14 +100,3 @@ function Footer(props) {
 }
 
 export default Footer;
-
-/*
-
-    <div className="mobile-column">
-          <a href="tel://+400766775420">
-            <img src={mobile} className="mobile" alt="mobile img" />
-          </a>
-          <p>+400766.775.420</p>
-        </div>
-
-      */

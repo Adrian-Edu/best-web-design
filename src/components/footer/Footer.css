@@ -20,6 +20,7 @@
 
 .first-column-list a {
   text-decoration: none;
+  margin-right: 10px;
 }
 
 p {
@@ -124,7 +125,7 @@ p {
   .email-display p,
   .mobile-display p {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 }
 
@@ -150,9 +151,9 @@ p {
 
 @media screen and (max-width: 1000px) {
   .footer {
-    height: 60vh;
+    height: 75vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
@@ -173,4 +174,25 @@ p {
 }
 
 @media screen and (max-width: 500px) {
+  .footer {
+    height: 75vh;
+  }
+  .third-column :nth-last-child(2) {
+    margin: 10px 5px;
+  }
+  .first-column-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .email-display,
+  .mobile-display {
+    margin-top: 10px;
+  }
 }
