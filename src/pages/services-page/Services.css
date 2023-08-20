@@ -40,14 +40,12 @@ h6 {
 }
 
 .oldnew-image {
-  width: auto;
-  height: 440px;
+  max-height: 440px;
   object-fit: contain;
 }
 
 .desktop-image {
-  width: auto;
-  height: 440px;
+  max-height: 430px;
   object-fit: contain;
 }
 
@@ -147,6 +145,7 @@ h6 {
 
   .h7 {
     font-size: 25px;
+    padding: 0;
   }
 
   h6 {

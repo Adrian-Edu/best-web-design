@@ -32,7 +32,7 @@ function Services(props) {
         </div>
         <div className="second2-fourtpage  animate__animated animate__backInRight">
           <p className="h7" style={{ color: `${props.textColor}` }}>
-            Modify your old website
+            Modifying your old website
           </p>
           <img src={oldnew} className="oldnew-image" alt="oldnew img" />
         </div>
