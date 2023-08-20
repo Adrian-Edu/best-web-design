@@ -24,20 +24,16 @@ function WebDesign(props) {
           />
         </p>
       </div>
-      <div className="second-container ">
-        <div className="secondpagetext animate__animated animate__backInLeft">
+      <div className="second-container">
+        <div className="second-container-h6">
           <p
             className="h6"
             style={{
               color: `${props.textColor}`,
             }}
           >
-            It is essential for any business to
-            <br />
-            have a professional online
-            <br />
+            It is essential for any business to have a professional online
             presence.
-            <br />
           </p>
           <p
             className="h6"
@@ -45,18 +41,17 @@ function WebDesign(props) {
               color: `${props.textColor}`,
             }}
           >
-            Using the latest technologies, I will
-            <br />
-            create a fully responsive
-            <br />
+            Using the latest technologies, I will create a fully responsive
             website.
           </p>
         </div>
-        <img
-          src={secondslicepicture}
-          className="secondpicture animate__animated animate__backInRight "
-          alt="presentation img"
-        />
+        <div className="second-container-image">
+          <img
+            src={secondslicepicture}
+            className="secondpicture animate__animated animate__backInRight "
+            alt="presentation img"
+          />
+        </div>
       </div>
       <BackToTopButton
         background={props.background}

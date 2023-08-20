@@ -189,4 +189,8 @@ h6 {
   .second2-fourtpage {
     padding-left: 0px;
   }
+
+  .services-page-height {
+    height: 110vh;
+  }
 }
