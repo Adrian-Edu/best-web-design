@@ -14,10 +14,10 @@ function WebDesign(props) {
       }}
     >
       <div>
-        <p className="h4">
+        <p className="website-header">
           <Typewriter
             options={{
-              strings: ["Web Design", "Website Design", "Website Development"],
+              strings: ["Website Development"],
               autoStart: true,
               loop: true,
             }}

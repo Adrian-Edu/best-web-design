@@ -2,13 +2,12 @@
   height: 100vh;
 }
 
-.h4 {
+.website-header {
   text-align: center;
   font-size: 60px;
   color: #f4b510;
-  padding: 80px 0;
+  padding: 80px 0 80px 0;
   margin: 0;
-  padding-bottom: 0;
   letter-spacing: 3px;
   font-weight: 700;
 }
@@ -68,7 +67,7 @@
     font-size: 30px;
     letter-spacing: 3px;
   }
-  .h4 {
+  .website-header {
     color: #f4b510;
     padding-top: 75px;
   }
@@ -101,7 +100,7 @@
     margin-bottom: 20px;
     font-size: 20px;
   }
-  .h4 {
+  .website-header {
     color: #f4b510;
     padding: 70px 0 30px 0;
     font-size: 40px;
@@ -118,8 +117,8 @@
     letter-spacing: 3px;
     margin: 40px 4px 20px 4px;
   }
-  .h4 {
-    padding: 40px 0 0 0;
+  .website-header {
+    padding-top: 70px;
     font-size: 40px;
     font-weight: 700;
     padding-bottom: 20px;
@@ -131,7 +130,7 @@
     max-width: 270px;
     max-height: 270px;
   }
-  .h4 {
+  .website-header {
     font-size: 30px;
   }
   .h6 {
