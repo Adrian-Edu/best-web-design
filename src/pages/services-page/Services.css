@@ -1,4 +1,4 @@
-.page-height {
+.services-page-height {
   height: 100vh;
 }
 
@@ -22,9 +22,9 @@
 
 h6 {
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
   color: #f4b510;
-  padding: 70px 0 10px 0;
+  padding: 40px 0 10px 0;
   margin: 0;
   letter-spacing: 3px;
 }
@@ -101,7 +101,7 @@ h6 {
     margin-bottom: 20px;
   }
   h6 {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
@@ -148,7 +148,7 @@ h6 {
 
   h6 {
     font-size: 40px;
-    padding: 70px 0;
+    padding: 40px 0;
   }
   .first2-fourtpage {
     justify-content: center;
@@ -185,7 +185,7 @@ h6 {
   h6 {
     font-size: 30px;
     padding-bottom: 20px;
-    padding-top: 70px;
+    padding-top: 40px;
   }
   .second2-fourtpage {
     padding-left: 0px;

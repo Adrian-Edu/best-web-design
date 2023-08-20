@@ -47,6 +47,7 @@ function ResponsiveAppBar(props) {
   return (
     <AppBar position="relative" sx={{ backgroundColor: "rgb(12, 11, 11)" }}>
       <Container maxWidth="xxl">
+        {" "}
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -112,7 +113,7 @@ function ResponsiveAppBar(props) {
                 </Typography>
                 <Typography sx={{ my: 1 }} textAlign="center">
                   <Link to="webdesign" className="isDisabled">
-                    Web Design
+                    Web Development
                   </Link>
                 </Typography>
                 <Typography sx={{ my: 1 }} textAlign="center">
@@ -170,7 +171,7 @@ function ResponsiveAppBar(props) {
             </Button>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
               <Link className="isDisabled" to="webdesign">
-                Web Design
+                Web Development
               </Link>
             </Button>
             <Button sx={{ my: 2, color: "white", display: "block" }}>

@@ -15,7 +15,7 @@
 
 .h6 {
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   letter-spacing: 3px;
 }
 
@@ -43,7 +43,7 @@
     max-height: 520px;
   }
   .h6 {
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 3px;
   }
 }
@@ -103,7 +103,8 @@
   }
   .h4 {
     color: #f4b510;
-    padding: 55px 0 30px 0;
+    padding: 10px 0 30px 0;
+    font-size: 40px;
   }
 }
 
@@ -131,8 +132,7 @@
     max-height: 270px;
   }
   .h4 {
-    font-size: 40px;
-    padding-top: 70px;
+    font-size: 30px;
   }
   .h6 {
     font-size: 16px;

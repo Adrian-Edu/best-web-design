@@ -8,7 +8,6 @@
   align-items: center;
   justify-content: space-around;
   margin-top: 20px;
-  height: 80%;
 }
 
 .first2-fifth {
@@ -82,10 +81,6 @@
 
   .release {
     width: 360px;
-  }
-
-  .fifth-container {
-    height: 65%;
   }
   .header-fifth {
     font-size: 50px;
@@ -209,17 +204,15 @@
   }
   .header-fifth {
     font-size: 25px;
-    padding: 65px 0 10px 0;
+    padding: 20px 0 10px 0;
   }
-  .fifth-container {
-    height: 80%;
-  }
+
   .test {
     margin: 0;
     align-items: center;
   }
   .fifth-container {
     justify-content: center;
-    margin-top: -20px;
+    margin-top: 20px;
   }
 }

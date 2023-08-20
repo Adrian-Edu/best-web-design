@@ -9,7 +9,7 @@ import Typewriter from "typewriter-effect";
 function Services(props) {
   return (
     <section
-      className="page-height"
+      className="services-page-height"
       style={{ backgroundColor: `${props.background}` }}
     >
       <div>
