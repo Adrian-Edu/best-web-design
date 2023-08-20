@@ -33,7 +33,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 70vh;
 }
 
 @media screen and (max-width: 2000px) {
@@ -140,5 +139,8 @@
     font-size: 16px;
     letter-spacing: 3px;
     margin-bottom: 20px 0;
+  }
+  .page-height {
+    height: 110vh;
   }
 }
