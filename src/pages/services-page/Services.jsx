@@ -26,13 +26,13 @@ function Services(props) {
       <div className="fourt-container">
         <div className="first2-fourtpage  animate__animated animate__backInLeft">
           <p className="h7" style={{ color: `${props.textColor}` }}>
-            Responsive website <br /> design
+            Responsive website design
           </p>
           <img src={desktopul} className="desktop-image" alt="dekstop img" />
         </div>
         <div className="second2-fourtpage  animate__animated animate__backInRight">
           <p className="h7" style={{ color: `${props.textColor}` }}>
-            Modify your old <br /> website
+            Modify your old website
           </p>
           <img src={oldnew} className="oldnew-image" alt="oldnew img" />
         </div>

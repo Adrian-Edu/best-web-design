@@ -12,12 +12,13 @@
 .first2-fourtpage {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .second2-fourtpage {
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
+  width: 50%;
 }
 
 h6 {
@@ -35,6 +36,7 @@ h6 {
   font-weight: 700;
   margin-bottom: 30px;
   letter-spacing: 3px;
+  padding: 0 60px;
 }
 
 .oldnew-image {
@@ -193,6 +195,6 @@ h6 {
   }
 
   .services-page-height {
-    height: 110vh;
+    height: 120vh;
   }
 }
