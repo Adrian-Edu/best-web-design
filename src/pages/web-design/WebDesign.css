@@ -123,6 +123,9 @@
     font-weight: 700;
     padding-bottom: 20px;
   }
+  .page-height {
+    height: 110vh;
+  }
 }
 
 @media screen and (max-width: 450px) {
